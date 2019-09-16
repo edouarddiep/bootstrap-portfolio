@@ -8,20 +8,22 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Agency - Start Bootstrap Theme</title>
+  <title>Edouard Diep - Portfolio</title>
+  <link rel="icon" href="./img/icon_html.png">
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom fonts -->
+  <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-  <!-- Custom styles for this template -->
-  <link href="css/agency.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="css/agency.css" rel="stylesheet">
 
 </head>
 
@@ -30,24 +32,29 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Edouard Diep</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#formations">Formations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a class="nav-link js-scroll-trigger" href="#diplomes">Diplômes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -61,52 +68,79 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome To Our Studio!</div>
-        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <div class="intro-lead-in" id="title-writer"></div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="btn-about" href="#about">About me</a>
       </div>
     </div>
   </header>
 
-  <!-- Services -->
-  <section class="page-section" id="services">
+  <!-- ABOUT ME -->
+  <section class="bg-light page-section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
+          <h2 class="section-heading text-uppercase">About me</h2>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle img-res" src="img/profil.png" alt="">
+          <h4>Edouard Diep</h4>
+          <p class="text-muted">Full stack developer</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.linkedin.com/in/edouard-diep-545241108/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://github.com/edouarddiep">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="mailto:edouard.diep@gmail.com">
+                <i class="far fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="tel:+41796959500">
+                <i class="fas fa-phone"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="large text-muted">Hello, I am Edouard. A newly graduated student looking for a first full-time job
+          into Web developpement. My purpose
+          is to integrate a small and effective task team to collaborate with and discover the real world of
+          professionnal leading.
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="page-section" id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Skills</h2>
           <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
+      <div class="progress" style="height:30px;">
+        <div class="progress-bar" role="progressbar" id="progressbar" style="width: 25%;" aria-valuenow="25"
+          aria-valuemin="0" aria-valuemax="100">25%</div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Grid -->
+  <!-- PORTFOLIO -->
   <section class="bg-light page-section" id="portfolio">
     <div class="container">
       <div class="row">
@@ -204,13 +238,13 @@
     </div>
   </section>
 
-  <!-- About -->
-  <section class="page-section" id="about">
+  <!-- FORMATIONS -->
+  <section class="page-section" id="formations">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase">Formations</h2>
+          <h3 class="section-subheading text-muted"></h3>
         </div>
       </div>
       <div class="row">
@@ -218,65 +252,98 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/heg.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
+                  <h5>2015 - 2019</h5>
+                  <h5 class="subheading">Informatique de Gestion</h5>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p>
+                    Haute École de Gestion - Genève
+                  </p>
                 </div>
               </div>
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/calvy.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
+                  <h5>Janv. - Juil. 2015</h5>
+                  <h5 class="subheading">Stage à la réception et service au restaurant</h5>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p>
+                    Hôtel Calvy
+                  </p>
                 </div>
               </div>
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/armee.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
+                  <h5>Juin - Nov. 2014</h5>
+                  <h5 class="subheading">Paiement de galons</h5>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p>
+                        Caserne militaire de Bière
+                      </p>
                 </div>
               </div>
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/bouvier2.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
+                  <h5>2013 - 2014</h5>
+                  <h5 class="subheading">Maturité Professionnelle Post-CFC</h5>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p>
+                    EC Nicolas-Bouvier
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/olexco.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h5>2011 - 2012</h5>
+                  <h5 class="subheading">Stage pratique de dernière année (CFC)</h5>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                    Olexco SA
+                  </p>
                 </div>
               </div>
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <h4>Be Part
-                  <br>Of Our
-                  <br>Story!</h4>
+                <img class="rounded-circle img-fluid" src="img/about/schulz.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h5>2009 - 2012</h5>
+                  <h5 class="subheading">CFC d'Employé de Commerce - Profil E</h5>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                    École Schulz
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
@@ -285,121 +352,111 @@
     </div>
   </section>
 
-  <!-- Team -->
-  <section class="bg-light page-section" id="team">
+  <!-- SECTION DIPLOMES & CERTIFICATS -->
+
+  <section class="bg-light page-section" id="diplomes">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase">Diplômes et certificats</h2>
+          <h3 class="section-subheading text-muted"></h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-            <h4>Kay Garland</h4>
-            <p class="text-muted">Lead Designer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
+        <div class="col-md-4 col-sm-6 diplomes-item">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal1">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-eye fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/diplomes/bachelor_ig_full.jpg" alt="">
+          </a>
+          <div class="diplomes-caption">
+            <h4>Bachelor HES</h4>
+            <h6>Informatique de Gestion</h6>
+            <p class="text-muted">Haute École de Gestion - Genève</p>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
+        <div class="col-md-4 col-sm-6 diplomes-item">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal2">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-eye fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border border-primary" src="img/diplomes/calvy_thumbnail.png" alt="">
+          </a>
+          <div class="diplomes-caption">
+            <h5>Certificat de travail</h5>
+            <br />
+            <p class="item-intro text-muted">Hôtel Calvy</p>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-            <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Clients -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+        <div class="col-md-4 col-sm-6 diplomes-item">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal3">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-eye fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border border-primary" src="img/diplomes/brevet_promotion_thumbnail.png" alt="">
           </a>
+          <div class="diplomes-caption">
+            <h5>Brevet de promotion (Sergent)</h5>
+            <p class="text-muted">Armée Suisse</p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+
+        <div class="col-md-4 col-sm-6 diplomes-item">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal4">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-eye fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border border-primary" src="img/diplomes/maturite_professionnelle_thumbnail.png"
+              alt="">
           </a>
+          <div class="diplomes-caption">
+            <h5>Maturité pro. commerciale</h5>
+            <p class="text-muted">École de commerce Nicolas-Bouvier</p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+
+        <div class="col-md-4 col-sm-6 diplomes-item">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal5">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-eye fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border border-primary" src="img/diplomes/olexco_sa_thumbnail.png" alt="">
           </a>
+          <div class="diplomes-caption">
+            <h5>Certificat de travail</h5>
+            <br />
+            <p class="text-muted">Olexco SA</p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+
+        <div class="col-md-4 col-sm-6 diplomes-item">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal6">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-eye fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border-left border-right border-top border-primary"
+              src="img/diplomes/cfc_thumbnail.jpg" alt="">
           </a>
+          <div class="diplomes-caption">
+            <h5>CFC d'Employé de Commerce - Profil E</h5>
+            <p class="text-muted">École Schulz</p>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -409,8 +466,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase">Contactez-moi</h2>
+          <h3 class="section-subheading text-muted">Pour me contacter par e-mail, veuillez remplir le formulaire ci-dessous.</h3>
         </div>
       </div>
       <div class="row">
@@ -419,28 +476,33 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                  <input class="form-control" id="name" type="text" placeholder="Votre nom *" required="required"
+                    data-validation-required-message="Veuillez saisir votre nom.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                  <input class="form-control" id="email" type="email" placeholder="Votre e-mail *" required="required"
+                    data-validation-required-message="Veuillez saisir une adresse e-mail.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <input class="form-control" id="phone" type="tel" placeholder="Votre téléphone *" required="required"
+                    data-validation-required-message="Veuillez saisir un numéro de téléphone.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <textarea class="form-control" id="message" placeholder="Votre message *" required="required"
+                    data-validation-required-message="Veuillez saisir un message."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Envoyer le
+                  message</button>
               </div>
             </div>
           </form>
@@ -454,40 +516,263 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Your Website 2019</span>
+          <span class="copyright" style="font-style: italic;">Copyright &copy; E. Diep 2019</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
+              <a target="_blank" href="https://www.linkedin.com/in/edouard-diep-545241108/">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
             <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
+              <a target="_blank" href="https://github.com/edouarddiep">
+                <i class="fab fa-github"></i>
+              </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
+              <a target="_blank" href="mailto:edouard.diep@gmail.com">
+                <i class="far fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="tel:+41796959500">
+                <i class="fas fa-phone"></i>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Diplome Modals -->
+
+  <!-- Modal 1 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h3 class="text-uppercase">Bachelor HES</h3>
+                <h3 class="text-uppercase">Informatique de Gestion</h3>
+                <p class="item-intro text-muted">Haute Ecole de Gestion de Genève | Rue de la Tambourine 17, 1227
+                  Carouge, Suisse</p>
+                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/error404.png" alt="">
+                <p style="text-align: left">
+                  Divers projets m'ont permis de mettre en pratique et perfectionner ma connaissance des langages de
+                  programmation web (HTML, CSS/SASS, JS/TypeScript) et l'apprentissage des langages serveur (Java 8, PHP
+                  5, Python 3).
+                  J'ai également utilisé la méthodologie agile (SCRUM et DAD) ce qui m'a valu d'améliorer mes aptitudes
+                  en termes de gestion de projets individuels et de développement collaboratif (Git)
+                  mais aussi l'administration de serveurs (WS 2016, Ubuntu 16.04), le montage et la configuration de
+                  réseaux télécomm. (cf : certification Cisco CCENT) ainsi que la gestion de bases de données
+                  relationnelles à travers divers SGBD (Oracle, MySQL, PostGreSQL)
+                  <ul class="list-inline">
+                    <li>Date : 26 novembre 2019</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h3 class="text-uppercase">Hôtel Calvy</h3>
+                <h5 class="text-uppercase">Certificat de travail</h5>
+                <p class="item-intro text-muted">Hôtel Calvy | Ruelle du Midi 5, 1207 Genève, Suisse</p>
+                <img class="img-fluid d-block mx-auto border border-primary"
+                  src="img/diplomes/certificat_travail_hotel_calvy.png" alt="">
+                <p>
+                  En tant que stagiaire à l'hôtel Calvy, j'ai eu pour mission : l'accueil clients
+                  à
+                  la réception (check-in/check-out), service au restaurant, tenue de la caisse,
+                  prise des réservations par téléphone et e-mail, mise à jour des débiteurs et saisie des pièces
+                  comptables.
+                </p>
+                <ul class="list-inline">
+                  <li>Date: 18 août 2015</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h4 class="text-uppercase">Brevet de promotion sous-officier</h4>
+                <p class="item-intro text-muted">Caserne militaire de Bière | Armée Suisse</p>
+                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/brevet_promotion.png"
+                  alt="">
+                <p>
+                  Ecole de recrue, école de sous-officier ainsi que paiement de galons effectués
+                  dans la caserne militaire de Bière.
+                  J'ai acquis le sens du commandement de troupe en tant que chef de groupe et instructeur MG64 12.7mm.
+                  J'étais au grade de sergent.
+                </p>
+                <ul class="list-inline">
+                  <li>Date: 18 août 2015</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 4 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h4 class="text-uppercase">Maturité Professionnelle Commerciale</h4>
+                <p class="item-intro text-muted">Ecole de Commerce Nicolas Bouvier | Rue de Saint-Jean 60, 1203 Genève,
+                  Suisse</p>
+                <img class="img-fluid d-block mx-auto border border-primary"
+                  src="img/diplomes/maturite_professionnelle.png" alt="">
+                <p>La maturité professionnelle a validé un niveau B2 en italien, amélioré mon
+                  vocabulaire de l'anglais commercial et
+                  m'a offert de solides compétences avec la comptabilité analytique d'entreprise, le droit suisse et
+                  les
+                  mathématiques statistiques.</p>
+                <ul class="list-inline">
+                  <li>Date: 18 août 2015</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 5 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h3 class="text-uppercase">OLEXCO SA</h3>
+                <h5 class="text-uppercase">Certificat de travail</h5>
+                <p class="item-intro text-muted">Olexco SA | Place de l'Université 6, 1205 Genève, Suisse</p>
+                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/olexco_sa.png" alt="">
+                <p>Mise en pratique des connaissances scolaires acquises durant mon CFC. Gestion du
+                  courrier, accueil des clients, réception des appels téléphoniques,
+                  préparation des classeurs annuels et répertoires des nouveaux clients, création et mise à jour des
+                  fichiers clients, petite correspondance,
+                  saisie de pièces comptables, préparation des écritures de bouclement, tenue du reporting Excel,
+                  archivage et classement des dossiers, tâches administratives diverses.</p>
+                <ul class="list-inline">
+                  <li>Date: 31 juillet 2012</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 6 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h3 class="text-uppercase">CFC d'Employé de Commerce</h3>
+                <p class="item-intro text-muted">Ecole Schulz | Rue du 31 Décembre 8, 1207 Genève, Suisse</p>
+                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/cfc_full.png" alt="">
+                <p>Etude de la comptabilité générale d'entreprise et validation d'un niveau B2 en
+                  anglais ainsi qu'un B1 en italien.
+                  Notions de bases en bureautique, dactylographie et pratique régulière avec les outils Microsoft
+                  Office (Word, Excel, PowerPoint & Outlook).</p>
+                <ul class="list-inline">
+                  <li>Date: 25 septembre 2012</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Portfolio Modals -->
 
@@ -508,7 +793,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Threads</li>
@@ -542,7 +829,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Explore</li>
@@ -576,7 +865,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Finish</li>
@@ -610,7 +901,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Lines</li>
@@ -644,7 +937,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Southwest</li>
@@ -678,7 +973,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Window</li>
@@ -696,18 +993,18 @@
   </div>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.js"></script>
 
   <!-- Contact form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
+  <script src="js/agency.js"></script>
 
 </body>
 
