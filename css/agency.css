@@ -229,56 +229,28 @@ header.masthead .intro-text .intro-heading {
 /* SKILLS LOGOS */
 
 .skills-logo {
-  height: 60px;
+  height: 35px;
   position: relative;
-  margin-right:20px;
+  margin-right: 10px;
   margin-bottom: 5px;
   opacity: 0;
   left:350px;
 }
-
 .sqr {
-  width: 60px;
+  width: 35px;
 }
-
 .rect {
-  width: 130px;
+  width: 65px;
 }
-
 .smallrect {
+  width: 50px;
+}
+.bigrect {
   width: 100px;
 }
-
-.bigrect {
-  width: 180px;
-}
-
 .verybigrect {
-  height: 40px;
-  width: 180px;
-}
-
-@media screen and (max-width:430px) {
-  .skills-logo {
-    height: 34px;
-    margin-right: 10px;
-  }
-  .sqr {
-    width: 34px;
-  }
-  .rect {
-    width: 65px;
-  }
-  .smallrect {
-    width: 50px;
-  }
-  .bigrect {
-    width: 100px;
-  }
-  .verybigrect {
-    height: 30px;
-    width: 120px;
-  }
+  height: 30px;
+  width: 120px;
 }
 
 @media screen and (min-width: 431px) and (max-width: 638px) {
@@ -348,6 +320,34 @@ header.masthead .intro-text .intro-heading {
   .verybigrect {
     height: 30px;
     width: 130px;
+  }
+}
+
+@media screen and (min-width: 1281px){
+  .skills-logo {
+    height: 60px;
+    margin-right:20px;
+  }
+  
+  .sqr {
+    width: 60px;
+  }
+  
+  .rect {
+    width: 130px;
+  }
+  
+  .smallrect {
+    width: 100px;
+  }
+  
+  .bigrect {
+    width: 180px;
+  }
+  
+  .verybigrect {
+    height: 40px;
+    width: 180px;
   }
 }
 
