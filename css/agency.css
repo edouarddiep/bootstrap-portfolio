@@ -260,11 +260,11 @@ header.masthead .intro-text .intro-heading {
 
 @media screen and (max-width:430px) {
   .skills-logo {
-    height: 35px;
+    height: 34px;
     margin-right: 10px;
   }
   .sqr {
-    width: 35px;
+    width: 34px;
   }
   .rect {
     width: 65px;
