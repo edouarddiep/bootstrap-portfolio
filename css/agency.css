@@ -415,13 +415,11 @@ header.masthead .intro-text .intro-heading {
   -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  overflow: hidden;
   border-radius: 50%;
   background: rgba(255, 140, 0, 0.8);
 }
 
 .formations-link .formations-hover:hover {
-  overflow: hidden;
   opacity: 1;
 }
 
@@ -434,6 +432,14 @@ header.masthead .intro-text .intro-heading {
   margin-top: -12px;
   text-align: center;
   color: white;
+}
+
+.formations-link .formations-hover .formations-hover-content i {
+  margin-top: -12px;
+}
+
+.formations-link .formations-hover .formations-hover-content h4 {
+  margin: 0;
 }
 
 #diplomes .diplomes-item .diplomes-link .diplomes-hover .diplomes-hover-content {
