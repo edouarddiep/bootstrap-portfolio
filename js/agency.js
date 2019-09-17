@@ -4,6 +4,7 @@ var timelineInverted = $('.timeline .timeline-inverted .timeline-panel');
 var timelineImage = $('.timeline .timeline-image');
 var diplomeItem = $('.page-section .container .row .diplomes-item');
 var aboutImage = $('#about .container #aboutImage');
+var portfolioItem = $('.page-section .container .row .portfolio-item');
 var aboutText = $('#about #aboutText');
 var lineProgressVisible = false;
 
@@ -71,7 +72,7 @@ var lineProgressVisible = false;
 $("#title-writer").writeText("Bienvenue sur mon portfolio");
 
 // button about animation
-$('#btn-about').delay(2500).animate({
+$('#btn-about').delay(2200).animate({
   'opacity': '1',
   'margin-top': '15px'
 }, 1500);
@@ -84,8 +85,8 @@ $(window).scroll(function () {
   var bottom_of_progress = progress.offset().top - progress.outerHeight();
   var bottom_of_timeline = timelineNormal.offset().top - timelineNormal.outerHeight();
   var bottom_of_diplomeItem = diplomeItem.offset().top - diplomeItem.outerHeight();
+  var bottom_of_portfolioItem = portfolioItem.offset().top - portfolioItem.outerHeight();
   var bottom_of_about = aboutImage.offset().top - aboutImage.outerHeight();
-  var windowVal = $(window).scrollTop();
 
 
   if ((bottom_of_window > bottom_of_progress) && lineProgressVisible == false) {
@@ -130,7 +131,7 @@ $(window).scroll(function () {
             'opacity': '1',
             'right': '0',
           }, 1500)
-        }, i * 300);
+        }, i * 600);
       }
     });
     timelineInverted.each(function () {
@@ -140,14 +141,18 @@ $(window).scroll(function () {
             'opacity': '1',
             'left': '0',
           }, 1500)
-        }, i * 600);
+        }, i * 1000);
       }
     })
     timelineImage.each(function () {
-      $(this).animate({
-        'opacity': '1',
-        'top': '0',
-      }, 2500)
+      for (let i = 0; i <= 6; i++) {
+        setTimeout(() => {
+          $('#timelineimage' + i).animate({
+            'opacity': '1',
+            'top': '0',
+          }, 1000)
+        }, i * 500);
+      }
     })
   }
 
@@ -166,6 +171,21 @@ $(window).scroll(function () {
     })
   }
 
+  // ANIMATION PORTFOLIO ITEMS 
+
+  if (bottom_of_window > bottom_of_portfolioItem) {
+    this.portfolioItem.each(function () {
+      for (let i = 0; i <= 3; i++) {
+        setTimeout(() => {
+          $('#portfolioItem' + i).animate({
+            'opacity': '1',
+            'top': '0',
+          }, 2000)
+        }, i * 600);
+      }
+    })
+  }
+
   // ANIMATION ABOUT ME
 
   if (bottom_of_window > bottom_of_about) {
@@ -178,9 +198,10 @@ $(window).scroll(function () {
     })
 
     this.aboutText.each(function (){
-      $(this).delay(1500).animate({
+      $(this).delay(1000).animate({
         'opacity': '1',
-      }, 2500);
+        'top': '0'
+      }, 1200);
     });
   }
 });

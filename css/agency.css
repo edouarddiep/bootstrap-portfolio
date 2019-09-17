@@ -214,6 +214,9 @@ header.masthead .intro-text .intro-heading {
 }
 
 #about #aboutText{
+  opacity: 0;
+  top:150px;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -494,6 +497,8 @@ header.masthead .intro-text .intro-heading {
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
+  opacity: 0;
+  top: 200px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
