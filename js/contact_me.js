@@ -1,3 +1,9 @@
+/**
+ * 
+ * 
+ * @author Edouard Diep
+ */
+
 $(function() {
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({

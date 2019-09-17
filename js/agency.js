@@ -1,3 +1,9 @@
+/**
+ * 
+ * 
+ * @author Edouard Diep
+ */
+
 var progress = $('.page-section .container .progress');
 var timelineNormal = $('.timeline .timeline-normal .timeline-panel');
 var timelineInverted = $('.timeline .timeline-inverted .timeline-panel');
