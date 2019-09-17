@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body id="page-top">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -83,9 +83,9 @@
           <h3 class="section-heading text-uppercase">A propos de moi</h3>
         </div>
       </div>
-      <div class="col-sm-12">
+      <div class="col-sm-12" id="aboutImage">
         <div class="team-member">
-          <img class="mx-auto rounded-circle img-res" src="img/profil.png" alt="">
+          <img class="mx-auto rounded-circle img-res" src="img/profil6.png" alt="">
           <h4>Edouard Diep</h4>
           <p class="text-muted">Développeur Full Stack</p>
           <ul class="list-inline social-buttons">
@@ -113,14 +113,15 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="aboutText">
       <div class="col-lg-5 mx-auto text-justify pl-5 pr-5">
-        <p class="large text-muted">
+        <p class="large text-muted" >
           Bonjour, je suis Edouard. Jeune et fraîchement diplômé d'un bachelor HES en Infomatique de Gestion, je suis
           actuellement
-          à la recherche d'un premier emploi à plein temps dans le domaine du développement web. Mon but est d'intégrer une équipe de travail afin de me
+          à la recherche d'un premier emploi à plein temps dans le domaine du développement web. Mon but est d'intégrer
+          une équipe de travail afin de me
           former, collaborer
-          et progresser dans un cadre de travail agréable et professionnel.
+          et progresser dans un cadre de travail sérieux, agréable et professionnel.
         </p>
       </div>
     </div>
@@ -147,8 +148,9 @@
       <img src="img/logo_skills/CSS3_logo.png" class="skills-logo smallsqr" id="skill2" title="CSS 3">
       <img src="img/logo_skills/sass_logo.png" class="skills-logo rect" id="skill4" title="SASS / SCSS">
       <div class="progress" style="height:18px;">
-        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" id="progressbar2"
-          aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-percent="100" style="width: 0%">100%</div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+          id="progressbar2" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-percent="100"
+          style="width: 0%">100%</div>
       </div>
       <br />
       <img src="img/logo_skills/javascript_logo.png" class="skills-logo smallrect" id="skill6" title="Javascript">
@@ -216,33 +218,37 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Threads</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+            <img class="img-fluid border-primary border" src="img/portfolio/vaudvin_thumbnail.png" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Explore</h4>
-            <p class="text-muted">Graphic Design</p>
+            <h4>VaudVin</h4>
+            <p class="text-muted">Application mobile hybride développée avec les Frameworks Ionic 4 (Front End) et
+              Laravel PHP 5 (Back End)</p>
           </div>
         </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border border-primary" src="img/portfolio/FoodNextDoor_thumbnail.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Food Next Door</h4>
+            <p class="text-muted">Responsive WebApp développée à l'aide des Frameworks Angular 7 (Front End) et
+              DjangoREST (Back End)</p>
+          </div>
+        </div>
+
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
             <div class="portfolio-hover">
@@ -250,11 +256,12 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            <img class="img-fluid border-primary border" src="img/portfolio/gcb_thumbnail.png" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
+            <h5>Global Class Booking</h5>
+            <p class="text-muted">Application lourde entièrement développée en langage Java SE 8 et utilisant une base
+              de données Oracle</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -315,13 +322,18 @@
       <div class="row">
         <div class="col-lg-12">
           <ul class="timeline">
-            <li class="timeline-normal" id="timeline1">
+            <li class="timeline-normal">
               <div class="timeline-image">
-                <a class="diplomes-link" data-toggle="modal" href="#diplomesModal1">
+                <a class="formations-link" data-toggle="modal" href="#diplomesModal1">
+                  <div class="formations-hover">
+                    <div class="formations-hover-content">
+                      <i class="far fa-eye fa-3x"></i>
+                    </div>
+                  </div>
                   <img class="rounded-circle img-fluid" src="img/about/heg.png" alt="">
                 </a>
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel" id="timelineNormal1">
                 <div class="timeline-heading">
                   <h5>2015 - 2019</h5>
                   <h5 class="subheading">Informatique de Gestion</h5>
@@ -333,13 +345,18 @@
                 </div>
               </div>
             </li>
-            <li class="timeline-inverted" id="timeline2">
+            <li class="timeline-inverted">
               <div class="timeline-image">
-                <a class="diplomes-link" data-toggle="modal" href="#diplomesModal2">
+                <a class="formations-link" data-toggle="modal" href="#diplomesModal2">
+                  <div class="formations-hover">
+                    <div class="formations-hover-content">
+                      <i class="far fa-eye fa-3x"></i>
+                    </div>
+                  </div>
                   <img class="rounded-circle img-fluid" src="img/about/calvy.png" alt="">
                 </a>
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel" id="timelineInverted1">
                 <div class="timeline-heading">
                   <h5>Janv. - Juil. 2015</h5>
                   <h5 class="subheading">Stage à la réception et service au restaurant</h5>
@@ -351,13 +368,18 @@
                 </div>
               </div>
             </li>
-            <li class="timeline-normal" id="timeline3">
+            <li class="timeline-normal">
               <div class="timeline-image">
-                <a class="diplomes-link" data-toggle="modal" href="#diplomesModal3">
+                <a class="formations-link" data-toggle="modal" href="#diplomesModal3">
+                  <div class="formations-hover">
+                    <div class="formations-hover-content">
+                      <i class="far fa-eye fa-3x"></i>
+                    </div>
+                  </div>
                   <img class="rounded-circle img-fluid" src="img/about/armee.png" alt="">
                 </a>
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel" id="timelineNormal2">
                 <div class="timeline-heading">
                   <h5>Juin - Nov. 2014</h5>
                   <h5 class="subheading">Paiement de galons</h5>
@@ -369,13 +391,18 @@
                 </div>
               </div>
             </li>
-            <li class="timeline-inverted" id="timeline4">
+            <li class="timeline-inverted">
               <div class="timeline-image">
-                <a class="diplomes-link" data-toggle="modal" href="#diplomesModal4">
-                  <img class="rounded-circle img-fluid" src="img/about/bouvier2.png" alt="">
+                <a class="formations-link" data-toggle="modal" href="#diplomesModal4">
+                  <div class="formations-hover">
+                    <div class="formations-hover-content">
+                      <i class="far fa-eye fa-3x"></i>
+                    </div>
+                  </div>
+                  <img class="rounded-circle img-fluid" src="img/about/bouvier.png" alt="">
                 </a>
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel" id="timelineInverted2">
                 <div class="timeline-heading">
                   <h5>2013 - 2014</h5>
                   <h5 class="subheading">Maturité Professionnelle Post-CFC</h5>
@@ -387,13 +414,18 @@
                 </div>
               </div>
             </li>
-            <li class="timeline-normal" id="timeline5">
+            <li class="timeline-normal">
               <div class="timeline-image">
-                <a class="diplomes-link" data-toggle="modal" href="#diplomesModal5">
+                <a class="formations-link" data-toggle="modal" href="#diplomesModal5">
+                  <div class="formations-hover">
+                    <div class="formations-hover-content">
+                      <i class="far fa-eye fa-3x"></i>
+                    </div>
+                  </div>
                   <img class="rounded-circle img-fluid" src="img/about/olexco.png" alt="">
                 </a>
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel" id="timelineNormal3">
                 <div class="timeline-heading">
                   <h5>2011 - 2012</h5>
                   <h5 class="subheading">Stage pratique de dernière année (CFC)</h5>
@@ -405,13 +437,18 @@
                 </div>
               </div>
             </li>
-            <li class="timeline-inverted" id="timeline6">
+            <li class="timeline-inverted">
               <div class="timeline-image">
-                <a class="diplomes-link" data-toggle="modal" href="#diplomesModal6">
+                <a class="formations-link" data-toggle="modal" href="#diplomesModal6">
+                  <div class="formations-hover">
+                    <div class="formations-hover-content">
+                      <i class="far fa-eye fa-3x"></i>
+                    </div>
+                  </div>
                   <img class="rounded-circle img-fluid" src="img/about/schulz.png" alt="">
                 </a>
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel" id="timelineInverted3">
                 <div class="timeline-heading">
                   <h5>2009 - 2012</h5>
                   <h5 class="subheading">CFC d'Employé de Commerce - Profil E</h5>
@@ -444,7 +481,7 @@
           <a class="diplomes-link" data-toggle="modal" href="#diplomesModal1">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
-                <i class="fas fa-eye fa-3x"></i>
+                <i class="far fa-eye fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid" src="img/diplomes/bachelor_ig_thumbnail.jpg" alt="">
@@ -459,7 +496,7 @@
           <a class="diplomes-link" data-toggle="modal" href="#diplomesModal2">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
-                <i class="fas fa-eye fa-3x"></i>
+                <i class="far fa-eye fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid border border-primary" src="img/diplomes/calvy_thumbnail.png" alt="">
@@ -475,7 +512,7 @@
           <a class="diplomes-link" data-toggle="modal" href="#diplomesModal3">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
-                <i class="fas fa-eye fa-3x"></i>
+                <i class="far fa-eye fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid border border-primary" src="img/diplomes/brevet_promotion_thumbnail.png" alt="">
@@ -490,7 +527,7 @@
           <a class="diplomes-link" data-toggle="modal" href="#diplomesModal4">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
-                <i class="fas fa-eye fa-3x"></i>
+                <i class="far fa-eye fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid border border-primary" src="img/diplomes/maturite_professionnelle_thumbnail.png"
@@ -506,7 +543,7 @@
           <a class="diplomes-link" data-toggle="modal" href="#diplomesModal5">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
-                <i class="fas fa-eye fa-3x"></i>
+                <i class="far fa-eye fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid border border-primary" src="img/diplomes/olexco_sa_thumbnail.png" alt="">
@@ -522,7 +559,7 @@
           <a class="diplomes-link" data-toggle="modal" href="#diplomesModal6">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
-                <i class="fas fa-eye fa-3x"></i>
+                <i class="far fa-eye fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid border-left border-right border-top border-primary"
@@ -540,17 +577,18 @@
 
   <!-- Contact -->
   <section class="page-section" id="contact">
+    <div class="bg-image"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Contactez-moi</h2>
-          <h3 class="section-subheading text-muted">Pour me contacter par e-mail, veuillez remplir le formulaire
-            ci-dessous.</h3>
+          <p class="section-subheading" style="color:darkgray">Pour me contacter par e-mail, veuillez remplir le formulaire
+            ci-dessous.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate" action="contact_me.php" method="POST" enctype="multipart/form-data" role="form">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -579,7 +617,7 @@
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Envoyer le
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" style="background-color:rgb(217, 120, 2)" type="submit">Envoyer le
                   message</button>
               </div>
             </div>

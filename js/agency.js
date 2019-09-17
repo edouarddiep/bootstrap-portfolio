@@ -3,6 +3,8 @@ var timelineNormal = $('.timeline .timeline-normal .timeline-panel');
 var timelineInverted = $('.timeline .timeline-inverted .timeline-panel');
 var timelineImage = $('.timeline .timeline-image');
 var diplomeItem = $('.page-section .container .row .diplomes-item');
+var aboutImage = $('#about .container #aboutImage');
+var aboutText = $('#about #aboutText');
 var lineProgressVisible = false;
 
 (function ($) {
@@ -80,8 +82,10 @@ $(window).scroll(function () {
   console.log('lol');
   var bottom_of_window = $(this).scrollTop() + $(this).outerHeight();
   var bottom_of_progress = progress.offset().top - progress.outerHeight();
-  var bottom_of_timelineNormal = timelineNormal.offset().top - timelineNormal.outerHeight();
+  var bottom_of_timeline = timelineNormal.offset().top - timelineNormal.outerHeight();
   var bottom_of_diplomeItem = diplomeItem.offset().top - diplomeItem.outerHeight();
+  var bottom_of_about = aboutImage.offset().top - aboutImage.outerHeight();
+  var windowVal = $(window).scrollTop();
 
 
   if ((bottom_of_window > bottom_of_progress) && lineProgressVisible == false) {
@@ -108,7 +112,7 @@ $(window).scroll(function () {
         if (width >= dataPercent) {
           clearInterval(id);
         } else {
-          width+=1.2;
+          width += 1.2;
           progressBar.css("width", width + "%");
         }
       }
@@ -116,20 +120,28 @@ $(window).scroll(function () {
     lineProgressVisible = true;
   }
 
-  console.log('Bottom of timeline = ' + bottom_of_timelineNormal);
+  console.log('Bottom of timeline = ' + bottom_of_timeline);
   // ANIMATION TIMELINE IMAGES & TEXTS 
-  if (bottom_of_window > bottom_of_timelineNormal) {
+  if (bottom_of_window > bottom_of_timeline) {
     timelineNormal.each(function () {
-      $(this).animate({
-        'opacity': '1',
-        'right': '0',
-      }, 2500)
+      for (let i = 0; i <= 3; i++) {
+        setTimeout(() => {
+          $('#timelineNormal' + i).animate({
+            'opacity': '1',
+            'right': '0',
+          }, 1500)
+        }, i * 300);
+      }
     });
     timelineInverted.each(function () {
-      $(this).animate({
-        'opacity': '1',
-        'left': '0',
-      }, 2500)
+      for (let i = 0; i <= 3; i++) {
+        setTimeout(() => {
+          $('#timelineInverted' + i).animate({
+            'opacity': '1',
+            'left': '0',
+          }, 1500)
+        }, i * 600);
+      }
     })
     timelineImage.each(function () {
       $(this).animate({
@@ -138,6 +150,8 @@ $(window).scroll(function () {
       }, 2500)
     })
   }
+
+  // ANIMATION DIPLOME & CERTIFICATS 
 
   if (bottom_of_window > bottom_of_diplomeItem) {
     this.diplomeItem.each(function () {
@@ -150,5 +164,23 @@ $(window).scroll(function () {
         }, i * 400);
       }
     })
+  }
+
+  // ANIMATION ABOUT ME
+
+  if (bottom_of_window > bottom_of_about) {
+    this.aboutImage.each(function () {
+      $(this).animate({
+        'opacity': '1',
+        'zoom': '100%'
+      }, 2000);
+      $(this).css('transform', 'rotate(0deg)');
+    })
+
+    this.aboutText.each(function (){
+      $(this).delay(1500).animate({
+        'opacity': '1',
+      }, 2500);
+    });
   }
 });

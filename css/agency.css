@@ -132,8 +132,6 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: darkorange;
-  transform: scale(1.1);
-  transition: all 100ms ease-in-out;
 }
 
 @media (min-width: 992px) {
@@ -205,6 +203,19 @@ header.masthead .intro-text .intro-heading {
   margin-top: 100px;
 }
 
+#about .container #aboutImage{
+  opacity: 0;
+  zoom: 50%;
+  transform: rotate(240deg);
+  -webkit-transition: -webkit-transform 2s ease;
+  -moz-transition: -moz-transform 2s ease;
+  -o-transition: -o-transform 2s ease;
+  -ms-transition: -ms-transform 2s ease;
+}
+
+#about #aboutText{
+}
+
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
@@ -234,20 +245,25 @@ header.masthead .intro-text .intro-heading {
   margin-right: 10px;
   margin-bottom: 5px;
   opacity: 0;
-  left:350px;
+  left: 350px;
 }
+
 .sqr {
   width: 35px;
 }
+
 .rect {
   width: 65px;
 }
+
 .smallrect {
   width: 50px;
 }
+
 .bigrect {
   width: 100px;
 }
+
 .verybigrect {
   height: 30px;
   width: 120px;
@@ -323,28 +339,23 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-@media screen and (min-width: 1281px){
+@media screen and (min-width: 1281px) {
   .skills-logo {
     height: 60px;
-    margin-right:20px;
+    margin-right: 20px;
   }
-  
   .sqr {
     width: 60px;
   }
-  
   .rect {
     width: 130px;
   }
-  
   .smallrect {
     width: 100px;
   }
-  
   .bigrect {
     width: 180px;
   }
-  
   .verybigrect {
     height: 40px;
     width: 180px;
@@ -360,7 +371,7 @@ header.masthead .intro-text .intro-heading {
   right: 0;
   margin: 0 0 15px;
   opacity: 0;
-  top:200px;
+  top: 200px;
 }
 
 #diplomes .diplomes-item .diplomes-link {
@@ -385,6 +396,44 @@ header.masthead .intro-text .intro-heading {
 
 #diplomes .diplomes-item .diplomes-link .diplomes-hover:hover {
   opacity: 1;
+}
+
+.formations-link {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.formations-link .formations-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  background: rgba(255, 140, 0, 0.8);
+}
+
+.formations-link .formations-hover:hover {
+  overflow: hidden;
+  opacity: 1;
+}
+
+.formations-link .formations-hover .formations-hover-content {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: white;
 }
 
 #diplomes .diplomes-item .diplomes-link .diplomes-hover .diplomes-hover-content {
@@ -739,7 +788,7 @@ header.masthead .intro-text .intro-heading {
   border-radius: 100%;
   background-color: white;
   opacity: 0;
-  top:200px;
+  top: 200px;
 }
 
 .timeline>li .timeline-image h4 {
@@ -753,14 +802,15 @@ header.masthead .intro-text .intro-heading {
   padding: 0 20px 0 100px;
   text-align: right;
   opacity: 0;
-  right:300px;
+  right: 300px;
 }
+
 .timeline>li.timeline-inverted>.timeline-panel {
   float: right;
   padding: 0 20px 0 100px;
   text-align: left;
   opacity: 0;
-  left:300px;
+  left: 300px;
 }
 
 .timeline>li.timeline-inverted>.timeline-panel:before {
@@ -890,10 +940,11 @@ header.masthead .intro-text .intro-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-color: rgba(0, 0, 0, 0.93);
+  background-image: url("../img/contact.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 section#contact .section-heading {
