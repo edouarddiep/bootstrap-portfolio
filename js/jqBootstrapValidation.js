@@ -102,7 +102,7 @@
             //                                                   PATTERN
             // ---------------------------------------------------------
             if ($this.attr("pattern") !== undefined) {
-              message = "Ne respecte pas le bon format !<!-- data-validation-pattern-message to override -->";
+              message = "Veuillez saisir un nom valide !<!-- data-validation-pattern-message to override -->";
               if ($this.data("validationPatternMessage")) {
                 message = $this.data("validationPatternMessage");
               }
@@ -148,7 +148,7 @@
             //                                                 MINLENGTH
             // ---------------------------------------------------------
             if ($this.attr("minlength") !== undefined) {
-              message = "Message trop court. Minimum : '" + $this.attr("minlength") + "' caractères<!-- data-validation-minlength-message to override -->";
+              message = "Votre message est trop court. Minimum : '" + $this.attr("minlength") + "' caractères<!-- data-validation-minlength-message to override -->";
               if ($this.data("validationMinlengthMessage")) {
                 message = $this.data("validationMinlengthMessage");
               }
@@ -166,10 +166,10 @@
               $this.data("validationRequiredMessage", message);
             }
             // ---------------------------------------------------------
-            //                                                    NUMBER
+            //                                                    TELEPHONE
             // ---------------------------------------------------------
-            if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "number") {
-              message = settings.builtInValidators.number.message;
+            if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "tel") {
+              message = "Le numéro de téléphone est incorrect !";
               if ($this.data("validationNumberMessage")) {
                 message = $this.data("validationNumberMessage");
               }
@@ -179,7 +179,7 @@
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "L'adresse e-mail est invalide !<!-- data-validator-validemail-message to override -->";
+              message = "L'adresse e-mail est incorrecte !<!-- data-validator-validemail-message to override -->";
               if ($this.data("validationValidemailMessage")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {
