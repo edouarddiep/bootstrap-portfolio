@@ -124,7 +124,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #3668fe;
+  color: darkorange;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -209,7 +209,7 @@ header.masthead .intro-text .intro-heading {
   margin-top: 100px;
 }
 
-#about .container #aboutImage{
+#about .container #aboutImage {
   opacity: 0;
   zoom: 50%;
   transform: rotate(240deg);
@@ -219,9 +219,9 @@ header.masthead .intro-text .intro-heading {
   -ms-transition: -ms-transform 2s ease;
 }
 
-#about #aboutText{
+#about #aboutText {
   opacity: 0;
-  top:150px;
+  top: 150px;
   position: relative;
 }
 
@@ -249,7 +249,7 @@ header.masthead .intro-text .intro-heading {
 /* SKILLS LOGOS */
 
 .skills-logo {
-  height: 35px;
+  height: 30px;
   position: relative;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -257,16 +257,36 @@ header.masthead .intro-text .intro-heading {
   left: 350px;
 }
 
+.progress-bar{
+  width:0%;
+  background-color: #0275d8;
+}
+
+.progress-bar-header {
+  display: inline;
+  width: 100%;
+}
+
+.percent {
+  color:#0275d8;
+  position: relative;
+  float: right;
+  font-size: 0.85em;
+  padding-top:5px;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .sqr {
-  width: 35px;
+  width: 30px;
 }
 
 .rect {
-  width: 65px;
+  width: 50px;
 }
 
 .smallrect {
-  width: 50px;
+  width: 45px;
 }
 
 .bigrect {
@@ -274,8 +294,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .verybigrect {
-  height: 30px;
-  width: 120px;
+  width: 115px;
 }
 
 @media screen and (min-width: 431px) and (max-width: 638px) {
@@ -299,6 +318,10 @@ header.masthead .intro-text .intro-heading {
     height: 30px;
     width: 120px;
   }
+  .percent {
+    padding-top:10px;
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (min-width: 639px) and (max-width: 825px) {
@@ -321,6 +344,10 @@ header.masthead .intro-text .intro-heading {
   .verybigrect {
     height: 30px;
     width: 120px;
+  }
+  .percent {
+    padding-top:15px;
+    font-size: 1em;
   }
 }
 
@@ -346,6 +373,14 @@ header.masthead .intro-text .intro-heading {
     height: 30px;
     width: 130px;
   }
+  .progress-bar-header {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .percent {
+    padding-top: 15px;
+    font-size: 1.1em;
+  }
 }
 
 @media screen and (min-width: 1281px) {
@@ -368,6 +403,185 @@ header.masthead .intro-text .intro-heading {
   .verybigrect {
     height: 40px;
     width: 180px;
+  }
+  .progress-bar-header {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .percent {
+    padding-top: 15px;
+    font-size: 1.2em;
+  }
+}
+
+/* LANGUAGES LOGO */
+
+
+.lang-logo {
+  height: 30px;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  opacity: 0;
+  left: 350px;
+}
+
+.progress-bar{
+  width:0%;
+  background-color: #0275d8;
+}
+
+.progress-bar-header {
+  display: inline;
+  width: 100%;
+}
+
+.lang-level-text {
+  color:#0275d8;
+  position: relative;
+  float: right;
+  font-size: 0.75em;
+  padding-top:5px;
+  font-style: italic;
+  font-weight: bold;
+  opacity: 0;
+  bottom:50px;
+}
+
+.sqr {
+  width: 30px;
+}
+
+.rect {
+  width: 50px;
+}
+
+.smallrect {
+  width: 45px;
+}
+
+.bigrect {
+  width: 100px;
+}
+
+.verybigrect {
+  width: 115px;
+}
+
+@media screen and (min-width: 431px) and (max-width: 638px) {
+  .lang-logo {
+    height: 40px;
+    margin-right: 20px;
+  }
+  .sqr {
+    width: 40px;
+  }
+  .rect {
+    width: 80px;
+  }
+  .smallrect {
+    width: 70px;
+  }
+  .bigrect {
+    width: 100px;
+  }
+  .verybigrect {
+    height: 30px;
+    width: 120px;
+  }
+  .lang-level-text {
+    padding-top:10px;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 639px) and (max-width: 825px) {
+  .lang-logo {
+    height: 50px;
+    margin-right: 20px;
+  }
+  .sqr {
+    width: 50px;
+  }
+  .rect {
+    width: 100px;
+  }
+  .smallrect {
+    width: 80px;
+  }
+  .bigrect {
+    width: 120px;
+  }
+  .verybigrect {
+    height: 30px;
+    width: 120px;
+  }
+  .lang-level-text {
+    padding-top:15px;
+    font-size: 0.95em;
+  }
+}
+
+@media screen and (min-width: 826px) and (max-width: 1280px) {
+  .lang-logo {
+    height: 50px;
+    margin-right: 20px;
+    position: relative;
+  }
+  .sqr {
+    width: 50px;
+  }
+  .rect {
+    width: 110px;
+  }
+  .smallrect {
+    width: 80px;
+  }
+  .bigrect {
+    width: 120px;
+  }
+  .verybigrect {
+    height: 30px;
+    width: 130px;
+  }
+  .progress-bar-header {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .lang-level-text {
+    padding-top: 15px;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .lang-logo {
+    height: 60px;
+    margin-right: 20px;
+  }
+  .sqr {
+    width: 60px;
+  }
+  .rect {
+    width: 130px;
+  }
+  .smallrect {
+    width: 100px;
+  }
+  .bigrect {
+    width: 180px;
+  }
+  .verybigrect {
+    height: 40px;
+    width: 180px;
+  }
+  .progress-bar-header {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .lang-level-text {
+    padding-top: 15px;
+    font-size: 1.2em;
   }
 }
 
@@ -444,7 +658,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .formations-link .formations-hover .formations-hover-content i {
-  margin-top: -12px;
+  margin-top: -5px;
 }
 
 .formations-link .formations-hover .formations-hover-content h4 {
@@ -475,7 +689,9 @@ header.masthead .intro-text .intro-heading {
   margin: 0 auto;
   padding: 25px;
   text-align: center;
-  background-color: #fff;
+  background-color:#f7f7f7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #diplomes .diplomes-item .diplomes-caption h4 {
@@ -497,6 +713,7 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 767px) {
   #diplomes .diplomes-item {
     margin: 0 0 30px;
+    border-radius: 15px;
   }
 }
 
@@ -505,6 +722,7 @@ header.masthead .intro-text .intro-heading {
   margin: 0 0 15px;
   opacity: 0;
   top: 200px;
+  border-radius: 15px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -556,6 +774,8 @@ header.masthead .intro-text .intro-heading {
   padding: 25px;
   text-align: center;
   background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -577,6 +797,8 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
 
@@ -623,22 +845,33 @@ header.masthead .intro-text .intro-heading {
   position: absolute;
   top: 25px;
   right: 25px;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   background-color: transparent;
 }
 
 .diplomes-modal .close-modal:hover {
-  opacity: 0.3;
+  transition: all 200ms ease;
+  background-color: orangered;
+}
+
+.diplomes-modal .close-modal:hover .lr {
+  transition: all 200ms ease;
+  background-color: white;
+}
+
+.diplomes-modal .close-modal:hover .lr .rl {
+  transition: all 200ms ease;
+  background-color: white;
 }
 
 .diplomes-modal .close-modal .lr {
   /* Safari and Chrome */
   z-index: 1051;
-  width: 1px;
-  height: 75px;
-  margin-left: 35px;
+  width: 3px;
+  height: 50px;
+  margin-left: 23px;
   /* IE 9 */
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -649,16 +882,14 @@ header.masthead .intro-text .intro-heading {
 .diplomes-modal .close-modal .lr .rl {
   /* Safari and Chrome */
   z-index: 1052;
-  width: 1px;
-  height: 75px;
+  width: 3px;
+  height: 50px;
   /* IE 9 */
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: #212529;
 }
-
-/* LOL */
 
 .portfolio-modal .modal-dialog {
   margin: 1rem;
@@ -703,22 +934,33 @@ header.masthead .intro-text .intro-heading {
   position: absolute;
   top: 25px;
   right: 25px;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   background-color: transparent;
 }
 
 .portfolio-modal .close-modal:hover {
-  opacity: 0.3;
+  background-color: orangered;
+  transition: all 200ms ease;
+}
+
+.portfolio-modal .close-modal:hover .lr {
+  transition: all 200ms ease;
+  background-color: white;
+}
+
+.portfolio-modal .close-modal:hover .lr .rl {
+  transition: all 200ms ease;
+  background-color: white;
 }
 
 .portfolio-modal .close-modal .lr {
   /* Safari and Chrome */
   z-index: 1051;
-  width: 1px;
-  height: 75px;
-  margin-left: 35px;
+  width: 3px;
+  height: 50px;
+  margin-left: 23px;
   /* IE 9 */
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -729,8 +971,8 @@ header.masthead .intro-text .intro-heading {
 .portfolio-modal .close-modal .lr .rl {
   /* Safari and Chrome */
   z-index: 1052;
-  width: 1px;
-  height: 75px;
+  width: 3px;
+  height: 50px;
   /* IE 9 */
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -934,6 +1176,7 @@ header.masthead .intro-text .intro-heading {
     padding: 0 100px 20px 20px;
   }
 }
+
 
 .team-member {
   margin-bottom: 50px;

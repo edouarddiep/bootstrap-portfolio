@@ -4,7 +4,10 @@
  * @author Edouard Diep
  */
 
-var progress = $('.page-section .container .progress');
+var skills = $('.page-section .container .skills-bar .progress');
+var languages = $('.page-section .container .lang-bar .progress');
+var progressSkillsHeader = $('.page-section .container .progress-bar-header');
+var progressLangHeader = $('.page-section .container .progress-lang-header');
 var timelineNormal = $('.timeline .timeline-normal .timeline-panel');
 var timelineInverted = $('.timeline .timeline-inverted .timeline-panel');
 var timelineImage = $('.timeline .timeline-image');
@@ -12,7 +15,8 @@ var diplomeItem = $('.page-section .container .row .diplomes-item');
 var aboutImage = $('#about .container #aboutImage');
 var portfolioItem = $('.page-section .container .row .portfolio-item');
 var aboutText = $('#about #aboutText');
-var lineProgressVisible = false;
+var lineSkillsVisible = false;
+var lineLangVisible = false;
 
 (function ($) {
   "use strict"; // Start of use strict
@@ -85,18 +89,17 @@ $('#btn-about').delay(2200).animate({
 
 $(window).scroll(function () {
 
-
-  console.log('lol');
   var bottom_of_window = $(this).scrollTop() + $(this).outerHeight();
-  var bottom_of_progress = progress.offset().top - progress.outerHeight();
+  var bottom_of_skills = skills.offset().top - skills.outerHeight();
+  var bottom_of_languages = languages.offset().top - languages.outerHeight();
   var bottom_of_timeline = timelineNormal.offset().top - timelineNormal.outerHeight();
   var bottom_of_diplomeItem = diplomeItem.offset().top - diplomeItem.outerHeight();
   var bottom_of_portfolioItem = portfolioItem.offset().top - portfolioItem.outerHeight();
   var bottom_of_about = aboutImage.offset().top - aboutImage.outerHeight();
 
 
-  if ((bottom_of_window > bottom_of_progress) && lineProgressVisible == false) {
-    this.progress.each(function () {
+  if ((bottom_of_window > bottom_of_skills) && lineSkillsVisible == false) {
+    this.skills.each(function () {
       var progressBar = $(this).find('.progress-bar');
       var dataPercent = parseInt(progressBar.data('percent'));
       var width = 0;
@@ -123,11 +126,75 @@ $(window).scroll(function () {
           progressBar.css("width", width + "%");
         }
       }
+
     });
-    lineProgressVisible = true;
+
+    this.progressSkillsHeader.each(function () {
+      var percent = $(this).find('.percent');
+      var dataPercent = parseInt(percent.data('percent'));
+      var width = 0;
+
+      var id = setInterval(frame, 30);
+
+      // ANIMATION PERCENTS
+      function frame() {
+
+        if (width >= dataPercent) {
+          clearInterval(id);
+        } else {
+          width++;
+          percent.html(width + "%");
+        }
+      }
+    });
+    lineSkillsVisible = true;
   }
 
-  console.log('Bottom of timeline = ' + bottom_of_timeline);
+  // ANIMATION LANGUAGES 
+
+  if ((bottom_of_window > bottom_of_languages) && lineLangVisible == false) {
+
+    this.languages.each(function () {
+      var progressBar = $(this).find('.progress-bar');
+      var dataPercent = parseInt(progressBar.data('percent'));
+      var width = 0;
+
+      var id = setInterval(frame, 30);
+
+      // ANIMATION LOGOS IT & PROGRESS BARS 
+      function frame() {
+        if (width > 10) {
+          for (let i = 0; i <= 23; i++) {
+            setTimeout(function () {
+              $('#language' + i).animate({
+                'opacity': '1',
+                'left': '0',
+              }, 1500);
+            }, i * 80);
+          }
+        }
+
+        if (width >= dataPercent) {
+          for(let j = 0; j <= 5; j++){
+            setTimeout(function () {
+              $('#textLevel' + j).delay(2000).animate({
+                'opacity': '1',
+                'bottom': '0',
+              }, 1500);
+            }, j * 250);
+          }
+          clearInterval(id);
+        } else {
+          width++;
+          progressBar.css('width', width + '%');
+          progressBar.html(Math.round(width) + "%");
+        }
+      }
+
+    });
+    lineLangVisible = true;
+  }
+
   // ANIMATION TIMELINE IMAGES & TEXTS 
   if (bottom_of_window > bottom_of_timeline) {
     timelineNormal.each(function () {
@@ -203,11 +270,17 @@ $(window).scroll(function () {
       $(this).css('transform', 'rotate(0deg)');
     })
 
-    this.aboutText.each(function (){
+    this.aboutText.each(function () {
       $(this).delay(1000).animate({
         'opacity': '1',
         'top': '0'
       }, 1200);
     });
   }
+});
+
+// SELECT LANGUAGES
+
+$(function () {
+  $('.selectpicker').selectpicker();
 });
