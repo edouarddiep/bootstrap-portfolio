@@ -179,9 +179,9 @@ $(window).scroll(function () {
             setTimeout(function () {
               $('#textLevel' + j).delay(2000).animate({
                 'opacity': '1',
-                'bottom': '0',
+                'right': '0',
               }, 1500);
-            }, j * 250);
+            }, j * 130);
           }
           clearInterval(id);
         } else {
