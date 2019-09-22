@@ -46,7 +46,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">A propos</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Profil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Compétences</a>
@@ -56,6 +56,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#formations">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#languages">Langues</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#diplomes">Diplômes</a>
@@ -73,7 +76,8 @@
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in" id="title-writer"></div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="btn-about" href="#about">A propos</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="btn-about" href="#about">A propos de
+          moi</a>
       </div>
     </div>
   </header>
@@ -82,35 +86,34 @@
   <section class="bg-light page-section" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h3 class="section-heading text-uppercase">A propos</h3>
-        </div>
       </div>
       <div class="col-sm-12" id="aboutImage">
         <div class="team-member">
-          <img class="mx-auto rounded-circle img-res" src="img/profil.jpeg" alt="">
+          <img class="mx-auto rounded-circle img-res" src="img/profil.png" alt="">
           <h4>Edouard Diep</h4>
-          <p class="text-muted">Développeur Full Stack</p>
+          <p id="infoProfil" class="text-muted">né le 28 avril 1994 / Suisse / Célibataire</p>
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a target="_blank" href="https://www.linkedin.com/in/edouard-diep-545241108/" title="Page Linkedin">
+              <a target="_blank" href="https://www.linkedin.com/in/edouard-diep-545241108/" title="Ma page Linkedin">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a target="_blank" href="https://github.com/edouarddiep" title="Page Github">
+              <a target="_blank" href="https://github.com/edouarddiep" title="Ma page Github">
                 <i class="fab fa-github"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a target="_blank" href="mailto:edouard.diep@gmail.com" title="Envoyer un e-mail">
+              <a target="_blank" href="mailto:edouard.diep@gmail.com" title="Pour m'envoyer un e-mail">
                 <i class="far fa-envelope"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a target="_blank" href="tel:+41796959500" title="Téléphone portable">
-                <i class="fas fa-phone"></i>
-              </a>
+              <span data-title="+41 79 695 95 00">
+                <a target="_blank" href="tel:+41796959500" title="">
+                  <i class="fas fa-phone"></i>
+                </a>
+              </span>
             </li>
           </ul>
         </div>
@@ -118,14 +121,15 @@
     </div>
     <div class="row" id="aboutText">
       <div class="col-lg-5 mx-auto text-justify pl-5 pr-5">
-        <p class="large text-muted">
-          Bonjour et bienvenue sur mon profil. Jeune et diplômé d'un Bachelor of Science HES en Infomatique de gestion
-          et véritable architecte de l'information grâce à mes compétences acquises en tant que développeur, je
-          recherche
-          un métier en constante évolution avec la possibilité de générer une grande valeur ajoutée.
-          Ambitieux, dynamique, persévérant dans mon travail, autodidacte et inconditionnellement passionné par les
-          nouvelles technologies informatiques, je suis prêt à intégrer une équipe dans un domaine évolutif comme le
-          développement applicatif Front End, Back End ou Full Stack.
+        <p class="large text-muted" style="text-align: justify">
+          Récemment diplômé d'un Bachelor HES en Informatique de gestion
+          et véritable architecte de l'information, grâce à mes connaissances acquises en tant que développeur Full
+          Stack, je
+          suis à la recherche d'un emploi qui me permettrait de développer mes compétences acquises durant mes quatre
+          ans de formation.<br />
+          De nature dynamique, patient, persévérant, autodidacte et inconditionnellement passionné par les
+          nouvelles technologies, je suis prêt à intégrer une équipe dans un domaine évolutif comme le
+          développement applicatif Front, Back End ou Full Stack.
         </p>
       </div>
     </div>
@@ -170,7 +174,7 @@
         <img src="img/logo_skills/javascript_logo.png" class="skills-logo smallrect" id="skill6" title="Javascript">
         <img src="img/logo_skills/jquery_logo.png" class="skills-logo sqr" id="skill8" title="JQuery">
         <img src="img/logo_skills/angular_logo.png" class="skills-logo sqr" id="skill10" title="Angular 7">
-        <img src="img/logo_skills/typescript_logo.png" class="skills-logo verybigrect" id="skill12" title="TypeScript">
+        <img src="img/logo_skills/ionic_logo.png" class="skills-logo bigrect" id="skill12" title="TypeScript">
         <span class="percent" data-percent="95"></span>
       </div>
       <div class="skills-bar">
@@ -239,12 +243,12 @@
       <br />
       <div class="progress-bar-header">
         <img src="img/logo_skills/cisco_logo.png" class="skills-logo smallrect" id="skill1" title="Cisco Enterprise">
-        <span class="percent" data-percent="90"></span>
+        <span class="percent" data-percent="85"></span>
       </div>
       <div class="skills-bar">
         <div class="progress" style="height:5.5px;">
           <div class="progress-bar" role="progressbar" id="progressbar8" aria-valuenow="90" aria-valuemin="0"
-            aria-valuemax="100" data-percent="90" style="width: 0%"></div>
+            aria-valuemax="100" data-percent="85" style="width: 0%"></div>
         </div>
       </div>
     </div>
@@ -330,7 +334,7 @@
                 <a class="formations-link" data-toggle="modal" href="#formationModal1">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
-                      <i class="far fa-eye fa-2x"></i>
+                      <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
                   <img class="rounded-circle img-fluid" src="img/formations/heg/heg.png" alt="">
@@ -343,7 +347,7 @@
                 </div>
                 <div class="timeline-body">
                   <p>
-                    Haute école de gestion - Genève
+                    HEG - Genève
                   </p>
                 </div>
               </div>
@@ -353,7 +357,7 @@
                 <a class="formations-link" data-toggle="modal" href="#formationModal2">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
-                      <i class="far fa-eye fa-2x"></i>
+                      <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
                   <img class="rounded-circle img-fluid" src="img/formations/calvy/calvy.png" alt="">
@@ -362,7 +366,7 @@
               <div class="timeline-panel" id="timelineInverted1">
                 <div class="timeline-heading">
                   <h5>Janv. - Juil. 2015</h5>
-                  <h5 class="subheading">Stage à la réception et service au restaurant</h5>
+                  <h5 class="subheading">Stage à la réception et service en salle</h5>
                 </div>
                 <div class="timeline-body">
                   <p>
@@ -376,7 +380,7 @@
                 <a class="formations-link" data-toggle="modal" href="#formationModal3">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
-                      <i class="far fa-eye fa-2x"></i>
+                      <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
                   <img class="rounded-circle img-fluid" src="img/formations/armee/armee.png" alt="">
@@ -399,7 +403,7 @@
                 <a class="formations-link" data-toggle="modal" href="#formationModal4">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
-                      <i class="far fa-eye fa-2x"></i>
+                      <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
                   <img class="rounded-circle img-fluid" src="img/formations/bouvier/bouvier.png" alt="">
@@ -408,7 +412,7 @@
               <div class="timeline-panel" id="timelineInverted2">
                 <div class="timeline-heading">
                   <h5>2013 - 2014</h5>
-                  <h5 class="subheading">Maturité Professionnelle Post-CFC</h5>
+                  <h5 class="subheading">Maturité Professionnelle Commerciale</h5>
                 </div>
                 <div class="timeline-body">
                   <p>
@@ -422,7 +426,7 @@
                 <a class="formations-link" data-toggle="modal" href="#formationModal5">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
-                      <i class="far fa-eye fa-2x"></i>
+                      <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
                   <img class="rounded-circle img-fluid" src="img/formations/olexco/olexco.png" alt="">
@@ -445,7 +449,7 @@
                 <a class="formations-link" data-toggle="modal" href="#formationModal6">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
-                      <i class="far fa-eye fa-2x"></i>
+                      <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
                   <img class="rounded-circle img-fluid" src="img/formations/schulz/schulz.png" alt="">
@@ -475,17 +479,18 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Langues</h2>
-          <h3 class="section-subheading text-muted">Les unités ci-dessous sont basées sur une échelle de 1% (débutant
-            A1) à
-            100% (maîtrise C2) </h3>
+          <h3 class="section-subheading text-muted">Les niveaux ci-dessous sont présentés selon <a
+              href="https://www.coe.int/fr/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale"
+              target="_blank">la norme européenne CECRL</a></h3>
         </div>
       </div>
       <div class="progress-lang-header">
         <img src="img/langues/france.gif" class="lang-logo smallrect" id="language1" title="Français">
+        <span class="lang-flag-text" id="textFlag1">Français</span>
         <span class="lang-level-text" id="textLevel1">Langue maternelle</span>
       </div>
       <div class="lang-bar">
-        <div class="progress" style="height:13px;">
+        <div class="progress" style="height:3px;">
           <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
             data-percent="100" style="width: 0%"></div>
         </div>
@@ -493,46 +498,50 @@
       <br />
       <div class="progress-lang-header">
         <img src="img/langues/anglais.gif" class="lang-logo smallrect" id="language2" title="Anglais">
-        <span class="lang-level-text" id="textLevel2">Niveau B2</span>
+        <span class="lang-flag-text" id="textFlag2">Anglais</span>
+        <span class="lang-level-text" id="textLevel2">B2</span>
       </div>
       <div class="lang-bar">
-        <div class="progress" style="height:13px;">
+        <div class="progress" style="height:3px;">
           <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-            data-percent="90" style="width: 0%">
+            data-percent="100" style="width: 0%">
           </div>
         </div>
       </div>
       <br />
       <div class="progress-lang-header">
         <img src="img/langues/italien.gif" class="lang-logo smallrect" id="language3" title="Italien">
-        <span class="lang-level-text" id="textLevel3">Niveau B2</span>
+        <span class="lang-flag-text" id="textFlag3">Italien</span>
+        <span class="lang-level-text" id="textLevel3">B2</span>
       </div>
       <div class="lang-bar">
-        <div class="progress" style="height:13px;">
+        <div class="progress" style="height:3px;">
           <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-            data-percent="80" style="width: 0%"></div>
+            data-percent="100" style="width: 0%"></div>
         </div>
       </div>
       <br />
       <div class="progress-lang-header">
         <img src="img/langues/allemand.gif" class="lang-logo smallrect" id="language4" title="Allemand">
-        <span class="lang-level-text" id="textLevel4">Niveau A2 - connaissances scolaires</span>
+        <span class="lang-flag-text" id="textFlag4">Allemand</span>
+        <span class="lang-level-text" id="textLevel4">A2</span>
       </div>
       <div class="lang-bar">
-        <div class="progress" style="height:13px;">
+        <div class="progress" style="height:3px;">
           <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-            data-percent="50" style="width: 0%"></div>
+            data-percent="100" style="width: 0%"></div>
         </div>
       </div>
       <br />
       <div class="progress-lang-header">
         <img src="img/langues/grec.gif" class="lang-logo smallrect" id="language5" title="Grec moderne">
-        <span class="lang-level-text" id="textLevel5">Niveau A1 - connaissances de base</span>
+        <span class="lang-flag-text" id="textFlag5">Grec moderne</span>
+        <span class="lang-level-text" id="textLevel5">A1</span>
       </div>
       <div class="lang-bar">
-        <div class="progress" style="height:13px;">
+        <div class="progress" style="height:3px;">
           <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
-            data-percent="30" style="width: 0%"></div>
+            data-percent="100" style="width: 0%"></div>
         </div>
       </div>
     </div>
@@ -553,7 +562,7 @@
           <a class="diplomes-link" data-toggle="modal" href="#diplomesModal1">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
-                <i class="far fa-eye fa-3x"></i>
+                <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid" src="img/diplomes/bachelor_ig_thumbnail.jpg" alt="">
@@ -564,19 +573,19 @@
             <p class="text-muted">Haute école de gestion - Genève</p>
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem2">
           <a class="diplomes-link" data-toggle="modal" href="#diplomesModal2">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
-                <i class="far fa-eye fa-3x"></i>
+                <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid border border-primary" src="img/diplomes/calvy_thumbnail.png" alt="">
+            <img class="img-fluid border border-primary" src="img/diplomes/ccent_thumbnail.png" alt="">
           </a>
           <div class="diplomes-caption">
-            <h5>Certificat de travail</h5>
-            <br />
-            <p class="item-intro text-muted">Hôtel Calvy</p>
+            <h5>CCENT Certificate of Achievement</h5>
+            <p class="text-muted">Haute école de gestion - Genève</p>
           </div>
         </div>
 
@@ -584,15 +593,15 @@
           <a class="diplomes-link" data-toggle="modal" href="#diplomesModal3">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
-                <i class="far fa-eye fa-3x"></i>
+                <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid border border-primary" src="img/diplomes/brevet_promotion_thumbnail.png" alt="">
+            <img class="img-fluid border border-primary" src="img/diplomes/maturite_professionnelle_thumbnail.png"
+              alt="">
           </a>
           <div class="diplomes-caption">
-            <h5>Brevet de promotion</h5>
-            <br />
-            <p class="text-muted">Armée Suisse</p>
+            <h5>Maturité professionnelle</h5>
+            <p class="text-muted" style="padding-bottom: 3px">École de commerce Nicolas-Bouvier</p>
           </div>
         </div>
 
@@ -600,39 +609,7 @@
           <a class="diplomes-link" data-toggle="modal" href="#diplomesModal4">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
-                <i class="far fa-eye fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid border border-primary" src="img/diplomes/maturite_professionnelle_thumbnail.png"
-              alt="">
-          </a>
-          <div class="diplomes-caption">
-            <h5>Maturité pro. commerciale</h5>
-            <p class="text-muted">École de commerce Nicolas-Bouvier</p>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem5">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal5">
-            <div class="diplomes-hover">
-              <div class="diplomes-hover-content">
-                <i class="far fa-eye fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid border border-primary" src="img/diplomes/olexco_sa_thumbnail.png" alt="">
-          </a>
-          <div class="diplomes-caption">
-            <h5>Certificat de travail</h5>
-            <br />
-            <p class="text-muted">Olexco SA</p>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem6">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal6">
-            <div class="diplomes-hover">
-              <div class="diplomes-hover-content">
-                <i class="far fa-eye fa-3x"></i>
+                <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid border-left border-right border-top border-primary"
@@ -640,10 +617,88 @@
           </a>
           <div class="diplomes-caption">
             <h5>CFC d'Employé de Commerce - Profil E</h5>
-            <p class="text-muted">École Schulz</p>
+            <p class="text-muted">École Schulz - Genève</p>
           </div>
         </div>
 
+        <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem5">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal5">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border-left border-right border-top border-primary"
+              src="img/diplomes/diplome_de_commerce_thumbnail.png" alt="">
+          </a>
+          <div class="diplomes-caption">
+            <h5>Diplôme supérieur de commerce</h5>
+            <p class="text-muted">École Schulz - Genève</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem6">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal6">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border border-primary" src="img/diplomes/brevet_promotion_thumbnail.png" alt="">
+          </a>
+          <div class="diplomes-caption">
+            <h5>Brevet de promotion</h5>
+            <h5>Sergent</h5>
+            <p class="text-muted">Armée Suisse</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem7">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal7">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border border-primary" src="img/diplomes/calvy_thumbnail.png" alt="">
+          </a>
+          <div class="diplomes-caption">
+            <h5>Certificat de travail</h5>
+            <br />
+            <p class="item-intro text-muted" style="padding-bottom: 10px">Hôtel Calvy - Genève</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem8">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal8">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border border-primary" src="img/diplomes/olexco_sa_thumbnail.png" alt="">
+          </a>
+          <div class="diplomes-caption">
+            <h5>Certificat de travail</h5>
+            <br />
+            <p class="text-muted" style="padding-bottom: 10px">Olexco SA - Genève</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem9">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal9">
+            <div class="diplomes-hover">
+              <div class="diplomes-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border border-primary" src="img/diplomes/level1_thumbnail.png" alt="">
+          </a>
+          <div class="diplomes-caption">
+            <h5>CrossFit Level 1 Certification</h5>
+            <p class="text-muted" style="padding-bottom: 10px">CrossFit GVA</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -654,8 +709,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Prise de contact</h2>
-          <p class="section-subheading" style="color:darkgray">Pour me contacter, veuillez remplir tous les champs du
+          <h2 class="section-heading">Contactez-moi</h2>
+          <p class="section-subheading" style="color:gainsboro">Pour me contacter, veuillez remplir tous les champs du
             formulaire
             ci-dessous.</p>
         </div>
@@ -667,24 +722,26 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" id="name" type="text" patternName="^[a-zA-Z- ]{2,}$" placeholder="Votre nom *"
-                    required="required" data-validation-required-message="Veuillez saisir votre nom.">
+                  <input class="form-control" id="name" type="text" patternName="^[a-zA-Z- ]{2,}$"
+                    placeholder="Votre nom*" required="required"
+                    data-validation-required-message="Veuillez saisir votre nom.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Votre adresse e-mail *"
+                  <input class="form-control" id="email" type="email" placeholder="Votre adresse e-mail*"
                     required="required" data-validation-required-message="Veuillez saisir une adresse e-mail.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="phone" patternPhone="^[0-9- ]{1,}$" placeholder="Votre numéro de téléphone *"
-                    required="required" data-validation-required-message="Veuillez saisir un numéro de téléphone.">
+                  <input class="form-control" id="phone" patternPhone="^[0-9- ]{1,}$"
+                    placeholder="Votre numéro de téléphone*" required="required"
+                    data-validation-required-message="Veuillez saisir un numéro de téléphone.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <textarea class="form-control" id="message" minlength="5" placeholder="Votre message *"
+                  <textarea class="form-control" id="message" minlength="5" placeholder="Votre message*"
                     required="required" data-validation-required-message="Veuillez saisir un message."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
@@ -727,9 +784,11 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a target="_blank" href="tel:+41796959500" title="Téléphone portable">
-                <i class="fas fa-phone"></i>
-              </a>
+              <span data-title="+41 79 695 95 00">
+                <a target="_blank" href="tel:+41796959500" title="">
+                  <i class="fas fa-phone"></i>
+                </a>
+              </span>
             </li>
           </ul>
         </div>
@@ -845,7 +904,7 @@
                 <!-- Project Details Go Here -->
                 <h4 class="text-uppercase">Hôtel Calvy</h4>
                 <h5 class="text-uppercase text-muted">Stage en hôtellerie</h5>
-                <h6 class="text-uppercase text-muted">Réception & service restauration</h6>
+                <h6 class="text-uppercase text-muted">Réception & service en salle</h6>
                 <p class="item-intro text-muted">Hôtel Calvy | Ruelle du Midi 5, 1207 Genève</p>
                 <div class="container">
                   <div class="row">
@@ -944,10 +1003,12 @@
                   </div>
                 </div>
                 <p style="text-align: left" class="col-lg-12">
-                  Ecole de recrue, école de sous-officier ainsi que paiement de galons effectués dans la caserne
-                  militaire de Bière dans ma fonction de sous-officier de transmission à l'école d'artillerie 31-1.
-                  J'ai acquis le sens du commandement de troupe en tant que chef de groupe et
-                  instructeur MG64 12.7mm et radio SE-235/135. J'étais au grade de sergent incorporé dans le Groupe Art.
+                  J'ai fait mon école de recrue, école de sous-officier ainsi que mon paiement de galons dans la caserne
+                  militaire de Bière. J'avais comme fonction le rôle de sous-officier de transmission à l'école
+                  d'artillerie 31-1.
+                  J'ai acquis le sens du commandement de troupe en tant qu'instructeur
+                  MG64 12.7mm et radio SE-235/135. J'étais chef de groupe au grade de sergent, incorporé dans le
+                  batterie Dir Feu du Groupe Art.
                   1 de la Brigade
                   Blindée 1.
                 </p>
@@ -991,10 +1052,28 @@
                   </div>
                 </div>
                 <p style="text-align: left" class="col-lg-12 pr-md-4 pl-md-4">
-                  La maturité professionnelle a validé un niveau B2 en italien, amélioré mon vocabulaire de l'anglais
-                  commercial (niveau B2 également) et m'a offert de solides compétences avec la comptabilité analytique
-                  d'entreprise, le droit
-                  suisse et les mathématiques statistiques.</p>
+                  La maturité m'a offert de solides compétences dans les domaines suivants :
+                  <ul style="text-align: left; margin-left:20px;">
+                    <li>
+                      la comptabilité de gestion
+                    </li>
+                    <li>
+                      la comptabilité analytique d'entreprise
+                    </li>
+                    <li>
+                      le droit suisse
+                    </li>
+                    <li>
+                      les mathématiques statistiques
+                    </li>
+                    <li>
+                      l'italien courant et littéraire (niveau B2)
+                    </li>
+                    <li>
+                      l'anglais général et commercial (niveau B2)
+                    </li>
+                  </ul>
+                </p>
                 <ul class="list-inline">
                   <li>Date de fin d'études : 20 juin 2014</li>
                 </ul>
@@ -1042,7 +1121,8 @@
                   </div>
                 </div>
                 <p style="text-align: left" class="col-lg-14 pr-4 pl-4">
-                  Mise en pratique des connaissances scolaires acquises durant mon CFC. Durant ce stage de fin d'études,
+                  Ce stage m'a permis de mettre en pratique les connaissances scolaires acquises durant mon CFC. Durant
+                  cette année de travail,
                   j'ai été amené à gérer les tâches suivantes :
                   <ul style="text-align: left" class="col-lg-14 ml-2">
                     <li>
@@ -1124,11 +1204,34 @@
                   </div>
                 </div>
                 <p style="text-align: left" class="col-lg-12 pr-4 pl-4">
-                  Etude de la comptabilité générale d'entreprise et validation d'un niveau B2 en anglais ainsi qu'un B1
-                  en italien. Notions de bases en bureautique, dactylographie et pratique régulière avec les outils
-                  Microsoft Office (Word, Excel, PowerPoint & Outlook).</p>
+                  Tout au long de ce cursus CFC en formation élargie, j'ai obtenu, après deux ans, un diplôme supérieur
+                  de commerce en informatique et gestion, mention bien et étudié les domaines suivants :
+                  <ul style="text-align: left">
+                    <li>
+                      la comptabilité générale d'entreprise
+                    </li>
+                    <li>
+                      la arithmétique commerciale
+                    </li>
+                    <li>
+                      la économie d'Enterprise
+                    </li>
+                    <li>
+                      la correspondance française
+                    </li>
+                    <li>
+                      l'anglais général (niveau B2) et bases commerciales
+                    </li>
+                    <li>
+                      les outils Microsoft Office
+                    </li>
+                    <li>
+                      le droit et instruction civique
+                    </li>
+                  </ul>
+                </p>
                 <ul class="list-inline">
-                  <li>Date: 25 septembre 2012</li>
+                  <li>Date de fin d'études : 25 septembre 2012</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -1161,12 +1264,20 @@
                 <h4 class="text-uppercase">en informatique de gestion</h4>
                 <p class="item-intro text-muted">HEG - Genève | Campus de Battelle, Rue de la Tambourine 17, 1227
                   Carouge - Genève</p>
-                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/heg_bulletin_1.jpeg"
-                  alt="">
-                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/heg_bulletin_2.jpg"
-                  alt="">
+                <div class="container col-lg-12">
+                  <div class="row mx-auto">
+                    <div class="col-sm-12">
+                      <img class="img-fluid d-block mx-auto border border-primary"
+                        src="img/diplomes/heg_bulletin_1.jpeg" alt="">
+                    </div>
+                    <div class="col-sm-12">
+                      <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/heg_bulletin_2.jpg"
+                        alt="">
+                    </div>
+                  </div>
+                </div>
                 <ul class="list-inline">
-                  <li>Date de fin de bachelor : 10 Septembre 2019</li>
+                  <li>Date de remise : 10 Septembre 2019</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -1192,13 +1303,13 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h3 class="text-uppercase">Hôtel Calvy</h3>
-                <h5 class="text-uppercase">Certificat de travail</h5>
-                <p class="item-intro text-muted">Hôtel Calvy | Ruelle du Midi 5, 1207 Genève</p>
-                <img class="img-fluid d-block mx-auto border border-primary"
-                  src="img/diplomes/certificat_travail_hotel_calvy.png" alt="">
+                <h4 class="text-uppercase">Cisco CCENT Certificate of Achievement</h4>
+                <p class="item-intro text-muted">HEG - Genève | Campus de Battelle, Rue de la Tambourine 17, 1227
+                  Carouge - Genève</p>
+                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/ccent_certificate.png"
+                  alt="">
                 <ul class="list-inline">
-                  <li>Date de fin de stage : 31 juillet 2015</li>
+                  <li>Date de remise : 22 juin 2017</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -1212,37 +1323,6 @@
   </div>
   <!-- Modal 3 -->
   <div class="diplomes-modal modal fade" id="diplomesModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h4 class="text-uppercase">Brevet de promotion sous-officier</h4>
-                <p class="item-intro text-muted">Caserne militaire de Bière | Armée Suisse</p>
-                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/brevet_promotion.png"
-                  alt="">
-                <ul class="list-inline">
-                  <li>Date de promotion : 27 septembre 2014</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Fermer l'aperçu</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal 4 -->
-  <div class="diplomes-modal modal fade" id="diplomesModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1273,8 +1353,132 @@
       </div>
     </div>
   </div>
+  <!-- Modal 4 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h3 class="text-uppercase">CFC d'Employé de Commerce</h3>
+                <p class="item-intro text-muted">Ecole Schulz | Rue du 31 Décembre 8, 1207 Genève
+                </p>
+                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/cfc_full.png" alt="">
+                <ul class="list-inline">
+                  <li>Date de remise : 25 septembre 2012</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal 5 -->
   <div class="diplomes-modal modal fade" id="diplomesModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h3 class="text-uppercase">Diplôme supérieur de commerce : mention bien</h3>
+                <p class="item-intro text-muted">Ecole Schulz | Rue du 31 Décembre 8, 1207 Genève
+                </p>
+                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/diplome_de_commerce.jpeg"
+                  alt="">
+                <ul class="list-inline">
+                  <li>Date de remise : 30 juin 2011</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 6 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <h4 class="text-uppercase">Brevet de promotion sous-officier</h4>
+                <p class="item-intro text-muted">Caserne militaire de Bière | Armée Suisse</p>
+                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/brevet_promotion.png"
+                  alt="">
+                <ul class="list-inline">
+                  <li>Date de promotion : 27 septembre 2014</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 7 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h3 class="text-uppercase">Hôtel Calvy</h3>
+                <h5 class="text-uppercase">Certificat de travail</h5>
+                <p class="item-intro text-muted">Hôtel Calvy | Ruelle du Midi 5, 1207 Genève</p>
+                <img class="img-fluid d-block mx-auto border border-primary"
+                  src="img/diplomes/certificat_travail_hotel_calvy.png" alt="">
+                <ul class="list-inline">
+                  <li>Date : 31 juillet 2015</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 8 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal8" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1304,8 +1508,8 @@
       </div>
     </div>
   </div>
-  <!-- Modal 6 -->
-  <div class="diplomes-modal modal fade" id="diplomesModal6" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal 9 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal9" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1315,15 +1519,14 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-10 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h3 class="text-uppercase">CFC d'Employé de Commerce</h3>
-                <p class="item-intro text-muted">Ecole Schulz | Rue du 31 Décembre 8, 1207 Genève
-                </p>
-                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/cfc_full.png" alt="">
+                <h3 class="text-uppercase">CrossFit Level 1 Certification</h3>
+                <p class="item-intro text-muted">CrossFit GVA | Rue de Lyon 27BIS, 1201 Genève</p>
+                <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/cf_level1.png" alt="">
                 <ul class="list-inline">
-                  <li>Date de remise : 25 septembre 2012</li>
+                  <li>Date de remise : 31 juillet 2012</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>

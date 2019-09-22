@@ -17,7 +17,7 @@ if(empty($_POST['name'])      ||
    
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
-$phone = strip_tags(htmlspecialchars(trim($_POST['phone'])));
+$phone = strip_tags(htmlspecialchars(str_replace(" ", "", $_POST['phone'])));
 $message = strip_tags(htmlspecialchars($_POST['message']));
    
 // Create the email and send the message

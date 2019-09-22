@@ -9,6 +9,47 @@ body {
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+@media(min-width:768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+
+[data-title]:after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -1.6em;
+  left: 100%;
+  padding: 4px 4px 4px 8px;
+  color: #495057;
+  white-space: nowrap;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #cccccc);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f8f8f8),color-stop(1, #cccccc));
+  background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #cccccc);
+  background-image: -o-linear-gradient(top, #f8f8f8, #cccccc);
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+}
+
+[data-title] {
+  position: relative;
+}
+
 p {
   line-height: 1.75;
 }
@@ -128,7 +169,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 85%;
+  font-size: 75%;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -219,6 +260,12 @@ header.masthead .intro-text .intro-heading {
   -ms-transition: -ms-transform 2s ease;
 }
 
+#about .container #aboutImage #infoProfil{
+  position: relative;
+  opacity: 0;
+  bottom:30px;
+}
+
 #about #aboutText {
   opacity: 0;
   top: 150px;
@@ -257,8 +304,8 @@ header.masthead .intro-text .intro-heading {
   left: 350px;
 }
 
-.progress-bar{
-  width:0%;
+.progress-bar {
+  width: 0%;
   background-color: #0275d8;
 }
 
@@ -268,11 +315,11 @@ header.masthead .intro-text .intro-heading {
 }
 
 .percent {
-  color:#0275d8;
+  color: #0275d8;
   position: relative;
   float: right;
   font-size: 0.85em;
-  padding-top:5px;
+  padding-top: 5px;
   font-style: italic;
   font-weight: bold;
 }
@@ -290,7 +337,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .bigrect {
-  width: 100px;
+  width: 85px;
 }
 
 .verybigrect {
@@ -312,14 +359,14 @@ header.masthead .intro-text .intro-heading {
     width: 70px;
   }
   .bigrect {
-    width: 100px;
+    width: 110px;
   }
   .verybigrect {
     height: 30px;
     width: 120px;
   }
   .percent {
-    padding-top:10px;
+    padding-top: 10px;
     font-size: 0.9em;
   }
 }
@@ -339,14 +386,14 @@ header.masthead .intro-text .intro-heading {
     width: 80px;
   }
   .bigrect {
-    width: 120px;
+    width: 130px;
   }
   .verybigrect {
     height: 30px;
     width: 120px;
   }
   .percent {
-    padding-top:15px;
+    padding-top: 15px;
     font-size: 1em;
   }
 }
@@ -367,7 +414,7 @@ header.masthead .intro-text .intro-heading {
     width: 80px;
   }
   .bigrect {
-    width: 120px;
+    width: 130px;
   }
   .verybigrect {
     height: 30px;
@@ -416,7 +463,6 @@ header.masthead .intro-text .intro-heading {
 
 /* LANGUAGES LOGO */
 
-
 .lang-logo {
   height: 30px;
   position: relative;
@@ -426,8 +472,8 @@ header.masthead .intro-text .intro-heading {
   left: 350px;
 }
 
-.progress-bar{
-  width:0%;
+.progress-bar {
+  width: 0%;
   background-color: #0275d8;
 }
 
@@ -437,15 +483,27 @@ header.masthead .intro-text .intro-heading {
 }
 
 .lang-level-text {
-  color:#0275d8;
+  color: #0275d8;
   position: relative;
   float: right;
   font-size: 0.75em;
-  padding-top:5px;
+  padding-top: 5px;
   font-style: italic;
   font-weight: bold;
   opacity: 0;
-  right:100px;
+  right: 100px;
+}
+
+.lang-flag-text {
+  position: relative;
+  opacity: 0;
+  left: 100px;
+  font-size: 0.55em;
+  padding-top: 5px;
+  margin-left: -10px;
+  color: #0275d8;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .sqr {
@@ -458,10 +516,6 @@ header.masthead .intro-text .intro-heading {
 
 .smallrect {
   width: 45px;
-}
-
-.bigrect {
-  width: 100px;
 }
 
 .verybigrect {
@@ -482,16 +536,18 @@ header.masthead .intro-text .intro-heading {
   .smallrect {
     width: 70px;
   }
-  .bigrect {
-    width: 100px;
-  }
   .verybigrect {
     height: 30px;
     width: 120px;
   }
   .lang-level-text {
-    padding-top:10px;
-    font-size: 0.9em;
+    padding-top: 10px;
+    font-size: 0.75em;
+  }
+  .lang-flag-text {
+    padding-top: 10px;
+    margin-left: -10px;
+    font-size: 0.65em;
   }
 }
 
@@ -509,16 +565,18 @@ header.masthead .intro-text .intro-heading {
   .smallrect {
     width: 80px;
   }
-  .bigrect {
-    width: 120px;
-  }
   .verybigrect {
     height: 30px;
     width: 120px;
   }
   .lang-level-text {
-    padding-top:15px;
+    padding-top: 15px;
     font-size: 0.95em;
+  }
+  .lang-flag-text {
+    padding-top: 15px;
+    margin-left: -10px;
+    font-size: 0.80em;
   }
 }
 
@@ -537,9 +595,6 @@ header.masthead .intro-text .intro-heading {
   .smallrect {
     width: 80px;
   }
-  .bigrect {
-    width: 120px;
-  }
   .verybigrect {
     height: 30px;
     width: 130px;
@@ -551,6 +606,11 @@ header.masthead .intro-text .intro-heading {
   .lang-level-text {
     padding-top: 15px;
     font-size: 1.1em;
+  }
+  .lang-flag-text {
+    padding-top: 15px;
+    margin-left: -10px;
+    font-size: 0.9em;
   }
 }
 
@@ -582,6 +642,11 @@ header.masthead .intro-text .intro-heading {
   .lang-level-text {
     padding-top: 15px;
     font-size: 1.2em;
+  }
+  .lang-flag-text {
+    padding-top: 15px;
+    margin-left: -15px;
+    font-size: 1em;
   }
 }
 
@@ -689,7 +754,7 @@ header.masthead .intro-text .intro-heading {
   margin: 0 auto;
   padding: 25px;
   text-align: center;
-  background-color:#f7f7f7;
+  background-color: #f7f7f7;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -1177,7 +1242,6 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-
 .team-member {
   margin-bottom: 50px;
   text-align: center;
@@ -1216,7 +1280,7 @@ section#contact .form-group {
   list-style-type: none;
 }
 
-section#contact .form-group .help-block{
+section#contact .form-group .help-block {
   list-style-type: none;
 }
 

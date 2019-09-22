@@ -15,6 +15,7 @@ var diplomeItem = $('.page-section .container .row .diplomes-item');
 var aboutImage = $('#about .container #aboutImage');
 var portfolioItem = $('.page-section .container .row .portfolio-item');
 var aboutText = $('#about #aboutText');
+var aboutInfos = $('#about #infoProfil');
 var lineSkillsVisible = false;
 var lineLangVisible = false;
 
@@ -73,7 +74,7 @@ var lineLangVisible = false;
       if (current < contentArray.length) {
         elem.text(elem.text() + contentArray[current++]);
       }
-    }, 75);
+    }, 65);
   };
 
 })(jQuery);
@@ -164,20 +165,26 @@ $(window).scroll(function () {
       // ANIMATION LOGOS IT & PROGRESS BARS 
       function frame() {
         if (width > 10) {
-          for (let i = 0; i <= 23; i++) {
+          for (let i = 0; i <= 5; i++) {
             setTimeout(function () {
               $('#language' + i).animate({
                 'opacity': '1',
                 'left': '0',
               }, 1500);
             }, i * 80);
+            setTimeout(function () {
+              $('#textFlag' + i).delay(1500).animate({
+                'opacity': '1',
+                'left': '0',
+              }, 1500);
+            }, i * 100);
           }
         }
 
         if (width >= dataPercent) {
           for(let j = 0; j <= 5; j++){
             setTimeout(function () {
-              $('#textLevel' + j).delay(2000).animate({
+              $('#textLevel' + j).delay(250).animate({
                 'opacity': '1',
                 'right': '0',
               }, 1500);
@@ -185,9 +192,8 @@ $(window).scroll(function () {
           }
           clearInterval(id);
         } else {
-          width++;
+          width+=2;
           progressBar.css('width', width + '%');
-          progressBar.html(Math.round(width) + "%");
         }
       }
 
@@ -233,18 +239,18 @@ $(window).scroll(function () {
 
   if (bottom_of_window > bottom_of_diplomeItem) {
     this.diplomeItem.each(function () {
-      for (let i = 0; i <= 6; i++) {
+      for (let i = 0; i <= 9; i++) {
         setTimeout(() => {
           $('#diplomeItem' + i).animate({
             'opacity': '1',
             'top': '0',
-          }, 2000)
-        }, i * 400);
+          }, 1500)
+        }, i * 200);
       }
     })
   }
 
-  // ANIMATION PORTFOLIO ITEMS 
+  // ANIMATION PORTFOLIO ITEMS   
 
   if (bottom_of_window > bottom_of_portfolioItem) {
     this.portfolioItem.each(function () {
@@ -276,6 +282,11 @@ $(window).scroll(function () {
         'top': '0'
       }, 1200);
     });
+
+    this.aboutInfos.delay(1300).animate({
+      'opacity': '1',
+      'bottom': '0'
+    }, 1200);
   }
 });
 
