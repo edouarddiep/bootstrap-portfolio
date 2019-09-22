@@ -1213,6 +1213,11 @@ section#contact .section-heading {
 
 section#contact .form-group {
   margin-bottom: 25px;
+  list-style-type: none;
+}
+
+section#contact .form-group .help-block{
+  list-style-type: none;
 }
 
 section#contact .form-group input, section#contact .form-group textarea {

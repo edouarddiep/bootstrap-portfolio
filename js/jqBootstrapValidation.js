@@ -99,15 +99,24 @@
           if (settings.options.sniffHtml) {
             var message = "";
             // ---------------------------------------------------------
-            //                                                   PATTERN
+            //                                                   PATTERNS
             // ---------------------------------------------------------
-            if ($this.attr("pattern") !== undefined) {
+            if ($this.attr("patternName") !== undefined) {
               message = "Veuillez saisir un nom valide !<!-- data-validation-pattern-message to override -->";
               if ($this.data("validationPatternMessage")) {
                 message = $this.data("validationPatternMessage");
               }
               $this.data("validationPatternMessage", message);
-              $this.data("validationPatternRegex", $this.attr("pattern"));
+              $this.data("validationPatternRegex", $this.attr("patternName"));
+            }
+
+            if ($this.attr("patternPhone") !== undefined) {
+              message = "Veuillez ne saisir que des chiffres !<!-- data-validation-pattern-message to override -->";
+              if ($this.data("validationPatternMessage")) {
+                message = $this.data("validationPatternMessage");
+              }
+              $this.data("validationPatternMessage", message);
+              $this.data("validationPatternRegex", $this.attr("patternPhone"));
             }
             // ---------------------------------------------------------
             //                                                       MAX
@@ -148,7 +157,7 @@
             //                                                 MINLENGTH
             // ---------------------------------------------------------
             if ($this.attr("minlength") !== undefined) {
-              message = "Votre message est trop court. Minimum : '" + $this.attr("minlength") + "' caractères<!-- data-validation-minlength-message to override -->";
+              message = "Message trop court. (" + $this.attr("minlength") + " caractères min.)<!-- data-validation-minlength-message to override -->";
               if ($this.data("validationMinlengthMessage")) {
                 message = $this.data("validationMinlengthMessage");
               }
