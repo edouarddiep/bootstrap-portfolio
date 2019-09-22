@@ -48,7 +48,6 @@ var lineLangVisible = false;
     offset: 56
   });
 
-
   // Collapse Navbar
   var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
@@ -182,7 +181,7 @@ $(window).scroll(function () {
         }
 
         if (width >= dataPercent) {
-          for(let j = 0; j <= 5; j++){
+          for (let j = 0; j <= 5; j++) {
             setTimeout(function () {
               $('#textLevel' + j).delay(250).animate({
                 'opacity': '1',
@@ -192,7 +191,7 @@ $(window).scroll(function () {
           }
           clearInterval(id);
         } else {
-          width+=2;
+          width += 2;
           progressBar.css('width', width + '%');
         }
       }
