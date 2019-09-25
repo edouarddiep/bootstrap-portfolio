@@ -14,6 +14,7 @@
 
   <title>Edouard Diep - Portfolio</title>
   <link rel="icon" href="./img/icon_html.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" />
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -46,25 +47,37 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Profil</a>
+            <a class="nav-link js-scroll-trigger" href="#about" id="profilLink">Profil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Compétences</a>
+            <a class="nav-link js-scroll-trigger" href="#skills" id="skillLink">Compétences</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#formations">Formations</a>
+            <a class="nav-link js-scroll-trigger" href="#formations" id="formationLink">Formation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#languages">Langues</a>
+            <a class="nav-link js-scroll-trigger" href="#languages" id="langLink">Langues</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#diplomes">Diplômes</a>
+            <a class="nav-link js-scroll-trigger" href="#diplomes" id="diplomesLink">Diplômes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact" id="contactLink">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"><span id="dropdownFlag" class="flag-icon flag-icon-fr"></span></a>
+            <div class="dropdown-container">
+              <div class="dropdown-menu" aria-labelledby="dropdown1" id="dropdownList">
+                <a class="dropdown-item" name="locale-option" locale="fr" id="locale_fr" href="#fr" data-reload><span
+                    class="flag-icon flag-icon-fr"> </span> Français</a>
+                <a class="dropdown-item" name="locale-option" locale="en" id="locale_en" href="#en" data-reload><span
+                    class="flag-icon flag-icon-gb"> </span> Anglais</a>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -75,9 +88,20 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
+        <div class="team-member">
+          <a class="js-scroll-trigger" href="#about">
+            <img class="mx-auto rounded-circle img-res mainPicture" id="mainPicture" src="img/profil12.png" alt=""
+              title="Cliquez pour en savoir plus">
+          </a>
+        </div>
         <div class="intro-lead-in" id="title-writer"></div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="btn-about" href="#about">A propos de
-          moi</a>
+        <div class="btn-about">
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="btn-about" href="#about"
+            title="Cliquez pour en savoir plus"></a>
+        </div>
+        <div class="arrow bounce" id="arrowAbout">
+            <i class="far fa-hand-pointer"></i>
+          </div>
       </div>
     </div>
   </header>
@@ -89,22 +113,23 @@
       </div>
       <div class="col-sm-12" id="aboutImage">
         <div class="team-member">
-          <img class="mx-auto rounded-circle img-res" src="img/profil.png" alt="">
+          <img class="mx-auto rounded-circle img-res" src="img/profil11.png" alt="" title="Edouard Diep">
           <h4>Edouard Diep</h4>
-          <p id="infoProfil" class="text-muted">né le 28 avril 1994 / Suisse / Célibataire</p>
+          <h6 id="profilQualifier" class="text-muted">Développeur Full-Stack</h6>
+          <p id="profilInfos" class="text-muted">né le 28 avril 1994 / Suisse / Célibataire</p>
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a target="_blank" href="https://www.linkedin.com/in/edouard-diep-545241108/" title="Ma page Linkedin">
+              <a target="_blank" href="https://www.linkedin.com/in/edouard-diep-545241108/" id="linkedinLink1" title="Ma page Linkedin">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a target="_blank" href="https://github.com/edouarddiep" title="Ma page Github">
+              <a target="_blank" href="https://github.com/edouarddiep" id="githubLink1" title="Ma page Github">
                 <i class="fab fa-github"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a target="_blank" href="mailto:edouard.diep@gmail.com" title="Pour m'envoyer un e-mail">
+              <a target="_blank" href="mailto:edouard.diep@gmail.com" id="emailLink1" title="Pour m'envoyer un e-mail">
                 <i class="far fa-envelope"></i>
               </a>
             </li>
@@ -121,14 +146,16 @@
     </div>
     <div class="row" id="aboutText">
       <div class="col-lg-5 mx-auto text-justify pl-5 pr-5">
-        <p class="large text-muted" style="text-align: justify">
+        <p class="large text-muted" style="text-align: justify; justify-content: space-evenly !important"
+          id="aboutDescription">
           Récemment diplômé d'un Bachelor HES en Informatique de gestion
-          et véritable architecte de l'information, grâce à mes connaissances acquises en tant qu'informaticien de gestion, je
+          et véritable architecte de l'information, grâce à mes connaissances acquises en tant qu'informaticien de
+          gestion, je
           suis à la recherche d'un emploi qui me permettrait de développer mes compétences acquises durant mes quatre
           ans de formation.<br />
-          De nature dynamique, patient, persévérant, autodidacte et inconditionnellement passionné par les
-          nouvelles technologies, je suis prêt à intégrer une équipe dans un domaine évolutif comme le
-          développement applicatif Front, Back End ou Full Stack.
+          De nature dynamique, patient, persévérant, optimiste, passionné par les nouvelles technologies, autonome et
+          avec un bon esprit de corps, je suis prêt à intégrer une équipe dans un domaine évolutif comme le
+          développement applicatif Front-End, Back-End ou Full-Stack.
         </p>
       </div>
     </div>
@@ -140,8 +167,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Compétences</h2>
-          <h3 class="section-subheading text-muted">Les unités ci-dessous sont basées sur une échelle de 1% (médiocre) à
+          <h2 class="section-heading text-uppercase" id="skillsTitle">Compétences</h2>
+          <h3 class="section-subheading text-muted" id="skillsSubtitle">Les unités ci-dessous sont basées sur une
+            échelle de 1% (médiocre) à
             100% (maîtrise) </h3>
         </div>
       </div>
@@ -173,7 +201,7 @@
         <img src="img/logo_skills/javascript_logo.png" class="skills-logo smallrect" id="skill6" title="Javascript">
         <img src="img/logo_skills/jquery_logo.png" class="skills-logo sqr" id="skill8" title="JQuery">
         <img src="img/logo_skills/angular_logo.png" class="skills-logo sqr" id="skill10" title="Angular 7">
-        <img src="img/logo_skills/ionic_logo.png" class="skills-logo bigrect" id="skill12" title="TypeScript">
+        <img src="img/logo_skills/ionic_logo.png" class="skills-logo bigrect" id="skill12" title="Ionic 4">
         <span class="percent" data-percent="95"></span>
       </div>
       <div class="skills-bar">
@@ -198,10 +226,10 @@
       </div>
       <br />
       <div class="progress-bar-header">
-        <img src="img/logo_skills/java_logo.png" class="skills-logo smallrect" id="skill22" title="Java SE">
-        <img src="img/logo_skills/java_ee_logo.png" class="skills-logo sqr" id="skill23" title="Java EE">
+        <img src="img/logo_skills/java_logo.png" class="skills-logo smallrect" id="skill22" title="Java SE 8">
+        <img src="img/logo_skills/java_ee_logo.png" class="skills-logo sqr" id="skill23" title="Java EE 8">
         <img src="img/logo_skills/vaadin_logo.png" class="skills-logo verybigrect" id="skill21" title="Vaadin 10">
-        <img src="img/logo_skills/restapi_logo.png" class="skills-logo rect" id="skill19" title="REST API">
+        <img src="img/logo_skills/restapi_logo.png" class="skills-logo rect" id="skill19" title="RESTful API">
         <span class="percent" data-percent="90"></span>
       </div>
       <div class="skills-bar">
@@ -259,12 +287,13 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Cliquez sur les illustrations pour plus de détails.</h3>
+          <h3 class="section-subheading text-muted" id="portfolioSubtitle">Cliquez sur les illustrations pour plus de
+            détails.</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 portfolio-item" id="portfolioItem1">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1" id="portfolioLink1" title="Cliquez pour voir le projet">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -274,13 +303,14 @@
           </a>
           <div class="portfolio-caption">
             <h4>VaudVin</h4>
-            <p class="text-muted">Application mobile hybride développée avec les Frameworks Ionic 4 (Front End) et
-              Laravel PHP 5 (Back End)</p>
+            <p class="text-muted" id="vaudvinDescr">Application mobile hybride développée avec les Frameworks Ionic 4
+              (Front-End) et
+              Laravel PHP 5 (Back-End)</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 portfolio-item" id="portfolioItem2">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2" id="portfolioLink2" title="Cliquez pour voir le projet">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -291,13 +321,14 @@
           </a>
           <div class="portfolio-caption">
             <h4>Food Next Door</h4>
-            <p class="text-muted">Responsive WebApp développée à l'aide des Frameworks Angular 7 (Front End) et
-              DjangoREST (Back End)</p>
+            <p class="text-muted" id="fndDescr">Responsive WebApp développée à l'aide des Frameworks Angular 7
+              (Front-End) et
+              DjangoREST (Back-End)</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 portfolio-item" id="portfolioItem3">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3" id="portfolioLink3" title="Cliquez pour voir le projet">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -307,8 +338,9 @@
               alt="">
           </a>
           <div class="portfolio-caption">
-            <h5>Global Class Booking</h5>
-            <p class="text-muted">Application lourde entièrement développée en langage Java SE 8 et utilisant une base
+            <h5 style="margin-bottom: 5px">Global Class Booking</h5>
+            <p class="text-muted" id="gcbDescr">Application lourde entièrement développée en langage Java SE 8 et
+              utilisant une base
               de données Oracle</p>
           </div>
         </div>
@@ -316,13 +348,14 @@
     </div>
   </section>
 
-  <!-- FORMATIONS -->
+  <!-- FORMATION -->
   <section class="page-section" id="formations">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Formations</h2>
-          <h3 class="section-subheading text-muted">Cliquez sur les illustrations pour plus de détails.</h3>
+          <h2 class="section-heading text-uppercase" id="formationTitle">Formation</h2>
+          <h3 class="section-subheading text-muted" id="formationSubtitle">Cliquez sur les illustrations pour plus de
+            détails.</h3>
         </div>
       </div>
       <div class="row">
@@ -330,22 +363,23 @@
           <ul class="timeline">
             <li class="timeline-normal">
               <div class="timeline-image" id="timelineimage1">
-                <a class="formations-link" data-toggle="modal" href="#formationModal1">
+                <a class="formations-link" data-toggle="modal" id="formationLink1" href="#formationModal1"
+                  title="Cliquez pour plus de détails">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
                       <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
-                  <img class="rounded-circle img-fluid" src="img/formations/heg/heg.png" alt="">
+                  <img class="rounded-circle img-fluid img-formation" src="img/formations/heg/heg.png" alt="">
                 </a>
               </div>
               <div class="timeline-panel" id="timelineNormal1">
                 <div class="timeline-heading">
                   <h5>2015 - 2019</h5>
-                  <h5 class="subheading">Informatique de Gestion</h5>
+                  <h5 class="subheading" id="textFormation1">Informatique de Gestion</h5>
                 </div>
                 <div class="timeline-body">
-                  <p>
+                  <p id="lieuFormation1">
                     HEG - Genève
                   </p>
                 </div>
@@ -353,22 +387,23 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image" id="timelineimage2">
-                <a class="formations-link" data-toggle="modal" href="#formationModal2">
+                <a class="formations-link" data-toggle="modal" id="formationLink2" href="#formationModal2"
+                  title="Cliquez pour plus de détails">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
                       <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
-                  <img class="rounded-circle img-fluid" src="img/formations/calvy/calvy.png" alt="">
+                  <img class="rounded-circle img-fluid img-formation" src="img/formations/calvy/calvy.png" alt="">
                 </a>
               </div>
               <div class="timeline-panel" id="timelineInverted1">
                 <div class="timeline-heading">
-                  <h5>Janv. - Juil. 2015</h5>
-                  <h5 class="subheading">Stage à la réception et service en salle</h5>
+                  <h5 id="datesFormation2">Janv. - Juil. 2015</h5>
+                  <h5 class="subheading" id="textFormation2">Stage à la réception et service en salle</h5>
                 </div>
                 <div class="timeline-body">
-                  <p>
+                  <p id="lieuFormation2">
                     Hôtel Calvy
                   </p>
                 </div>
@@ -376,22 +411,23 @@
             </li>
             <li class="timeline-normal">
               <div class="timeline-image" id="timelineimage3">
-                <a class="formations-link" data-toggle="modal" href="#formationModal3">
+                <a class="formations-link" data-toggle="modal" id="formationLink3" href="#formationModal3"
+                  title="Cliquez pour plus de détails">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
                       <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
-                  <img class="rounded-circle img-fluid" src="img/formations/armee/armee.png" alt="">
+                  <img class="rounded-circle img-fluid img-formation" src="img/formations/armee/armee.png" alt="">
                 </a>
               </div>
               <div class="timeline-panel" id="timelineNormal2">
                 <div class="timeline-heading">
-                  <h5>Juin - Nov. 2014</h5>
-                  <h5 class="subheading">Paiement de galons</h5>
+                  <h5 id="datesFormation3">Juin - Nov. 2014</h5>
+                  <h5 id="textFormation3" class="subheading">Paiement de galons</h5>
                 </div>
                 <div class="timeline-body">
-                  <p>
+                  <p id="lieuFormation3">
                     Caserne militaire de Bière
                   </p>
                 </div>
@@ -399,22 +435,23 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image" id="timelineimage4">
-                <a class="formations-link" data-toggle="modal" href="#formationModal4">
+                <a class="formations-link" data-toggle="modal" id="formationLink4" href="#formationModal4"
+                  title="Cliquez pour plus de détails">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
                       <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
-                  <img class="rounded-circle img-fluid" src="img/formations/bouvier/bouvier.png" alt="">
+                  <img class="rounded-circle img-fluid img-formation" src="img/formations/bouvier/bouvier.png" alt="">
                 </a>
               </div>
               <div class="timeline-panel" id="timelineInverted2">
                 <div class="timeline-heading">
                   <h5>2013 - 2014</h5>
-                  <h5 class="subheading">Maturité Professionnelle Commerciale</h5>
+                  <h5 class="subheading" id="textFormation4">Maturité Professionnelle Commerciale</h5>
                 </div>
                 <div class="timeline-body">
-                  <p>
+                  <p id="lieuFormation4">
                     EC Nicolas-Bouvier
                   </p>
                 </div>
@@ -422,19 +459,20 @@
             </li>
             <li class="timeline-normal">
               <div class="timeline-image" id="timelineimage5">
-                <a class="formations-link" data-toggle="modal" href="#formationModal5">
+                <a class="formations-link" data-toggle="modal" id="formationLink5" href="#formationModal5"
+                  title="Cliquez pour plus de détails">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
                       <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
-                  <img class="rounded-circle img-fluid" src="img/formations/olexco/olexco.png" alt="">
+                  <img class="rounded-circle img-fluid img-formation" src="img/formations/olexco/olexco.png" alt="">
                 </a>
               </div>
               <div class="timeline-panel" id="timelineNormal3">
                 <div class="timeline-heading">
                   <h5>2011 - 2012</h5>
-                  <h5 class="subheading">Stage pratique de dernière année (CFC)</h5>
+                  <h5 class="subheading" id="textFormation5">Stage pratique de dernière année (CFC)</h5>
                 </div>
                 <div class="timeline-body">
                   <p>
@@ -445,22 +483,23 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image" id="timelineimage6">
-                <a class="formations-link" data-toggle="modal" href="#formationModal6">
+                <a class="formations-link" data-toggle="modal" id="formationLink6" href="#formationModal6"
+                  title="Cliquez pour plus de détails">
                   <div class="formations-hover">
                     <div class="formations-hover-content">
                       <i class="fas fa-plus fa-2x"></i>
                     </div>
                   </div>
-                  <img class="rounded-circle img-fluid" src="img/formations/schulz/schulz.png" alt="">
+                  <img class="rounded-circle img-fluid img-formation" src="img/formations/schulz/schulz.png" alt="">
                 </a>
               </div>
               <div class="timeline-panel" id="timelineInverted3">
                 <div class="timeline-heading">
                   <h5>2009 - 2012</h5>
-                  <h5 class="subheading">CFC d'Employé de Commerce - Profil E</h5>
+                  <h5 class="subheading" id="textFormation6">CFC d'Employé de Commerce - Profil E</h5>
                 </div>
                 <div class="timeline-body">
-                  <p>
+                  <p id="lieuFormation6">
                     École Schulz
                   </p>
                 </div>
@@ -477,10 +516,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Langues</h2>
-          <h3 class="section-subheading text-muted">Les niveaux ci-dessous sont présentés selon <a
+          <h2 class="section-heading text-uppercase" id="languageTitle">Langues</h2>
+          <h3 class="section-subheading text-muted" id="languageSubtitle">Les niveaux ci-dessous sont présentés selon <a
               href="https://www.coe.int/fr/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale"
-              target="_blank">la norme européenne CECRL</a></h3>
+              target="_blank" data-title="Cliquez pour suivre le lien">le cadre européen de
+              référence CECRL</a></h3>
         </div>
       </div>
       <div class="progress-lang-header">
@@ -552,29 +592,30 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Diplômes et certificats</h2>
-          <h3 class="section-subheading text-muted">Cliquez sur les illustrations pour plus de détails.</h3>
+          <h2 class="section-heading text-uppercase" id="diplomesTitle">Diplômes et certificats</h2>
+          <h3 class="section-subheading text-muted" id="diplomesSubtitle">Cliquez sur les illustrations pour plus de
+            détails.</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem1">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal1">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal1" id="diplomeLink1" title="Cliquez pour voir le diplôme">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/diplomes/bachelor_ig_thumbnail.jpg" alt="">
+            <img class="img-fluid border-primary border" src="img/diplomes/bachelor_ig_thumbnail.jpg" alt="">
           </a>
           <div class="diplomes-caption">
-            <h5>Bachelor HES</h5>
-            <h6>informatique de gestion</h6>
-            <p class="text-muted">Haute école de gestion - Genève</p>
+            <h6>Bachelor of Science HES-SO</h6>
+            <h6 style="margin-bottom: 12px;" id="diplome1Title">Informatique de gestion</h6>
+            <p class="text-muted m-1" id="diplome1Subtitle">Haute école de gestion - Genève</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem2">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal2">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal2" id="diplomeLink2" title="Cliquez pour voir le certificat">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -584,12 +625,12 @@
           </a>
           <div class="diplomes-caption">
             <h5>CCENT Certificate of Achievement</h5>
-            <p class="text-muted">Haute école de gestion - Genève</p>
+            <p class="text-muted" style="margin-bottom: 5px;" id="diplome2Subtitle">Haute école de gestion - Genève</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem3">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal3">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal3" id="diplomeLink3" title="Cliquez pour voir le diplôme">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -599,13 +640,14 @@
               alt="">
           </a>
           <div class="diplomes-caption">
-            <h5>Maturité professionnelle</h5>
-            <p class="text-muted" style="padding-bottom: 3px">École de commerce Nicolas-Bouvier</p>
+            <h5 id="diplome3Title">Maturité professionnelle</h5>
+            <p class="text-muted" style="padding-bottom: 3px" id="diplome3Subtitle">École de commerce Nicolas-Bouvier
+            </p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem4">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal4">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal4" id="diplomeLink4" title="Cliquez pour voir le diplôme">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -615,13 +657,13 @@
               src="img/diplomes/cfc_thumbnail.jpg" alt="">
           </a>
           <div class="diplomes-caption">
-            <h5>CFC d'Employé de Commerce - Profil E</h5>
-            <p class="text-muted">École Schulz - Genève</p>
+            <h5 id="diplome4Title">CFC d'Employé de Commerce - Profil E</h5>
+            <p class="text-muted" id="diplome4Subtitle">École Schulz - Genève</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem5">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal5">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal5" id="diplomeLink5" title="Cliquez pour voir le diplôme">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -631,13 +673,13 @@
               src="img/diplomes/diplome_de_commerce_thumbnail.png" alt="">
           </a>
           <div class="diplomes-caption">
-            <h5>Diplôme supérieur de commerce</h5>
-            <p class="text-muted">École Schulz - Genève</p>
+            <h5 id="diplome5Title">Diplôme supérieur de commerce</h5>
+            <p class="text-muted" style="margin-bottom: 5px;" id="diplome5Subtitle">École Schulz - Genève</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem6">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal6">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal6" id="diplomeLink6" title="Cliquez pour voir le brevet">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -646,14 +688,13 @@
             <img class="img-fluid border border-primary" src="img/diplomes/brevet_promotion_thumbnail.png" alt="">
           </a>
           <div class="diplomes-caption">
-            <h5>Brevet de promotion</h5>
-            <h5>Sergent</h5>
-            <p class="text-muted">Armée Suisse</p>
+            <h5 id="diplome6Title">Brevet de promotion Sergent</h5>
+            <p class="text-muted" style="margin-bottom: 5px;" id="diplome6Subtitle">Armée Suisse</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem7">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal7">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal7" id="diplomeLink7" title="Cliquez pour voir le certificat">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -662,14 +703,14 @@
             <img class="img-fluid border border-primary" src="img/diplomes/calvy_thumbnail.png" alt="">
           </a>
           <div class="diplomes-caption">
-            <h5>Certificat de travail</h5>
+            <h5 id="diplome7Title">Certificat de travail</h5>
             <br />
-            <p class="item-intro text-muted" style="padding-bottom: 10px">Hôtel Calvy - Genève</p>
+            <p class="item-intro text-muted" style="padding-bottom: 10px" id="diplome7Subtitle">Hôtel Calvy - Genève</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem8">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal8">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal8" id="diplomeLink8" title="Cliquez pour voir le certificat">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -678,14 +719,14 @@
             <img class="img-fluid border border-primary" src="img/diplomes/olexco_sa_thumbnail.png" alt="">
           </a>
           <div class="diplomes-caption">
-            <h5>Certificat de travail</h5>
+            <h5 id="diplome8Title">Certificat de travail</h5>
             <br />
-            <p class="text-muted" style="padding-bottom: 10px">Olexco SA - Genève</p>
+            <p class="text-muted" style="margin-bottom: 12px" id="diplome8Subtitle">Olexco SA - Genève</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem9">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal9">
+          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal9" id="diplomeLink9" title="Cliquez pour voir le certificat">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -695,7 +736,7 @@
           </a>
           <div class="diplomes-caption">
             <h5>CrossFit Level 1 Certification</h5>
-            <p class="text-muted" style="padding-bottom: 10px">CrossFit GVA</p>
+            <p class="text-muted" style="margin-bottom: 12px">CrossFit GVA</p>
           </div>
         </div>
       </div>
@@ -708,8 +749,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Contactez-moi</h2>
-          <p class="section-subheading" style="color:gainsboro">Pour me contacter, veuillez remplir tous les champs du
+          <h2 class="section-heading" id="contactTitle">Contactez-moi</h2>
+          <p class="section-subheading" style="color:gainsboro" id="contactSubtitle">Pour me contacter, veuillez remplir
+            tous les champs du
             formulaire
             ci-dessous.</p>
         </div>
@@ -724,25 +766,25 @@
                   <input class="form-control" id="name" type="text" patternName="^[a-zA-Z- ]{2,}$"
                     placeholder="Votre nom*" required="required"
                     data-validation-required-message="Veuillez saisir votre nom.">
-                  <p class="help-block text-danger"></p>
+                  <p class="help-block text-danger" id="nameHelpText"></p>
                 </div>
                 <div class="form-group">
                   <input class="form-control" id="email" type="email" placeholder="Votre adresse e-mail*"
                     required="required" data-validation-required-message="Veuillez saisir une adresse e-mail.">
-                  <p class="help-block text-danger"></p>
+                  <p class="help-block text-danger" id="emailHelpText"></p>
                 </div>
                 <div class="form-group">
                   <input class="form-control" id="phone" patternPhone="^[0-9- ]{1,}$"
                     placeholder="Votre numéro de téléphone*" required="required"
                     data-validation-required-message="Veuillez saisir un numéro de téléphone.">
-                  <p class="help-block text-danger"></p>
+                  <p class="help-block text-danger" id="phoneHelpText"></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <textarea class="form-control" id="message" minlength="5" placeholder="Votre message*"
                     required="required" data-validation-required-message="Veuillez saisir un message."></textarea>
-                  <p class="help-block text-danger"></p>
+                  <p class="help-block text-danger" id="messageHelpText"></p>
                 </div>
               </div>
               <div class="clearfix"></div>
@@ -768,17 +810,17 @@
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a target="_blank" href="https://www.linkedin.com/in/edouard-diep-545241108/" title="Page Linkedin">
+              <a target="_blank" href="https://www.linkedin.com/in/edouard-diep-545241108/" id="linkedinLink2" title="Page Linkedin">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a target="_blank" href="https://github.com/edouarddiep" title="Page Github">
+              <a target="_blank" href="https://github.com/edouarddiep" id="githubLink2" title="Page Github">
                 <i class="fab fa-github"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a target="_blank" href="mailto:edouard.diep@gmail.com" title="Envoyer un e-mail">
+              <a target="_blank" href="mailto:edouard.diep@gmail.com" id="emailLink2" title="Envoyer un e-mail">
                 <i class="far fa-envelope"></i>
               </a>
             </li>
@@ -810,8 +852,7 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h4 class="text-uppercase">Informatique de Gestion</h4>
+                <h4 class="text-uppercase">Informatique de gestion</h4>
                 <h5 class="text-uppercase text-muted">Niveau HES - Bachelor</h5>
                 <p class="item-intro text-muted">HEG - Genève | Campus de Battelle, Rue de la Tambourine 17, 1227
                   Carouge - Genève</p>
@@ -853,10 +894,10 @@
                       Langages serveurs : Java 8, PHP 5, Python 3
                     </li>
                     <li>
-                      Frameworks Front End : Angular 7, Ionic 4
+                      Frameworks Front-End : Angular 7, Ionic 4
                     </li>
                     <li>
-                      Frameworks Back End : Laravel PHP, Django REST Framework
+                      Frameworks Back-End : Laravel PHP, Django REST Framework
                     </li>
                     <li>
                       Outils de collaboration et versionning Git
@@ -900,7 +941,6 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
                 <h4 class="text-uppercase">Hôtel Calvy</h4>
                 <h5 class="text-uppercase text-muted">Stage en hôtellerie</h5>
                 <h6 class="text-uppercase text-muted">Réception & service en salle</h6>
@@ -969,7 +1009,6 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
                 <h4 class="text-uppercase">Paiement de galons en tant que sous-officier transmission dans l'artillerie
                 </h4>
                 <p class="item-intro text-muted">Caserne militaire de Bière | Armée Suisse</p>
@@ -1037,7 +1076,6 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
                 <h4 class="text-uppercase">Formation d'employé de commerce</h4>
                 <h5 class="text-uppercase text-muted">Niveau maturité professionnelle</h5>
                 <p class="item-intro text-muted">Ecole de Commerce Nicolas Bouvier | Rue de Saint-Jean 60, 1203 Genève
@@ -1054,22 +1092,22 @@
                   La maturité m'a offert de solides compétences dans les domaines suivants :
                   <ul style="text-align: left; margin-left:20px;">
                     <li>
-                      la comptabilité de gestion
+                      Comptabilité de gestion
                     </li>
                     <li>
-                      la comptabilité analytique d'entreprise
+                      Comptabilité analytique d'entreprise
                     </li>
                     <li>
-                      le droit suisse
+                      Droit suisse
                     </li>
                     <li>
-                      les mathématiques statistiques
+                      Mathématiques statistiques
                     </li>
                     <li>
-                      l'italien courant et littéraire (niveau B2)
+                      Italien courant et littéraire (niveau B2)
                     </li>
                     <li>
-                      l'anglais général et commercial (niveau B2)
+                      Anglais général et commercial (niveau B2)
                     </li>
                   </ul>
                 </p>
@@ -1099,7 +1137,6 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
                 <h4 class="text-uppercase">OLEXCO SA</h4>
                 <h5 class="text-uppercase text-muted">Stage de dernière année - niveau CFC</h5>
                 <p class="item-intro text-muted">Olexco SA | Place de l'Université 6, 1205 Genève</p>
@@ -1185,7 +1222,6 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
                 <h4 class="text-uppercase">Formation d'employé de commerce</h4>
                 <h5 class="text-uppercase text-muted">Niveau CFC - Profil E</h5>
                 <p class="item-intro text-muted">Ecole Schulz | Rue du 31 Décembre 8, 1207 Genève
@@ -1207,25 +1243,25 @@
                   de commerce en informatique et gestion, mention bien et étudié les domaines suivants :
                   <ul style="text-align: left">
                     <li>
-                      la comptabilité générale d'entreprise
+                      Comptabilité générale d'entreprise
                     </li>
                     <li>
-                      la arithmétique commerciale
+                      Arithmétique commerciale
                     </li>
                     <li>
-                      la économie d'Enterprise
+                      Économie d'entreprise
                     </li>
                     <li>
-                      la correspondance française
+                      Correspondance française
                     </li>
                     <li>
-                      l'anglais général (niveau B2) et bases commerciales
+                      Anglais général (niveau B2) et bases commerciales
                     </li>
                     <li>
-                      les outils Microsoft Office
+                      Microsoft Office 365
                     </li>
                     <li>
-                      le droit et instruction civique
+                      Droit et l'instruction civique
                     </li>
                   </ul>
                 </p>
@@ -1258,25 +1294,25 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h4 class="text-uppercase">Bachelor of Science HES</h4>
-                <h4 class="text-uppercase">en informatique de gestion</h4>
+                <h4 class="text-uppercase">Bachelor of Science HES-SO</h4>
+                <h4 class="text-uppercase">en Informatique de gestion</h4>
                 <p class="item-intro text-muted">HEG - Genève | Campus de Battelle, Rue de la Tambourine 17, 1227
                   Carouge - Genève</p>
                 <div class="container col-lg-12">
                   <div class="row mx-auto">
-                    <div class="col-sm-12">
+                    <div class="col-sm-14">
                       <img class="img-fluid d-block mx-auto border border-primary"
-                        src="img/diplomes/heg_bulletin_1.jpeg" alt="">
-                    </div>
-                    <div class="col-sm-12">
-                      <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/heg_bulletin_2.jpg"
-                        alt="">
+                        src="img/diplomes/heg_attestation_bachelor.jpg" alt="">
                     </div>
                   </div>
                 </div>
                 <ul class="list-inline">
-                  <li>Date de remise : 10 Septembre 2019</li>
+                  <li>
+                    <a id="bulletinsLink" href="diplomesModal10" title="Cliquez pour voir les bulletins">Consulter les
+                      notes</a>
+                  </li>
+                  <br />
+                  <li>Date de remise : 11 Septembre 2019</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -1301,7 +1337,6 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
                 <h4 class="text-uppercase">Cisco CCENT Certificate of Achievement</h4>
                 <p class="item-intro text-muted">HEG - Genève | Campus de Battelle, Rue de la Tambourine 17, 1227
                   Carouge - Genève</p>
@@ -1333,7 +1368,6 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
                 <h4 class="text-uppercase">Maturité Professionnelle Commerciale</h4>
                 <p class="item-intro text-muted">Ecole de Commerce Nicolas Bouvier | Rue de Saint-Jean 60, 1203 Genève
                 </p>
@@ -1365,7 +1399,7 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <h3 class="text-uppercase">CFC d'Employé de Commerce</h3>
+                <h4 class="text-uppercase">CFC d'Employé de Commerce</h4>
                 <p class="item-intro text-muted">Ecole Schulz | Rue du 31 Décembre 8, 1207 Genève
                 </p>
                 <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/cfc_full.png" alt="">
@@ -1396,7 +1430,7 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <h3 class="text-uppercase">Diplôme supérieur de commerce : mention bien</h3>
+                <h4 class="text-uppercase">Diplôme supérieur de commerce : mention bien</h4>
                 <p class="item-intro text-muted">Ecole Schulz | Rue du 31 Décembre 8, 1207 Genève
                 </p>
                 <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/diplome_de_commerce.jpeg"
@@ -1457,14 +1491,13 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h3 class="text-uppercase">Hôtel Calvy</h3>
+                <h4 class="text-uppercase">Hôtel Calvy</h4>
                 <h5 class="text-uppercase">Certificat de travail</h5>
                 <p class="item-intro text-muted">Hôtel Calvy | Ruelle du Midi 5, 1207 Genève</p>
                 <img class="img-fluid d-block mx-auto border border-primary"
                   src="img/diplomes/certificat_travail_hotel_calvy.png" alt="">
                 <ul class="list-inline">
-                  <li>Date : 31 juillet 2015</li>
+                  <li>Date de remise : 18 août 2015</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -1489,13 +1522,12 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h3 class="text-uppercase">OLEXCO SA</h3>
+                <h4 class="text-uppercase">OLEXCO SA</h4>
                 <h5 class="text-uppercase">Certificat de travail</h5>
                 <p class="item-intro text-muted">Olexco SA | Place de l'Université 6, 1205 Genève</p>
                 <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/olexco_sa.png" alt="">
                 <ul class="list-inline">
-                  <li>Date de fin de stage : 31 juillet 2012</li>
+                  <li>Date de remise : 31 juillet 2012</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -1520,12 +1552,52 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h3 class="text-uppercase">CrossFit Level 1 Certification</h3>
+                <h4 class="text-uppercase">CrossFit Level 1 Certification</h4>
                 <p class="item-intro text-muted">CrossFit GVA | Rue de Lyon 27BIS, 1201 Genève</p>
                 <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/cf_level1.png" alt="">
                 <ul class="list-inline">
-                  <li>Date de remise : 31 juillet 2012</li>
+                  <li>Date de remise : 9 août 2015</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Fermer l'aperçu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 10 -->
+  <div class="diplomes-modal modal fade" id="diplomesModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <h4 class="text-uppercase">Bulletins de notes | Bachelor</h4>
+                <p class="item-intro text-muted">HEG - Genève | Campus de Battelle, Rue de la Tambourine 17, 1227
+                  Carouge - Genève</p>
+                <div class="container col-lg-12">
+                  <div class="row mx-auto">
+                    <div class="col-sm-12">
+                      <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/heg_bulletin1.jpeg"
+                        alt="">
+                    </div>
+                    <div class="col-sm-12">
+                      <img class="img-fluid d-block mx-auto border border-primary" src="img/diplomes/heg_bulletin2.jpg"
+                        alt="">
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-inline">
+                  <li>Date de remise : 17 septembre 2019</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -1553,7 +1625,7 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <h3 class="text-uppercase">Projet VaudVin</h3>
+                <h4 class="text-uppercase">Projet VaudVin</h4>
                 <p class="item-intro text-muted">Application mobile hybride développée dans le cadre de mon travail de
                   fin d'études.</p>
                 <div class="container">
@@ -1590,7 +1662,7 @@
                   existants dans sa société. Le but de l'application était de proposer une plateforme de notation et
                   d’évaluation de vins suisses aux consommateurs locaux afin de les inciter
                   à vouloir consommer des cépages de la région aux dépens des importations étrangères. Ce projet a été
-                  développé à l'aide des frameworks Ionic 4 (Front End) et Laravel PHP 5 (Back End). Il utilise une base
+                  développé à l'aide des frameworks Ionic 4 (Front-End) et Laravel PHP 5 (Back-End). Il utilise une base
                   de données PostGreSQL comme stockage global des données.
                 </p>
                 <ul class="list-inline col-lg-14" style="text-align: left">
@@ -1623,10 +1695,9 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h3 class="text-uppercase">Projet Food Next Door</h3>
+                <h4 class="text-uppercase">Projet Food Next Door</h4>
                 <p class="item-intro text-muted">Responsive WebApp développée à l'aide des Frameworks Angular 7 (Front
-                  End) et DjangoREST (Back End) dans le cadre d'un projet d'études en groupe.</p>
+                  End) et DjangoREST (Back-End) dans le cadre d'un projet d'études en groupe.</p>
                 <div class="container">
                   <div class="row">
                     <div class="col-sm-12">
@@ -1657,7 +1728,7 @@
                     permettre de générer des revenus annexes en préparant des plats à domicile tout en effectuant une
                     transaction
                     sans passer par un professionnel (restaurant ou société de livraison par exemple). Ce projet a été
-                    développé à l'aide des Frameworks Angular 7 (Front End) et DjangoREST (Back End). Les deux étaient
+                    développé à l'aide des Frameworks Angular 7 (Front-End) et DjangoREST (Back-End). Les deux étaient
                     reliés à l'aide
                     d'une base de données PostGreSQL qui servait de stockage global. </p>
                   <ul class="list-inline col-lg-14" style="text-align: left">
@@ -1691,8 +1762,7 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h3 class="text-uppercase">Projet Global Class Booking</h3>
+                <h4 class="text-uppercase">Projet Global Class Booking</h4>
                 <p class="item-intro text-muted">Application lourde entièrement développée en langage Java SE 8 dans le
                   cadre d'un premier projet d'études réalisé de manière individuelle.</p>
                 <div class="container">

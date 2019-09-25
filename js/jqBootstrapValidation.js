@@ -102,7 +102,11 @@
             //                                                   PATTERNS
             // ---------------------------------------------------------
             if ($this.attr("patternName") !== undefined) {
-              message = "Veuillez saisir un nom valide !<!-- data-validation-pattern-message to override -->";
+              if(window.location.hash === "#en"){
+                message = "Please enter a valid name !<!-- data-validation-pattern-message to override -->";
+              } else {
+                message = "Veuillez saisir un nom valide !<!-- data-validation-pattern-message to override -->";
+              }
               if ($this.data("validationPatternMessage")) {
                 message = $this.data("validationPatternMessage");
               }
@@ -111,7 +115,11 @@
             }
 
             if ($this.attr("patternPhone") !== undefined) {
-              message = "Veuillez ne saisir que des chiffres !<!-- data-validation-pattern-message to override -->";
+              if(window.location.hash === "#en"){
+                message = "Only numbers are accepted here !<!-- data-validation-pattern-message to override -->";
+              } else {
+                message = "Veuillez ne saisir que des chiffres !<!-- data-validation-pattern-message to override -->";
+              }
               if ($this.data("validationPatternMessage")) {
                 message = $this.data("validationPatternMessage");
               }
@@ -157,7 +165,11 @@
             //                                                 MINLENGTH
             // ---------------------------------------------------------
             if ($this.attr("minlength") !== undefined) {
-              message = "Message trop court. (" + $this.attr("minlength") + " caractères min.)<!-- data-validation-minlength-message to override -->";
+              if(window.location.hash === "#en"){
+                message = "Too short. (minimum " + $this.attr("minlength") + " characters)<!-- data-validation-minlength-message to override -->";
+              } else {
+                message = "Message trop court. (" + $this.attr("minlength") + " caractères min.)<!-- data-validation-minlength-message to override -->";
+              }
               if ($this.data("validationMinlengthMessage")) {
                 message = $this.data("validationMinlengthMessage");
               }
@@ -188,7 +200,11 @@
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "L'adresse e-mail est incorrecte !<!-- data-validator-validemail-message to override -->";
+              if(window.location.hash === "#en"){
+                message = "Invalid e-mail address !<!-- data-validator-validemail-message to override -->";
+              } else {
+                message = "L'adresse e-mail est incorrecte !<!-- data-validator-validemail-message to override -->";
+              }
               if ($this.data("validationValidemailMessage")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {
