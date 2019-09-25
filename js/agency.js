@@ -25,6 +25,9 @@ var lineLangVisible = false;
 (function ($) {
   "use strict"; // Start of use strict
 
+  // set default window hash
+
+  window.location.hash = "#fr";
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
@@ -631,7 +634,6 @@ if (window.location.hash) {
   if (window.location.hash === "#fr") {
     // input text for typing animation 
     $("#title-writer").writeText("Bienvenue sur mon portfolio");
-    console.log($('#languageNormLink').html());
 
     $('#mainPicture').attr('title', language.fr.knowMoreTitle);
     $('#btn-about').attr('title', language.fr.knowMoreTitle);
@@ -689,7 +691,7 @@ if (window.location.hash) {
     $('#diplome4Title').html(language.fr.diplome4Title);
     $('#diplome4Subtitle').html(language.fr.schulzTitle);
     $('#diplome5Title').html(language.fr.diplome5Title);
-    $('#diplome5Subtitle').html(language.en.schulzTitle);
+    $('#diplome5Subtitle').html(language.fr.schulzTitle);
     $('#diplome6Title').html(language.fr.diplome6Title);
     $('#diplome6Subtitle').html(language.fr.diplome6Subtitle);
     $('#diplome7Title').html(language.fr.workCertificateTitle);
