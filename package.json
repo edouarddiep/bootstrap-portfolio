@@ -1,11 +1,11 @@
 {
-    "title": "Agency",
-    "name": "startbootstrap-agency",
+    "title": "Portfolio",
+    "name": "portfolio-ed",
     "version": "5.2.1",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "Agency is a one page HTML theme for Bootstrap.",
+    "description": "Edouard Diep's personal portfolio.",
     "keywords": [
         "css",
         "sass",
@@ -14,19 +14,19 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/agency",
+    "homepage": "https://edouardiep.com",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/edouarddiep/bootstrap-portfolio",
+        "email": "edouard.diep@gmail.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Edouard Diep",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Edouard Diep (https://edouarddiep.com)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-agency.git"
+        "url": "https://github.com/edouarddiep/bootstrap-portfolio"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.9.0",
