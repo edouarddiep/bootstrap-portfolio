@@ -1541,6 +1541,10 @@ section#contact {
   background-size: cover;
 }
 
+section#contact #contactTitle{
+  padding-bottom: 30px;
+}
+
 section#contact .section-heading {
   color: #fff;
 }
