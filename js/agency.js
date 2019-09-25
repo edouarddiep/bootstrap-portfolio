@@ -26,8 +26,9 @@ var lineLangVisible = false;
   "use strict"; // Start of use strict
 
   // set default window hash
-
-  window.location.hash = "#fr";
+  if(!window.location.hash){
+    window.location.hash = "#fr";
+  }
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
