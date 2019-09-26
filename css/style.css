@@ -360,7 +360,7 @@ img::-moz-selection {
 
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 60%;
+  font-size: 70%;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -376,6 +376,13 @@ img::-moz-selection {
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
     font-size: 85%;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1279px){
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+    font-size: 60%;
   }
 }
 
@@ -397,9 +404,7 @@ img::-moz-selection {
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-  #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em !important;
-  }
+  
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
