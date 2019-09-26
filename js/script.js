@@ -112,6 +112,16 @@ $('#bulletinsLink').click(function (e) {
 
 });
 
+  // Add slideDown animation to Bootstrap dropdown when expanding.
+  $('.dropdown').on('show.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+  });
+
+  // Add slideUp animation to Bootstrap dropdown when collapsing.
+  $('.dropdown').on('hide.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+  });
+
 // Scrolling event
 $(window).scroll(function () {
 
@@ -500,7 +510,8 @@ var language = {
     diplomesModal10Subtitle: "HEG - Geneva | Campus de Battelle, Rue de la Tambourine 17, 1227 Carouge - Geneva",
     diplomesModal10Date: "Delivery date : 17th September 2019",
     seeNotesText: "Click to see the reports",
-    copyrightText: "Copyright &copy; E. Diep 2019 "
+    copyrightText: "Copyright &copy; E. Diep 2019 ",
+    siteLanguage: "Select language",
   },
   fr: {
     skill: "Compétences",
@@ -666,7 +677,8 @@ var language = {
     diplomesModal10Subtitle: "HEG - Genève | Campus de Battelle, Rue de la Tambourine 17, 1227 Carouge - Genève",
     diplomesModal10Date: "Date de remise : 17 septembre 2019",
     seeNotesText: "Cliquez pour voir les bulletins",
-    copyrightText: "Auteur &copy; E. Diep 2019 "
+    copyrightText: "Auteur &copy; E. Diep 2019 ",
+    siteLanguage: "Choisir la langue",
   }
 };
 
@@ -683,6 +695,7 @@ if (window.location.hash) {
     $('#mainPicture').attr('title', language.en.knowMoreTitle);
     $('#btn-about').attr('title', language.en.knowMoreTitle);
     $('#dropdownMenu').html('<span id="dropdownFlag" class="flag-icon flag-icon-gb border"></span>  ENG');
+    $('#dropdownMenu').attr('title', language.en.siteLanguage);
     $('#locale_fr').html('<span class="flag-icon flag-icon-fr"> </span> French');
     $('#locale_en').css('display', 'none');
     $('#profilLink').html(language.en.profil);
@@ -895,6 +908,7 @@ if (window.location.hash) {
     $('#mainPicture').attr('title', language.fr.knowMoreTitle);
     $('#btn-about').attr('title', language.fr.knowMoreTitle);
     $('#dropdownMenu').html('<span id="dropdownFlag" class="flag-icon flag-icon-fr border"></span>  FR');
+    $('#dropdownMenu').attr('title', language.fr.siteLanguage);
     $('#locale_en').html('<span class="flag-icon flag-icon-gb"> </span> Anglais');
     $('#locale_fr').css('display', 'none');
     $('#profilLink').html(language.fr.profil);
