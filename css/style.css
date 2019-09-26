@@ -16,23 +16,6 @@ body {
   position: relative;
 }
 
-.arrowLeft {
-  position: relative;
-  color: rgba(0, 0, 0, 0.5);
-  zoom: 2;
-  top: 8px;
-  margin-left: 10px;
-}
-
-.arrowRight {
-  position: relative;
-  color: rgba(0, 0, 0, 0.5);
-  zoom: 2;
-  top: 8px;
-  margin-right: 10px;
-  animation: bounce 2s infinite;
-}
-
 .arrow {
   position: relative;
   bottom: -2rem;
@@ -41,8 +24,8 @@ body {
   top: 100px;
   width: 40px;
   height: 40px;
-  zoom: 1.5;
   opacity: 0;
+  font-size: 0.9rem;
 }
 
 .bounce {
@@ -351,13 +334,12 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 12px;
+  font-size: 0.5rem;
   right: 0;
-  padding: 13px;
+  padding: 8px;
   text-transform: uppercase;
-  color: white;
+  color: darkorange;
   border: 0;
-  background-color: #3668fe;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -372,7 +354,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 65%;
+  font-size: 70%;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
