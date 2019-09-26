@@ -419,9 +419,13 @@ img::-moz-selection {
   color:blue;
 }
 
+#dropdownList{
+  position: absolute;
+}
+
 #dropdownMenu #locale_fr, #locale_en{
   text-align: center;
-  font-size: 60%;
+  font-size: 75%;
   font-weight: 400;
   letter-spacing: 1px;
   color: black;
@@ -430,7 +434,7 @@ img::-moz-selection {
 
 #dropdownMenu #locale_en, #locale_fr{
   text-align: center;
-  font-size: 60%;
+  font-size: 75%;
   font-weight: 400;
   letter-spacing: 1px;
   color: black;
