@@ -682,7 +682,7 @@ if (window.location.hash) {
 
     $('#mainPicture').attr('title', language.en.knowMoreTitle);
     $('#btn-about').attr('title', language.en.knowMoreTitle);
-    $('#dropdownMenu').html('<span id="dropdownFlag" class="flag-icon flag-icon-gb"></span>  ENG');
+    $('#dropdownMenu').html('<span id="dropdownFlag" class="flag-icon flag-icon-gb border"></span>  ENG');
     $('#locale_fr').html('<span class="flag-icon flag-icon-fr"> </span> French');
     $('#locale_en').css('display', 'none');
     $('#profilLink').html(language.en.profil);
@@ -894,7 +894,7 @@ if (window.location.hash) {
 
     $('#mainPicture').attr('title', language.fr.knowMoreTitle);
     $('#btn-about').attr('title', language.fr.knowMoreTitle);
-    $('#dropdownMenu').html('<span id="dropdownFlag" class="flag-icon flag-icon-fr"></span>  FR');
+    $('#dropdownMenu').html('<span id="dropdownFlag" class="flag-icon flag-icon-fr border"></span>  FR');
     $('#locale_en').html('<span class="flag-icon flag-icon-gb"> </span> Anglais');
     $('#locale_fr').css('display', 'none');
     $('#profilLink').html(language.fr.profil);
