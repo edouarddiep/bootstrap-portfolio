@@ -448,19 +448,19 @@ var language = {
     // LES MODALES DE PORTFOLIO
     portfolioModal1Title: "VaudVin Project",
     portfolioModal1Subtitle: "Hybrid mobile application developed as part of my Bachelor's final thesis",
-    portfolioModal1Descr: "This project has been thought, conceived and introduced as part of my Bachelor's final work. Indeed, I collaborated with a client who co-owned a company and wished to expand its existing services. The purpose of the application was to introduce a Swiss Wine's rating and evaluation platform to the local consumers to encourage them to consume local grape varieties instead of foreign imported products. This project has been developed using Ionic 4 Framework (Front End) and Laravel PHP 5 (Back End). It uses a PostGreSQL database as global data storage.",
+    portfolioModal1Descr: "This project has been thought, conceived and introduced as part of my Bachelor's final work. Indeed, I collaborated with a principal who co-owned a wine contests' company and wished to expand its existing services. The purpose of this application was to introduce to local consumers a brand new rating and evaluation's platform for swiss wines in order to encourage them to consume local grape varieties instead of foreign imported products. This project has been developed using Ionic 4 Framework (Front End) and Laravel PHP 5 (Back End). It uses a PostGreSQL database as global data storage.",
     portfolioModal1StartDate: "Start date : June 2019",
     portfolioModal1EndDate: "End date : September 2019",
     portfolioModal1Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>VaudVin Project</a>",
     portfolioModal2Title: "Food Next Door Project",
     portfolioModal2Subtitle: "Responsive Web Application developed using Angular 7 Framework (Front End) and DjangoREST Framework (Back End) as part of a group project.",
-    portfolioModal2Descr: "This project was built on the basis of agile delivery management method named DAD (Disciplined Agile Delivery). From the inception phase to the construction, followed by the transition and finally unit tests, every step was rigorously followed by all four members of the project board. Indeed, we were mandated to create a responsive web application, multiple-platforms compatible, from which the purpose was to generate additional income while making a transaction without the need of a professionnal actor (such as a restaurant or a delivery company). This project was built using Angular 7 Framework (Front End) and DjangoREST (Back End). Both were linked with the help of a PostGreSQL database which was used as a global data storage.",
+    portfolioModal2Descr: "This project was built on the basis of an agile methodology named DAD (Disciplined Agile Delivery). From inception phase to construction, followed by transition and finally unit tests, every step was rigorously followed by all four members of the project board. Indeed, we were mandated to create a responsive web application, cross-platform compatible, from which the purpose was to allow individuals to generate additional incomes while making a transaction without the need of a business actor (such as a restaurant or a delivery company). This project was built using Angular 7 Framework (Front End) and DjangoREST (Back End). Both were linked with the help of a PostGreSQL database which was used as a global data storage.",
     portfolioModal2StartDate: "Start date : September 2018",
     portfolioModal2EndDate: "End date: May 2019",
     portfolioModal2Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>Food Next Door Project</a>",
     portfolioModal3Title: "Global Class Booking Project",
     portfolioModal3Subtitle: "Heavy application fully built using Java SE 8 programming language as part of a very first school project achieved individually.",
-    portfolioModal3Descr: "This project represents my very first practical experiment in software developement. Indeed, it was conceived as part of an intermediate school exam and I was free to choose the application's topic. Therefore, I imagined a platform which allows the registered user to subscribe to group classes with the help of a personnal account and free class slots, among several sport clubs located in Geneva city, locally stored in a database. The purpose was to give to the user the possibility to check which courses are availables and give his own opinion on those to which he participated, or check other customers' opinions. This project has been fully built using Java SE 8 programming language, based on JDK 1.8 and using an Oracle local database.",
+    portfolioModal3Descr: "This project represents my very first practical experiment in software developement. Indeed, it was conceived as part of an intermediate school exam and I was free to choose the application's topic. Therefore, I imagined a platform which allows the registered user to subscribe to free slots' group classes using his personnal account, among several sport clubs located in Geneva city. All clubs and classes are locally stored in a database. The purpose was to give the user the possibility to check which courses are currently availables and give his own opinion on those to which he participated, or check other customers' opinions. This project has been fully built using Java SE 8 programming language, based on JDK 1.8 and using an Oracle local database.",
     portfolioModal3StartDate: "Start date : September 2017",
     portfolioModal3EndDate: "End date : January 2018",
     portfolioModal3Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/GlobalClassBooking'>Global Class Booking Project</a>",
@@ -484,7 +484,7 @@ var language = {
     diplomesModal5Date: "Delivery date : 30th June 2011",
     diplomesModal6Title: "Ranked military Certificate (Sergeant)",
     diplomesModal6Subtitle: "Bière's military barracks | Swiss Army",
-    diplomesModal6Date: "Date de promotion : 27th September 2014",
+    diplomesModal6Date: "Date-of-promotion : 27th September 2014",
     diplomesModal7Title: "Calvy Hôtel",
     diplomesModal7Subtitle1: "Work Certificate",
     diplomesModal7Subtitle2: "Calvy Hotel | Ruelle du Midi 5, 1207 Geneva",
@@ -500,7 +500,7 @@ var language = {
     diplomesModal10Subtitle: "HEG - Geneva | Campus de Battelle, Rue de la Tambourine 17, 1227 Carouge - Geneva",
     diplomesModal10Date: "Delivery date : 17th September 2019",
     seeNotesText: "Click to see the reports",
-    copyrightText: "Copyright : &copy; E. Diep 2019 "
+    copyrightText: "Copyright &copy; E. Diep 2019 "
   },
   fr: {
     skill: "Compétences",
@@ -666,7 +666,7 @@ var language = {
     diplomesModal10Subtitle: "HEG - Genève | Campus de Battelle, Rue de la Tambourine 17, 1227 Carouge - Genève",
     diplomesModal10Date: "Date de remise : 17 septembre 2019",
     seeNotesText: "Cliquez pour voir les bulletins",
-    copyrightText: "Auteur : &copy; E. Diep 2019 "
+    copyrightText: "Auteur &copy; E. Diep 2019 "
   }
 };
 
@@ -886,7 +886,7 @@ if (window.location.hash) {
     $('#diplomesModal10Subtitle').html(language.en.diplomesModal10Subtitle);
     $('#diplomesModal10Date').html(language.en.diplomesModal10Date);
     $('#diplomesModal10Close').html(language.en.closeText);
-    $('#copyrightText').html(language.fr.copyrightText);
+    $('#copyrightText').html(language.en.copyrightText);
   }
   if (window.location.hash === "#fr") {
     // input text for typing animation 
