@@ -39,7 +39,7 @@
     <div class="container" id="navbarContainer">
 
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Edouard Diep</a>
-      <ul class="navbar-nav text-uppercase" style="left:0;">
+      <ul class="navbar-nav text-uppercase" style="left:0;" id="mobileDropDown">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false" title="Langue du site"></a>
@@ -83,7 +83,20 @@
           </li>
         </ul>
       </div>
-
+      <ul class="navbar-nav text-uppercase" style="position: relative; margin:auto; left: 100px; float: right;" id="desktopDropDown">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="desktopDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" title="Langue du site"></a>
+            <div class="dropdown-container">
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown1" id="dropdownList">
+                <a class="dropdown-item" name="locale-option" locale="fr" id="desktopLocale_fr" href="#fr" data-reload
+                  title="Français"></a>
+                <a class="dropdown-item" name="locale-option" locale="en" id="desktopLocale_en" href="#en" data-reload
+                  title="Anglais"></a>
+              </div>
+            </div>
+          </li>
+        </ul>
     </div>
   </nav>
 
@@ -93,7 +106,7 @@
       <div class="intro-text">
         <div class="team-member">
           <a class="js-scroll-trigger" href="#about">
-            <img class="mx-auto rounded-circle img-res mainPicture" id="mainPicture" src="img/profil12.png" alt=""
+            <img class="mx-auto rounded-circle img-res mainPicture" id="mainPicture" src="img/profil10.png" alt=""
               title="Cliquez pour en savoir plus">
           </a>
         </div>
@@ -116,7 +129,7 @@
       </div>
       <div class="col-sm-12" id="aboutImage">
         <div class="team-member">
-          <img class="mx-auto rounded-circle img-res" src="img/profil11.png" alt="" title="Edouard Diep">
+          <img class="mx-auto rounded-circle img-res" src="img/profil13.png" alt="" title="Edouard Diep">
           <h4>Edouard Diep</h4>
           <h6 id="profilQualifier" class="text-muted"></h6>
           <p id="profilInfos" class="text-muted"></p>
@@ -583,7 +596,8 @@
           </a>
           <div class="diplomes-caption">
             <h6></h6>
-            <h6 style="margin-bottom: 12px;" id="diplome1Title"></h6>
+            <h6 style="margin-bottom: 0px;" id="diplome1Title"></h6>
+            <br />
             <p class="text-muted m-1" id="diplome1Subtitle"></p>
           </div>
         </div>

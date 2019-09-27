@@ -347,11 +347,21 @@ $('#locale_en').click(function () {
   location.reload(true);
 });
 
+$('#desktopLocale_fr').click(function () {
+  window.location.hash = '#fr';
+  location.reload(true);
+});
+
+$('#desktopLocale_en').click(function () {
+  window.location.hash = '#en';
+  location.reload(true);
+});
+
 // Languages translations 
 var language = {
   en: {
     skill: "Skills",
-    profil: "Profile",
+    profil: "About me",
     lang: "Languages",
     formation: "Education",
     diplomes: "Diplomas",
@@ -366,9 +376,9 @@ var language = {
     gcbDescr: "Thick Client Application fully developped using Java SE 8 programming language. Datas are stored on an Oracle database",
     formationTitle: "Education",
     textFormation1: "Business computing",
-    textFormation2: "Reception and room service internship",
-    datesFormation2: "Jan. - Jul. 2015",
-    datesFormation3: "June - Nov. 2015",
+    textFormation2: "Reception and restaurant service internship",
+    datesFormation2: "2015",
+    datesFormation3: "2014",
     textFormation3: "Ranked military service",
     lieuFormation3: "Bière's military barracks",
     textFormation4: "Business Professional Matriculation",
@@ -387,7 +397,7 @@ var language = {
     textLevel4: "A2",
     textFlag5: "Modern Greek",
     textLevel5: "A1",
-    aboutDescription: "Recently graduated from a Bachelor of Science HES-SO in Business computing, through my acquired knowledge as an information architect into software development, I am looking for a job that would give me the opportunity to expand my acquired skills throughout four years of Bachelor's education and training. <br/> By nature I am dynamic, patient, persevering, optimistic, selfless, passionate about new technologies, self-taught while having a significant team spirit, I am ready to integrate a team in an evolving domain such as Front End, Back End or Full Stack development.",
+    aboutDescription: "Recently graduated from a Bachelor of Science HES-SO in Business computing, through my acquired knowledge as an information architect into software development, I am looking for a job that would give me the opportunity to expand my current skills throughout four years of Bachelor's education and training. <br/> By nature I am dynamic, patient, persevering, optimistic, selfless, passionate about new technologies, self-taught while having a significant team spirit, I am ready to integrate a team in an evolving domain such as Front End, Back End or Full Stack development.",
     diplomesTitle: "Diplomas and certificates",
     diplome1Title: "Business computing",
     diplome3Title: "Professional Matriculation",
@@ -429,10 +439,10 @@ var language = {
     formationModal1Subtitle1: "Bachelor's degree",
     formationModal1Subtitle2: "HEG - Geneva | Campus de Battelle, Rue de la Tambourine 17, 1227 Carouge - Geneva",
     formationModal1Descr: "Acquired knowledge during Bachelor's education years are the following :<ul style='text-align: left'><li>Web programming languages : HTML, CSS/SASS, JS/TypeScript</li><li>Server-oriented languages : Java 8, PHP 5, Python 3</li><li>Front-End Frameworks : Angular 7, Ionic 4</li><li>Back-End Frameworks : Laravel PHP, Django REST Framework</li><li>Collaborating tools and Git versionning</li><li>Agile delivery methods : SCRUM et DAD</li><li>Windows Server 2016's Active Directory installation</li><li>Basics Shell scripts under Ubuntu 16.04</li><li>Cisco Networking administration and configuration</li></ul>",
-    formationModal1Date: "End of school : 21st June 2019",
+    formationModal1Date: "End-of-studies : 21st June 2019",
     formationModal2Title: "Calvy Hotel",
     formationModal2Subtitle1: "Hotel Internship",
-    formationModal2Subtitle2: "Reception and room service",
+    formationModal2Subtitle2: "Reception and restaurant service",
     formationModal2Subtitle3: "Calvy Hotel | Ruelle du Midi 5, 1207 Geneva",
     formationModal2Descr: "As an internship apprentice at Calvy Hotel, I was in charge of the following tasks :<ul style='text-align: left'><li>Customer reception at the office (check-in/check-out)</li><li>Restaurant lunch service</li><li>Management of the Fund</li><li>Phone and e-mail's booking management</li><li>Updating receivables and entry of accounting documents</li></ul>",
     formationModal2Date: "End-of-internship : 31st July 2015",
@@ -454,11 +464,11 @@ var language = {
     formationModal6Subtitle1: "CFC Level - Expanded Profile",
     formationModal6Subtitle2: "Ecole Schulz | Rue du 31 Décembre 8, 1207 Geneva",
     formationModal6Descr: "Throughout my CFC training and education I received, after two years, an advanced commercial diploma in computing and management with Honours (\"Mention : Bien\"), and studied the following areas :<ul style='text-align: left'><li>General enterprise accounting</li><li>Commercial arithmetic</li><li>Enterprise economy</li><li>French commercial letters</li><li>General English (B2 level) and business basics</li><li>Microsoft Office 365</li><li>Swiss legislation and civic education</li></ul>",
-    formationModal6Date: "End-of-studies : 25th September 2012",
+    formationModal6Date: "End-of-studies : 22nd June 2012",
     // LES MODALES DE PORTFOLIO
     portfolioModal1Title: "VaudVin Project",
     portfolioModal1Subtitle: "Hybrid mobile application developed as part of my Bachelor's final thesis",
-    portfolioModal1Descr: "This project has been thought, conceived and introduced as part of my Bachelor's final work. Indeed, I collaborated with a principal who co-owned a wine contests' company and wished to expand its existing services. The purpose of this application was to introduce to local consumers a brand new rating and evaluation's platform for swiss wines in order to encourage them to consume local grape varieties instead of foreign imported products. This project has been developed using Ionic 4 Framework (Front End) and Laravel PHP 5 (Back End). It uses a PostGreSQL database as global data storage.",
+    portfolioModal1Descr: "This project has been thought, conceived and introduced as part of my Bachelor's final work. Indeed, I collaborated with a principal who co-owned a wine contests' company and wished to expand its existing services. The purpose of this application was to introduce to local consumers a brand new rating and evaluation's platform for swiss wines, in order to encourage them to consume local grape varieties instead of foreign imported products. This software has been developed using Ionic 4 Framework (Front End) and Laravel PHP 5 (Back End). It uses a PostGreSQL database as global data storage.",
     portfolioModal1StartDate: "Start date : June 2019",
     portfolioModal1EndDate: "End date : September 2019",
     portfolioModal1Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>VaudVin Project</a>",
@@ -515,7 +525,7 @@ var language = {
   },
   fr: {
     skill: "Compétences",
-    profil: "Profil",
+    profil: "A propos",
     lang: "Langues",
     formation: "Formation",
     diplomes: "Diplômes",
@@ -531,8 +541,8 @@ var language = {
     formationTitle: "Formation",
     textFormation1: "Informatique de gestion",
     textFormation2: "Stage à la réception et service en salle",
-    datesFormation2: "Janv. - Juil. 2015",
-    datesFormation3: "Juin - Nov. 2015",
+    datesFormation2: "2015",
+    datesFormation3: "2014",
     textFormation3: "Paiement de galons",
     lieuFormation3: "Caserne militaire de Bière",
     textFormation4: "Maturité Professionnelle Commerciale",
@@ -615,23 +625,23 @@ var language = {
     formationModal5Title: "Olexco SA",
     formationModal5Subtitle1: "Stage de dernière année - Niveau CFC",
     formationModal5Subtitle2: "Olexco SA | Place de l'Université 6, 1205 Genève",
-    formationModal5Descr: "Ce stage m'a permis de mettre en pratique les connaissances scolaires acquises durant mon CFC. Durantcette année de travail,j'ai été amené à gérer les tâches suivantes :<ul style='text-align: left' class='col-lg-14 ml-2'><li>Gestion du courrier</li><li>Accueil des clients</li><li>Réception des appels téléphoniques</li><li>Préparation des classeurs annuels et répertoires clients</li><li>Création et mise à jour des fichiers clients existants</li><li>Petite correspondance</li><li>Saisie de pièces comptables</li><li>Préparation des écritures de bouclement</li><li>Tenue du reporting Excel</li><li>Archivage et classement des dossiers</li><li>Tâches administratives diverses</li></ul>",
+    formationModal5Descr: "Ce stage m'a permis de mettre en pratique les connaissances scolaires acquises durant mon CFC. Durant cette année de travail, j'ai été amené à gérer les tâches suivantes :<ul style='text-align: left' class='col-lg-14 ml-2'><li>Gestion du courrier</li><li>Accueil des clients</li><li>Réception des appels téléphoniques</li><li>Préparation des classeurs annuels et répertoires clients</li><li>Création et mise à jour des fichiers clients existants</li><li>Petite correspondance</li><li>Saisie de pièces comptables</li><li>Préparation des écritures de bouclement</li><li>Tenue du reporting Excel</li><li>Archivage et classement des dossiers</li><li>Tâches administratives diverses</li></ul>",
     formationModal5Date: "Fin de stage : 31 juillet 2012",
     formationModal6Title: "Formation d'Employé de Commerce",
     formationModal6Subtitle1: "Niveau CFC - Profil E",
     formationModal6Subtitle2: "Ecole Schulz | Rue du 31 Décembre 8, 1207 Genève",
-    formationModal6Descr: "Tout au long de ce cursus CFC en formation élargie, j'ai obtenu, après deux ans, un diplôme supérieur de commerce en informatique et gestion, mention bien et étudié les domaines suivants :<ul style='text-align: left'><li>Comptabilité générale d'entreprise</li><li>Arithmétique commerciale</li><li>Économie d'entreprise</li><li>Correspondance française</li><li>Anglais général (niveau B2) et bases commerciales</li><li>Microsoft Office 365</li><li>Droit et l'instruction civique</li></ul>",
-    formationModal6Date: "Fin des études : 25 septembre 2012",
+    formationModal6Descr: "Tout au long de ce cursus CFC en formation élargie, j'ai obtenu après deux ans, un diplôme supérieur de commerce en informatique et gestion mention bien et étudié les domaines suivants :<ul style='text-align: left'><li>Comptabilité générale d'entreprise</li><li>Arithmétique commerciale</li><li>Économie d'entreprise</li><li>Correspondance française</li><li>Anglais général (niveau B2) et bases commerciales</li><li>Microsoft Office 365</li><li>Droit et instruction civique</li></ul>",
+    formationModal6Date: "Fin des études : 22 juin 2012",
     // LES MODALES DE PORTFOLIO
     portfolioModal1Title: "Projet VaudVin",
     portfolioModal1Subtitle: "Application mobile hybride développée dans le cadre de mon travail de fin d'études.",
-    portfolioModal1Descr: "Ce projet a été pensé, réalisé et présenté dans le cadre de mon travail de bachelor. En effet, j'ai collaboré avec un client qui avait pour idée d'étendre les services déjà existants dans sa société. Le but de l'application était de proposer une plateforme de notation et d’évaluation de vins suisses aux consommateurs locaux afin de les inciter à vouloir consommer des cépages de la région aux dépens des importations étrangères. Ce projet a été développé à l'aide des frameworks Ionic 4 (Front-End) et Laravel PHP 5 (Back-End). Il utilise une base de données PostGreSQL comme stockage global des données.",
+    portfolioModal1Descr: "Ce projet a été pensé, réalisé et présenté dans le cadre de mon travail de bachelor. En effet, j'ai collaboré avec un client qui avait pour idée d'étendre les services déjà existants dans sa société. Le but de l'application était de proposer une plateforme de notation et d’évaluation de vins suisses aux consommateurs locaux, afin de les inciter à vouloir consommer des cépages de la région aux dépens des importations étrangères. Ce projet a été développé à l'aide des frameworks Ionic 4 (Front-End) et Laravel PHP 5 (Back-End). Il utilise une base de données PostGreSQL comme stockage global des données.",
     portfolioModal1StartDate: "Date de début : Juin 2019",
     portfolioModal1EndDate: "Date de fin : Septembre 2019",
     portfolioModal1Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>Projet VaudVin</a>",
     portfolioModal2Title: "Projet Food Next Door",
     portfolioModal2Subtitle: "Responsive WebApp développée à l'aide des Frameworks Angular 7 (Front End) et DjangoREST (Back-End) dans le cadre d'un projet d'études en groupe.",
-    portfolioModal2Descr: "Ce projet a été conçu sur la base d'une méthode agile de gestion de projet : DAD (Disciplined Agile Delivery). De la phase investigation à la construction, puis la transition en passant par les tests unitaires, chacune des étapes a été scrupuleusement suivie par chacun des quatre membres constituant le comité du projet. En effet, nous avions été mandaté afin de réaliser une web application responsive, compatible multi-plateforme, dont l'objectif était de pouvoir proposer une plateforme de mise en relation entre un particulier et un autre afin de leur permettre de générer des revenus annexes en préparant des plats à domicile tout en effectuant une transaction sans passer par un professionnel (restaurant ou société de livraison par exemple). Ce projet a été développé à l'aide des Frameworks Angular 7 (Front-End) et DjangoREST (Back-End). Les deux étaient reliés à l'aide d'une base de données PostGreSQL qui servait de stockage global.",
+    portfolioModal2Descr: "Ce projet a été conçu sur la base d'une méthode agile de gestion de projet : DAD (Disciplined Agile Delivery). De la phase investigation à la construction, puis la transition en passant par les tests unitaires, chacune des étapes a été scrupuleusement suivie par chacun des quatre membres constituant le comité du projet. En effet nous avions été mandaté, afin de réaliser une web application responsive, compatible multi-plateforme, dont l'objectif était de pouvoir proposer une plateforme de mise en relation entre un particulier et un autre afin de leur permettre de générer des revenus annexes en préparant des plats à domicile tout en effectuant une transaction sans passer par un professionnel (restaurant ou société de livraison par exemple). Ce projet a été développé à l'aide des Frameworks Angular 7 (Front-End) et DjangoREST (Back-End). Les deux étaient reliés à l'aide d'une base de données PostGreSQL qui servait de stockage global.",
     portfolioModal2StartDate: "Date de début : Septembre 2018",
     portfolioModal2EndDate: "Date de fin : Mai 2019",
     portfolioModal2Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>Projet Food Next Door</a>",
@@ -677,7 +687,7 @@ var language = {
     diplomesModal10Subtitle: "HEG - Genève | Campus de Battelle, Rue de la Tambourine 17, 1227 Carouge - Genève",
     diplomesModal10Date: "Date de remise : 17 septembre 2019",
     seeNotesText: "Cliquez pour voir les bulletins",
-    copyrightText: "Auteur &copy; E. Diep 2019 ",
+    copyrightText: "Copyright &copy; E. Diep 2019 ",
     siteLanguage: "Choisir la langue",
   }
 };
@@ -695,8 +705,12 @@ if (window.location.hash) {
     $('#mainPicture').attr('title', language.en.knowMoreTitle);
     $('#btn-about').attr('title', language.en.knowMoreTitle);
     $('#dropdownMenu').html('<span id="dropdownFlag" class="flag-icon flag-icon-gb border"></span>  ENG');
+    $('#desktopDropdownMenu').html('<span id="dropdownFlag" class="flag-icon flag-icon-gb border"></span>  ENG');
     $('#dropdownMenu').attr('title', language.en.siteLanguage);
+    $('#desktopDropDownMenu').attr('title', language.en.siteLanguage);
     $('#locale_fr').html('<span class="flag-icon flag-icon-fr"> </span> French');
+    $('#desktopLocale_fr').html('<span class="flag-icon flag-icon-fr"> </span> French');
+    $('#desktopLocale_en').css('display', 'none');
     $('#locale_en').css('display', 'none');
     $('#profilLink').html(language.en.profil);
     $('#skillLink').html(language.en.skill);
@@ -908,9 +922,13 @@ if (window.location.hash) {
     $('#mainPicture').attr('title', language.fr.knowMoreTitle);
     $('#btn-about').attr('title', language.fr.knowMoreTitle);
     $('#dropdownMenu').html('<span id="dropdownFlag" class="flag-icon flag-icon-fr border"></span>  FR');
+    $('#desktopDropdownMenu').html('<span id="dropdownFlag" class="flag-icon flag-icon-fr border"></span>  FR');
     $('#dropdownMenu').attr('title', language.fr.siteLanguage);
+    $('#desktopDropdownMenu').attr('title', language.fr.siteLanguage);
     $('#locale_en').html('<span class="flag-icon flag-icon-gb"> </span> Anglais');
+    $('#desktopLocale_en').html('<span class="flag-icon flag-icon-gb"> </span> Anglais');
     $('#locale_fr').css('display', 'none');
+    $('#desktopLocale_fr').css('display', 'none');
     $('#profilLink').html(language.fr.profil);
     $('#skillLink').html(language.fr.skill);
     $('#langLink').html(language.fr.lang);
