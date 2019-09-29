@@ -5,7 +5,7 @@
  */
 
 html, body {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
   overflow-y: scroll !important;
   max-width: 100% !important;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -17,8 +17,8 @@ body {
   position: relative;
 }
 
-body.modal-open {
-  overflow: hidden !important;
+.modal-content{
+  min-height:100vh;
 }
 
 .arrow {
@@ -549,6 +549,10 @@ header.masthead .intro-text .intro-heading {
   text-align: left;
 }
 
+#portfolioModal0Descr {
+  text-align: left;
+}
+
 #portfolioModal1Descr {
   text-align: left;
 }
@@ -592,6 +596,11 @@ header.masthead .intro-text .intro-heading {
     text-justify: distribute;
     text-align-last: left;
   }
+
+  #portfolioModal0Descr {
+    text-align: justify;
+  }  
+
   #portfolioModal1Descr {
     text-align: justify;
   }

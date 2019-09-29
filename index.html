@@ -83,20 +83,21 @@
           </li>
         </ul>
       </div>
-      <ul class="navbar-nav text-uppercase" style="position: relative; margin:auto; left: 100px; float: right;" id="desktopDropDown">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="desktopDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false" title="Langue du site"></a>
-            <div class="dropdown-container">
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown1" id="dropdownList">
-                <a class="dropdown-item" name="locale-option" locale="fr" id="desktopLocale_fr" href="#fr" data-reload
-                  title="Français"></a>
-                <a class="dropdown-item" name="locale-option" locale="en" id="desktopLocale_en" href="#en" data-reload
-                  title="Anglais"></a>
-              </div>
+      <ul class="navbar-nav text-uppercase" style="position: relative; margin:auto; left: 100px; float: right;"
+        id="desktopDropDown">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="desktopDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" title="Langue du site"></a>
+          <div class="dropdown-container">
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown1" id="dropdownList">
+              <a class="dropdown-item" name="locale-option" locale="fr" id="desktopLocale_fr" href="#fr" data-reload
+                title="Français"></a>
+              <a class="dropdown-item" name="locale-option" locale="en" id="desktopLocale_en" href="#en" data-reload
+                title="Anglais"></a>
             </div>
-          </li>
-        </ul>
+          </div>
+        </li>
+      </ul>
     </div>
   </nav>
 
@@ -180,6 +181,7 @@
       </div>
       <div class="progress-bar-header">
         <img src="img/logo_skills/html5_logo.png" class="skills-logo smallsqr" id="skill0" title="HTML 5">
+        <img src="img/logo_skills/Bootstrap_logo.png" class="skills-logo smallsqr" id="skill2" title="Bootstrap 4">
         <span class="percent" data-percent="100"></span>
       </div>
       <div class="skills-bar">
@@ -190,8 +192,8 @@
       </div>
       <br />
       <div class="progress-bar-header">
-        <img src="img/logo_skills/CSS3_logo.png" class="skills-logo smallsqr" id="skill2" title="CSS 3">
-        <img src="img/logo_skills/sass_logo.png" class="skills-logo rect" id="skill4" title="SASS / SCSS">
+        <img src="img/logo_skills/CSS3_logo.png" class="skills-logo smallsqr" id="skill4" title="CSS 3">
+        <img src="img/logo_skills/sass_logo.png" class="skills-logo rect" id="skill6" title="SASS / SCSS">
         <span class="percent" data-percent="100"></span>
       </div>
       <div class="skills-bar">
@@ -203,10 +205,10 @@
       </div>
       <br />
       <div class="progress-bar-header">
-        <img src="img/logo_skills/javascript_logo.png" class="skills-logo smallrect" id="skill6" title="Javascript">
-        <img src="img/logo_skills/jquery_logo.png" class="skills-logo sqr" id="skill8" title="JQuery">
-        <img src="img/logo_skills/angular_logo.png" class="skills-logo sqr" id="skill10" title="Angular 7">
-        <img src="img/logo_skills/ionic_logo.png" class="skills-logo bigrect" id="skill12" title="Ionic 4">
+        <img src="img/logo_skills/javascript_logo.png" class="skills-logo smallrect" id="skill8" title="Javascript">
+        <img src="img/logo_skills/jquery_logo.png" class="skills-logo sqr" id="skill10" title="JQuery">
+        <img src="img/logo_skills/angular_logo.png" class="skills-logo sqr" id="skill12" title="Angular 7">
+        <img src="img/logo_skills/ionic_logo.png" class="skills-logo bigrect" id="skill14" title="Ionic 4">
         <span class="percent" data-percent="95"></span>
       </div>
       <div class="skills-bar">
@@ -217,10 +219,10 @@
       </div>
       <br />
       <div class="progress-bar-header">
-        <img src="img/logo_skills/python_logo.png" class="skills-logo verybigrect" id="skill14" title="Python 3.7">
-        <img src="img/logo_skills/php_logo.png" class="skills-logo smallrect" id="skill16" title="PHP 5">
-        <img src="img/logo_skills/ajax_logo.png" class="skills-logo smallrect" id="skill18" title="AJAX">
-        <img src="img/logo_skills/c_logo.png" class="skills-logo smallsqr" id="skill20" title="C#">
+        <img src="img/logo_skills/python_logo.png" class="skills-logo verybigrect" id="skill16" title="Python 3.7">
+        <img src="img/logo_skills/php_logo.png" class="skills-logo smallrect" id="skill18" title="PHP 5">
+        <img src="img/logo_skills/ajax_logo.png" class="skills-logo smallrect" id="skill20" title="AJAX">
+        <img src="img/logo_skills/c_logo.png" class="skills-logo smallsqr" id="skill22" title="C#">
         <span class="percent" data-percent="85"></span>
       </div>
       <div class="skills-bar">
@@ -231,7 +233,7 @@
       </div>
       <br />
       <div class="progress-bar-header">
-        <img src="img/logo_skills/java_logo.png" class="skills-logo smallrect" id="skill22" title="Java SE 8">
+        <img src="img/logo_skills/java_logo.png" class="skills-logo smallrect" id="skill24" title="Java SE 8">
         <img src="img/logo_skills/java_ee_logo.png" class="skills-logo sqr" id="skill23" title="Java EE 8">
         <img src="img/logo_skills/vaadin_logo.png" class="skills-logo verybigrect" id="skill21" title="Vaadin 10">
         <img src="img/logo_skills/restapi_logo.png" class="skills-logo rect" id="skill19" title="RESTful API">
@@ -296,7 +298,23 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item" id="portfolioItem1">
+        <div class="col-md-6 portfolio-item" id="portfolioItem0">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal0" id="portfolioLink0"
+            title="Cliquez pour voir le projet">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid border-primary border" src="img/portfolio/bootstrap-portfolio/portfolio_thumbnail.png"
+              alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>ePortfolio</h4>
+            <p class="text-muted" id="portfolioDescr"></p>
+          </div>
+        </div>
+        <div class="col-md-6 portfolio-item" id="portfolioItem1">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1" id="portfolioLink1"
             title="Cliquez pour voir le projet">
             <div class="portfolio-hover">
@@ -311,8 +329,9 @@
             <p class="text-muted" id="vaudvinDescr"></p>
           </div>
         </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" id="portfolioItem2">
+      </div>
+      <div class="row">
+        <div class="col-md-6 portfolio-item" id="portfolioItem2">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2" id="portfolioLink2"
             title="Cliquez pour voir le projet">
             <div class="portfolio-hover">
@@ -328,8 +347,7 @@
             <p class="text-muted" id="fndDescr"></p>
           </div>
         </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" id="portfolioItem3">
+        <div class="col-md-6 portfolio-item" id="portfolioItem3">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3" id="portfolioLink3"
             title="Cliquez pour voir le projet">
             <div class="portfolio-hover">
@@ -585,7 +603,7 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem1">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal1" id="diplomeLink1"
+          <a class="diplomes-link" data-toggle="modal" data-target="#diplomesModal1" href="javascript" id="diplomeLink1"
             title="Cliquez pour voir le diplôme">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
@@ -603,8 +621,8 @@
         </div>
 
         <div class="col-md-4 col-sm-6 diplomes-item" id="diplomeItem2">
-          <a class="diplomes-link" data-toggle="modal" href="#diplomesModal2" id="diplomeLink2"
-            title="Cliquez pour voir le certificat">
+          <a class="diplomes-link" data-toggle="modal" data-target="#diplomesModal2" href="javascript:;"
+            id="diplomeLink2" title="Cliquez pour voir le certificat">
             <div class="diplomes-hover">
               <div class="diplomes-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -1126,14 +1144,14 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-10 mx-auto">
               <div class="modal-body">
                 <h4 class="text-uppercase" id="diplomesModal1Title"></h4>
                 <h4 class="text-uppercase" id="diplomesModal1Subtitle1"></h4>
                 <p class="item-intro text-muted" id="diplomesModal1Subtitle2"></p>
-                <div class="container col-lg-12">
+                <div class="container col-lg-10">
                   <div class="row mx-auto">
-                    <div class="col-sm-14">
+                    <div class="col-sm-10 mx-auto">
                       <img class="img-fluid d-block mx-auto border border-primary"
                         src="img/diplomes/heg_attestation_bachelor.jpg" alt="">
                     </div>
@@ -1141,7 +1159,7 @@
                 </div>
                 <ul class="list-inline">
                   <li>
-                    <a id="bulletinsLink" href="diplomesModal10" title="Cliquez pour voir les bulletins"></a>
+                    <a id="bulletinsLink" href="#diplomesModal10" title="Cliquez pour voir les bulletins"></a>
                   </li>
                   <br />
                   <li id="diplomesModal1Date"></li>
@@ -1165,7 +1183,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-10 mx-auto">
               <div class="modal-body">
                 <h4 class="text-uppercase" id="diplomesModal2Title"></h4>
                 <p class="item-intro text-muted" id="diplomesModal2Subtitle"></p>
@@ -1193,7 +1211,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-12 mx-auto">
               <div class="modal-body">
                 <h4 class="text-uppercase" id="diplomesModal3Title"></h4>
                 <p class="item-intro text-muted" id="diplomesModal3Subtitle"></p>
@@ -1221,7 +1239,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-12 mx-auto">
               <div class="modal-body">
                 <h4 class="text-uppercase" id="diplomesModal4Title"></h4>
                 <p class="item-intro text-muted" id="diplomesModal4Subtitle"></p>
@@ -1249,7 +1267,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-6 mx-auto">
               <div class="modal-body">
                 <h4 class="text-uppercase" id="diplomesModal5Title"></h4>
                 <p class="item-intro text-muted" id="diplomesModal5Subtitle">
@@ -1278,7 +1296,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-6 mx-auto">
               <div class="modal-body">
                 <h4 class="text-uppercase" id="diplomesModal6Title"></h4>
                 <p class="item-intro text-muted" id="diplomesModal6Subtitle"></p>
@@ -1306,7 +1324,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-7 mx-auto">
               <div class="modal-body">
                 <h4 class="text-uppercase" id="diplomesModal7Title"></h4>
                 <h5 class="text-uppercase" id="diplomesModal7Subtitle1"></h5>
@@ -1335,7 +1353,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-7 mx-auto">
               <div class="modal-body">
                 <h4 class="text-uppercase" id="diplomesModal8Title"></h4>
                 <h5 class="text-uppercase" id="diplomesModal8Subtitle1"></h5>
@@ -1419,6 +1437,44 @@
   </div>
 
   <!-- PORTFOLIO MODALS -->
+
+  <!-- Modal 0 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 mx-auto">
+              <div class="modal-body">
+                <h4 class="text-uppercase" id="portfolioModal0Title"></h4>
+                <p class="item-intro text-muted" id="portfolioModal0Subtitle"></p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-14 mx-auto">
+                      <img class="img-fluid d-block mx-auto border border-primary" style="max-height: 50vh"
+                        src="img/portfolio/bootstrap-portfolio/1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <p class="col-lg-14" id="portfolioModal0Descr"></p>
+                <ul class="list-inline col-lg-14" style="text-align: left">
+                  <li id="portfolioModal0StartDate"></li>
+                  <li id="portfolioModal0Source"><a target="_blank"
+                      href="https://github.com/edouarddiep/bootstrap-portfolio"></a></li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button" id="portfolioModal0Close"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
