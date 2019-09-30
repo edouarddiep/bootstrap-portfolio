@@ -311,13 +311,13 @@ img::-moz-selection {
 }
 
 #btn-about {
-  left:-50%;
-  position: relative;
   animation: hover 2.5s infinite;
 }
 
 .btn-about{
-  left:50%;
+  left:0;
+  right:0;
+  margin:auto;
   position: absolute;
 }
 
