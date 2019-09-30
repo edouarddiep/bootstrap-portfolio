@@ -39,8 +39,8 @@ body {
 }
 
 .bounce {
-  animation-delay: 2.2s;
   animation: bounce 2.5s infinite;
+  animation-delay: 2.2s;
 }
 
 @keyframes bounce {
