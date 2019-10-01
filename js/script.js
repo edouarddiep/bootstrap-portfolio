@@ -143,6 +143,38 @@ $(window).scroll(function () {
   var bottom_of_about = aboutImage.offset().top - aboutImage.outerHeight();
 
 
+  // ANIMATION ABOUT ME
+
+  if (bottom_of_window > bottom_of_about) {
+
+    this.aboutImage.each(function () {
+      $(this).animate({
+        'opacity': '1',
+        'zoom': '100%'
+      }, 2000);
+      $(this).css('transform', 'rotate(0deg)');
+    })
+
+    this.aboutText.each(function () {
+      $(this).delay(1000).animate({
+        'opacity': '1',
+        'top': '0'
+      }, 1200);
+    });
+
+    this.aboutQualifier.delay(1300).animate({
+      'opacity': '1',
+      'bottom': '0'
+    }, 1200);
+
+    this.aboutInfos.delay(1400).animate({
+      'opacity': '1',
+      'bottom': '0'
+    }, 1200);
+
+  }
+
+
   if ((bottom_of_window > bottom_of_skills) && lineSkillsVisible == false) {
     this.skills.each(function () {
       var progressBar = $(this).find('.progress-bar');
@@ -195,56 +227,6 @@ $(window).scroll(function () {
     lineSkillsVisible = true;
   }
 
-  // ANIMATION LANGUAGES 
-
-  if ((bottom_of_window > bottom_of_languages) && lineLangVisible == false) {
-
-    this.languages.each(function () {
-      var progressBar = $(this).find('.progress-bar');
-      var dataPercent = parseInt(progressBar.data('percent'));
-      var width = 0;
-
-      var id = setInterval(frame, 30);
-
-      // ANIMATION LOGOS IT & PROGRESS BARS 
-      function frame() {
-        if (width > 10) {
-          for (let i = 0; i <= 5; i++) {
-            setTimeout(function () {
-              $('#language' + i).animate({
-                'opacity': '1',
-                'left': '0',
-              }, 1500);
-            }, i * 80);
-            setTimeout(function () {
-              $('#textFlag' + i).delay(1500).animate({
-                'opacity': '1',
-                'left': '0',
-              }, 1500);
-            }, i * 100);
-          }
-        }
-
-        if (width >= dataPercent) {
-          for (let j = 0; j <= 5; j++) {
-            setTimeout(function () {
-              $('#textLevel' + j).delay(250).animate({
-                'opacity': '1',
-                'right': '0',
-              }, 1500);
-            }, j * 130);
-          }
-          clearInterval(id);
-        } else {
-          width += 2;
-          progressBar.css('width', width + '%');
-        }
-      }
-
-    });
-    lineLangVisible = true;
-  }
-
   // ANIMATION TIMELINE IMAGES & TEXTS 
   if (bottom_of_window > bottom_of_timeline) {
     timelineNormal.each(function () {
@@ -279,6 +261,59 @@ $(window).scroll(function () {
     })
   }
 
+  // ANIMATION LANGUAGES 
+
+  if ((bottom_of_window > bottom_of_languages) && lineLangVisible == false) {
+
+    this.languages.each(function () {
+      var progressBar = $(this).find('.progress-bar');
+      var dataPercent = parseInt(progressBar.data('percent'));
+      var width = 0;
+
+      var id = setInterval(frame, 30);
+
+      // ANIMATION LOGOS LANGUAGES & PROGRESS BARS 
+      function frame() {
+        if (width > 10) {
+          for (let i = 0; i <= 5; i++) {
+            setTimeout(function () {
+              $('#language' + i).animate({
+                'opacity': '1',
+                'left': '0',
+              }, 1500);
+            }, i * 80);
+            setTimeout(function () {
+              $('#textFlag' + i).delay(1500).animate({
+                'opacity': '1',
+                'left': '0',
+              }, 1500);
+            }, i * 100);
+          }
+        }
+
+        // ANIMATION LANGUAGES TEXT 
+        if (width >= dataPercent) {
+          for (let j = 0; j <= 5; j++) {
+            setTimeout(function () {
+              $('#textLevel' + j).delay(250).animate({
+                'opacity': '1',
+                'right': '0',
+              }, 1500);
+            }, j * 130);
+          }
+          clearInterval(id);
+        } else {
+          width += 2;
+          progressBar.css('width', width + '%');
+        }
+      }
+
+    });
+    lineLangVisible = true;
+  }
+
+
+
   // ANIMATION DIPLOME & CERTIFICATS 
 
   if (bottom_of_window > bottom_of_diplomeItem) {
@@ -309,36 +344,6 @@ $(window).scroll(function () {
     })
   }
 
-  // ANIMATION ABOUT ME
-
-  if (bottom_of_window > bottom_of_about) {
-
-    this.aboutImage.each(function () {
-      $(this).animate({
-        'opacity': '1',
-        'zoom': '100%'
-      }, 2000);
-      $(this).css('transform', 'rotate(0deg)');
-    })
-
-    this.aboutText.each(function () {
-      $(this).delay(1000).animate({
-        'opacity': '1',
-        'top': '0'
-      }, 1200);
-    });
-
-    this.aboutQualifier.delay(1300).animate({
-      'opacity': '1',
-      'bottom': '0'
-    }, 1200);
-
-    this.aboutInfos.delay(1400).animate({
-      'opacity': '1',
-      'bottom': '0'
-    }, 1200);
-
-  }
 });
 
 // SELECT LANGUAGES
@@ -378,7 +383,7 @@ var language = {
     profilQualifier: "Full Stack Developer",
     profilInfos: "born 28th April 1994 / Swiss citizenship / Single",
     skillsTitle: "Skills",
-    skillsSubtitle: "Units below are originally based on a scale from 1% (bad knowledge) to 100% (mastery)",
+    skillsSubtitle: "Units below are originally based on a scale from 1% (poor knowledge) to 100% (mastery)",
     clickImagesSubtitle: "Click on the illustrations below for more details",
     portfolioDescr: "Responsive web application developped using web technologies (HTML 5, CSS 3 and JavaScript 8) and Bootstrap 4 Framework",
     vaudvinDescr: "Hybrid mobile application programmed with Ionic 4 (Front End) and Laravel PHP 5 (Back End) Frameworks technologies",
@@ -466,13 +471,13 @@ var language = {
     formationModal4Descr: "Professional Maturity provided me strong skills in the following areas : <ul style='text-align: left; margin-left:20px;'><li>Management accounting</li><li>Cost accounting</li><li>Swiss legislation</li><li>Mathematics, statistics</li><li>Common and literary Italian (B2 level)</li><li>General and business English (B2 level)</li></ul>",
     formationModal4Date: "End-of-studies : 20th June 2014",
     formationModal5Title: "Olexco SA",
-    formationModal5Subtitle1: "Final year internship - CFC level",
+    formationModal5Subtitle1: "Final year internship - VET level",
     formationModal5Subtitle2: "Olexco SA | Place de l'Université 6, 1205 Geneva",
-    formationModal5Descr: "This internship allowed me to put into practice my school knowledge acquired during my CFC's education. During this year, I have been dealing with the following tasks :<ul style='text-align: left' class='col-lg-14 ml-2'><li>Mail management</li><li>Client reception</li><li>Reception of incoming phone calls</li><li>Preparation of yearly folders and customers' directories</li><li>Creation and update of the existing customers' files</li><li>Small correspondence</li><li>Entry of accounting documents</li><li>Preparation of closing entries</li><li>Handling Excel reporting</li><li>Archiving and folders's filing</li><li>Miscellaneous administrative tasks</li></ul>",
+    formationModal5Descr: "This internship allowed me to put into practice my school knowledge acquired during my VET's education. During this year, I have been dealing with the following tasks :<ul style='text-align: left' class='col-lg-14 ml-2'><li>Mail management</li><li>Client reception</li><li>Reception of incoming phone calls</li><li>Preparation of yearly folders and customers' directories</li><li>Creation and update of the existing customers' files</li><li>Small correspondence</li><li>Entry of accounting documents</li><li>Preparation of closing entries</li><li>Handling Excel reporting</li><li>Archiving and folders's filing</li><li>Miscellaneous administrative tasks</li></ul>",
     formationModal5Date: "End-of-internship : 31st July 2012",
-    formationModal6Title: "Federal VET Diploma in commerce's training - Type E",
+    formationModal6Title: "Training of Federal VET Diploma in commerce - Type E",
     formationModal6Subtitle2: "Ecole Schulz | Rue du 31 Décembre 8, 1207 Geneva",
-    formationModal6Descr: "Throughout my CFC training and education I received, after two years, an advanced commercial diploma in computing and management with Honours (\"Mention : Bien\"), and studied the following areas :<ul style='text-align: left'><li>General enterprise accounting</li><li>Commercial arithmetic</li><li>Enterprise economy</li><li>French commercial letters</li><li>General English (B2 level) and business basics</li><li>Microsoft Office 365</li><li>Swiss legislation and civic education</li></ul>",
+    formationModal6Descr: "Throughout my VET training and education I received, after two years, an advanced commercial diploma in computing and management with Honours (\"Mention : Bien\"), and studied the following areas :<ul style='text-align: left'><li>General enterprise accounting</li><li>Commercial arithmetic</li><li>Enterprise economy</li><li>French commercial letters</li><li>General English (B2 level) and business basics</li><li>Microsoft Office 365</li><li>Swiss legislation and civic education</li></ul>",
     formationModal6Date: "End-of-studies : 22nd June 2012",
     // LES MODALES DE PORTFOLIO
     portfolioModal0Title: "My e-Portfolio",
@@ -507,7 +512,7 @@ var language = {
     diplomesModal2Title: "CISCO CCENT CERTIFICATE OF ACHIEVEMENT",
     diplomesModal2Subtitle: "HEG - Geneva | Campus de Battelle, Rue de la Tambourine 17, 1227 Carouge - Geneva",
     diplomesModal2Date: "Delivery date : 22nd June 2017",
-    diplomesModal3Title: "Business Professional Matriculation",
+    diplomesModal3Title: "Professional Maturity Diploma",
     diplomesModal3Subtitle: "Nicolas Bouvier Business School | Rue de Saint-Jean 60, 1203 Geneva",
     diplomesModal3Date: "Delivery date : 2nd September 2014",
     diplomesModal4Title: "Federal VET Diploma in Commerce - Type E",
@@ -518,7 +523,7 @@ var language = {
     diplomesModal5Date: "Delivery date : 30th June 2011",
     diplomesModal6Title: "Ranked military Certificate (Sergeant)",
     diplomesModal6Subtitle: "Bière's military barracks | Swiss Army",
-    diplomesModal6Date: "Date-of-promotion : 27th September 2014",
+    diplomesModal6Date: "Promotion date : 27th September 2014",
     diplomesModal7Title: "Calvy Hôtel",
     diplomesModal7Subtitle1: "Work Certificate",
     diplomesModal7Subtitle2: "Calvy Hotel | Ruelle du Midi 5, 1207 Geneva",
@@ -547,7 +552,7 @@ var language = {
     profilQualifier: "Développeur Full-Stack",
     profilInfos: "né le 28 avril 1994 / Suisse / Célibataire",
     skillsTitle: "Compétences",
-    skillsSubtitle: "Les unités ci-dessous sont basées sur une échelle de 1% (insatisfaisant) à 100% (maîtrise)",
+    skillsSubtitle: "Les unités ci-dessous sont basées sur une échelle de 1% (faible connaissance) à 100% (maîtrise)",
     clickImagesSubtitle: "Cliquez sur les illustrations pour plus de détails",
     portfolioDescr: "Web responsive application développée avec les technologies web (HTML 5, CSS 3 et JavaScript 8) et utilisant le Framework Bootstrap 4",
     vaudvinDescr: "Application mobile hybride développée avec les Frameworks Ionic 4 (Front End) et Laravel PHP 5 (Back End)",
@@ -578,7 +583,7 @@ var language = {
     textLevel5: "A1",
     aboutDescription: "Récemment diplômé d'un Bachelor HES en Informatique de gestion et véritable architecte de l'information grâce à mes connaissances acquises en tant qu'informaticien de gestion, je suis à la recherche d'un emploi qui me permettrait de développer mes compétences assimilées durant mes quatre ans de formation. <br/> De nature dynamique, patient, persévérant, optimiste, altruiste, passionné par les nouvelles technologies, autodidacte et avec un bon esprit d'équipe, je suis prêt à intégrer un team dans un domaine évolutif comme le développement applicatif Front-End, Back-End ou Full-Stack.",
     diplomesTitle: "Diplômes et certificats",
-    diplome1Title: "Informatique de gestion",
+    diplome1Title: "Bachelor HES-SO <br/> <h6>en Informatique de Gestion<h6>",
     diplome3Title: "Maturité professionnelle",
     diplome3Subtitle: "École de commerce Nicolas-Bouvier",
     diplome4Title: "CFC d'Employé de Commerce - Profil E",
@@ -623,19 +628,19 @@ var language = {
     formationModal1Descr: "Les connaissances acquises durant le cursus du Bachelor HES sont les suivantes :<ul style='text-align: left'><li>Langages de programmation web : HTML, CSS/SASS, JS/TypeScript</li><li>Langages serveurs : Java 8, PHP 5, Python 3</li><li>Frameworks Front-End : Angular 7, Ionic 4</li><li>Frameworks Back-End : Laravel PHP, Django REST Framework</li><li>Outils de collaboration et versionning Git</li><li>Méthodes agiles de gestion de projet : SCRUM et DAD</li><li>Installation d'active directory sous Windows Server 2016</li><li>Introduction aux scripts shell sous Ubuntu 16.04</li><li>Administration de réseaux Cisco</li></ul>",
     formationModal1Date: "Fin des études : 21 juin 2019",
     formationModal2Title: "Hôtel Calvy",
-    formationModal2SubTitle1: "Stage en hôtellerie",
-    formationModal2SubTitle2: "Réception & service en salle",
-    formationModal2SubTitle3: "Hôtel Calvy | Ruelle du Midi 5, 1207 Genève",
+    formationModal2Subtitle1: "Stage en hôtellerie",
+    formationModal2Subtitle2: "Réception & service en salle",
+    formationModal2Subtitle3: "Hôtel Calvy | Ruelle du Midi 5, 1207 Genève",
     formationModal2Date: "Fin de stage : 31 juillet 2015",
     formationModal2Descr: "En tant que stagiaire à l'hôtel Calvy, j'ai eu pour mission les tâches suivantes :<ul style='text-align: left'><li>Accueil des clients à la réception (check-in/check-out)</li><li>Service au restaurant</li><li>Tenue de la caisse</li><li>Prises des réservations par téléphone et e-mail</li><li>Mise à jour des débiteurs et saisie des pièces comptables</li></ul>",
     formationModal3Title: "Paiement de galons en tant que sergent",
     formationModal3Subtitle1: "Caserne militaire de Bière | Armée Suisse",
-    formationModal3Descr: "J'ai fait mon école de recrue, école de sous-officier ainsi que mon paiement de galons dans la caserne militaire de Bière. J'avais comme fonction le rôle de sous-officier de transmission à l'école d'artillerie 31-1. J'ai acquis le sens du commandement de troupe en tant qu'instructeur MG64 12.7mm et radio SE-235/135. J'étais chef de groupe au grade de sergent, incorporé dans le batterie Dir Feu du Groupe Art. 1 de la Brigade Blindée 1.",
+    formationModal3Descr: "J'ai fait mon école de recrue, école de sous-officier ainsi que mon paiement de galons dans la caserne militaire de Bière. J'avais comme fonction le rôle de sous-officier de transmission à l'école d'artillerie 31-1. J'ai acquis le sens du commandement de troupe en tant qu'instructeur MG64 12.7mm et radio SE-235/135. J'étais chef de groupe au grade de sergent, incorporé dans la batterie Dir Feu du Groupe Art. 1 de la Brigade Blindée 1.",
     formationModal3Date: "Fin de service : 21 novembre 2014",
     formationModal4Title: "Formation d'Employé de commerce",
     formationModal4Subtitle1: "Niveau maturité professionnelle",
     formationModal4Subtitle2: "Ecole de Commerce Nicolas Bouvier | Rue de Saint-Jean 60, 1203 Genève",
-    formationModal4Descr: "La maturité m'a offert de solides compétences dans les domaines suivants <ul style='text-align: left; margin-left:20px;'><li>Comptabilité de gestion</li><li>Comptabilité analytique d'entreprise</li><li>Droit suisse</li><li>Mathématiques statistiques</li><li>Italien courant et littéraire (niveau B2)</li><li>Anglais général et commercial (niveau B2)</li></ul>",
+    formationModal4Descr: "La maturité professionnelle m'a offert de solides compétences dans les domaines suivants : <ul style='text-align: left; margin-left:20px;'><li>Comptabilité de gestion</li><li>Comptabilité analytique d'entreprise</li><li>Droit suisse</li><li>Mathématiques statistiques</li><li>Italien courant et littéraire (niveau B2)</li><li>Anglais général et commercial (niveau B2)</li></ul>",
     formationModal4Date: "Fin des études : 20 juin 2014",
     formationModal5Title: "Olexco SA",
     formationModal5Subtitle1: "Stage de dernière année - Niveau CFC",
@@ -645,7 +650,7 @@ var language = {
     formationModal6Title: "Formation d'Employé de Commerce",
     formationModal6Subtitle1: "Niveau CFC - Profil E",
     formationModal6Subtitle2: "Ecole Schulz | Rue du 31 Décembre 8, 1207 Genève",
-    formationModal6Descr: "Tout au long de ce cursus CFC en formation élargie, j'ai obtenu après deux ans, un diplôme supérieur de commerce en informatique et gestion mention bien et étudié les domaines suivants :<ul style='text-align: left'><li>Comptabilité générale d'entreprise</li><li>Arithmétique commerciale</li><li>Économie d'entreprise</li><li>Correspondance française</li><li>Anglais général (niveau B2) et bases commerciales</li><li>Microsoft Office 365</li><li>Droit et instruction civique</li></ul>",
+    formationModal6Descr: "Tout au long de ce cursus CFC en formation élargie, j'ai obtenu après deux ans, un diplôme supérieur de commerce en informatique et gestion mention bien et étudié les domaines suivants : <ul style='text-align: left'><li>Comptabilité générale d'entreprise</li><li>Arithmétique commerciale</li><li>Économie d'entreprise</li><li>Correspondance française</li><li>Anglais général (niveau B2) et bases commerciales</li><li>Microsoft Office 365</li><li>Droit et instruction civique</li></ul>",
     formationModal6Date: "Fin des études : 22 juin 2012",
     // LES MODALES DE PORTFOLIO
     portfolioModal0Title: "Mon e-Portfolio",
@@ -661,7 +666,7 @@ var language = {
     portfolioModal1Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>Projet VaudVin</a>",
     portfolioModal2Title: "Projet Food Next Door",
     portfolioModal2Subtitle: "Responsive WebApp développée à l'aide des Frameworks Angular 7 (Front End) et DjangoREST (Back-End) dans le cadre d'un projet d'études en groupe.",
-    portfolioModal2Descr: "Ce projet a été conçu sur la base d'une méthode agile de gestion de projet : DAD (Disciplined Agile Delivery). De la phase investigation à la construction, puis la transition en passant par les tests unitaires, chacune des étapes a été scrupuleusement suivie par chacun des quatre membres constituant le comité du projet. En effet nous avions été mandaté, afin de réaliser une web application responsive, compatible multi-plateforme, dont l'objectif était de pouvoir proposer une plateforme de mise en relation entre un particulier et un autre, afin de leur permettre de générer des revenus annexes en préparant des plats à domicile. L'objectif était d'effectuer une transaction sans passer par un professionnel (restaurant ou société de livraison par exemple). Ce projet a été développé à l'aide des Frameworks Angular 7 (Front-End) et DjangoREST (Back-End). Les deux étaient reliés à l'aide d'une base de données PostGreSQL qui servait de stockage global.",
+    portfolioModal2Descr: "Ce projet a été conçu sur la base d'une méthode agile de gestion de projet : DAD (Disciplined Agile Delivery). De la phase investigation à la construction, puis la transition en passant par les tests unitaires, chacune des étapes a été scrupuleusement suivie par chacun des quatre membres constituant le comité du projet. En effet, nous avions été mandaté afin de réaliser une web application responsive, compatible multi-plateforme, dont l'objectif était de pouvoir proposer une plateforme de mise en relation entre un particulier et un autre, afin de leur permettre de générer des revenus annexes en préparant des plats à domicile. L'objectif était d'effectuer une transaction sans passer par un professionnel (restaurant ou société de livraison par exemple). Ce projet a été développé à l'aide des Frameworks Angular 7 (Front-End) et DjangoREST (Back-End). Les deux étaient reliés à l'aide d'une base de données PostGreSQL qui servait de stockage global.",
     portfolioModal2StartDate: "Date de début : Septembre 2018",
     portfolioModal2EndDate: "Date de fin : Mai 2019",
     portfolioModal2Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>Projet Food Next Door</a>",
@@ -689,7 +694,7 @@ var language = {
     diplomesModal5Title: "DIPLÔME SUPÉRIEUR DE COMMERCE : MENTION BIEN",
     diplomesModal5Subtitle: "Ecole Schulz | Rue du 31 Décembre 8, 1207 Genève",
     diplomesModal5Date: "Date de remise : 30 juin 2011",
-    diplomesModal6Title: "BREVET DE PROMOTION SOUS-OFFICIER",
+    diplomesModal6Title: "BREVET DE PROMOTION <br/> SOUS-OFFICIER",
     diplomesModal6Subtitle: "Caserne militaire de Bière | Armée Suisse",
     diplomesModal6Date: "Date de promotion : 27 septembre 2014",
     diplomesModal7Title: "HÔTEL CALVY",
@@ -715,12 +720,9 @@ var language = {
 
 // define langage via window hash
 if (window.location.hash) {
-  console.log(window.location.hash);
   if (window.location.hash === "#en") {
     // input text for typing animation 
     $("#title-writer").writeText("Welcome to my portfolio");
-
-    console.log($('#name').attr('placeholder'));
 
     $('#mainPicture').attr('title', language.en.knowMoreTitle);
     $('#btn-about').attr('title', language.en.knowMoreTitle);
