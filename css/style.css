@@ -12,7 +12,7 @@ html, body {
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-nav{
+nav {
   padding-right: 0px !important;
 }
 
@@ -22,8 +22,8 @@ body {
   position: relative;
 }
 
-.modal-content{
-  min-height:100vh;
+.modal-content {
+  min-height: 100vh;
 }
 
 .arrow {
@@ -314,10 +314,10 @@ img::-moz-selection {
   animation: hover 2.5s infinite;
 }
 
-.btn-about{
-  left:0;
-  right:0;
-  margin:auto;
+.btn-about {
+  left: 0;
+  right: 0;
+  margin: auto;
   position: absolute;
 }
 
@@ -350,8 +350,8 @@ img::-moz-selection {
   background-color: #212529;
 }
 
-#mainNav #navbarContainer{
-  width:100% !important;
+#mainNav #navbarContainer {
+  width: 100% !important;
 }
 
 #mainNav .navbar-toggler {
@@ -374,19 +374,20 @@ img::-moz-selection {
   color: darkorange;
 }
 
-#mainNav #navbarContainer #mobileDropDown{
-  display: block; 
-}
-#mainNav #navbarContainer #desktopDropDown{
-  display: none; 
+#mainNav #navbarContainer #mobileDropDown {
+  display: block;
 }
 
-@media(min-width: 992px){
-  #mainNav #navbarContainer #mobileDropDown{
-    display: none; 
+#mainNav #navbarContainer #desktopDropDown {
+  display: none;
+}
+
+@media(min-width: 992px) {
+  #mainNav #navbarContainer #mobileDropDown {
+    display: none;
   }
-  #mainNav #navbarContainer #desktopDropDown{
-    display: block; 
+  #mainNav #navbarContainer #desktopDropDown {
+    display: block;
   }
 }
 
@@ -409,24 +410,23 @@ img::-moz-selection {
     padding: 1.1em 1em !important;
     font-size: 85%;
   }
-
-  #mainNav .navbar-nav{
-    width:100%;
+  #mainNav .navbar-nav {
+    width: 100%;
     position: relative;
-    margin:auto;
+    margin: auto;
     display: -webkit-box;
   }
 }
 
-@media(min-width: 992px) and (max-width: 1279px){
+@media(min-width: 992px) and (max-width: 1279px) {
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
     font-size: 60%;
   }
-  #mainNav .navbar-nav{
-    width:100%;
+  #mainNav .navbar-nav {
+    width: 100%;
     position: relative;
-    margin:auto;
+    margin: auto;
     display: -webkit-box;
   }
 }
@@ -449,7 +449,6 @@ img::-moz-selection {
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-  
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
@@ -465,15 +464,15 @@ img::-moz-selection {
   max-width: 50%;
 }
 
-#dropdownMenu{
-  color:blue;
+#dropdownMenu {
+  color: blue;
 }
 
-#dropdownList{
+#dropdownList {
   position: absolute;
 }
 
-#dropdownMenu #locale_fr, #locale_en{
+#dropdownMenu #locale_fr, #locale_en {
   text-align: center;
   font-size: 75%;
   font-weight: 400;
@@ -482,7 +481,7 @@ img::-moz-selection {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#dropdownMenu #locale_en, #locale_fr{
+#dropdownMenu #locale_en, #locale_fr {
   text-align: center;
   font-size: 75%;
   font-weight: 400;
@@ -576,9 +575,15 @@ header.masthead .intro-text .intro-heading {
 #portfolioModal3Descr {
   text-align: left;
 }
+
+#portfolioModal4Descr {
+  text-align: left;
+}
+
 #formationModal3Descr {
   text-align: left;
 }
+
 #formationModal6Descr {
   text-align: left;
 }
@@ -608,11 +613,9 @@ header.masthead .intro-text .intro-heading {
     text-justify: distribute;
     text-align-last: left;
   }
-
   #portfolioModal0Descr {
     text-align: justify;
-  }  
-
+  }
   #portfolioModal1Descr {
     text-align: justify;
   }
@@ -620,6 +623,9 @@ header.masthead .intro-text .intro-heading {
     text-align: justify;
   }
   #portfolioModal3Descr {
+    text-align: justify;
+  }
+  #portfolioModal4Descr {
     text-align: justify;
   }
   #formationModal3Descr {

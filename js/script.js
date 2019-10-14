@@ -333,7 +333,7 @@ $(window).scroll(function () {
 
   if (bottom_of_window > bottom_of_portfolioItem) {
     this.portfolioItem.each(function () {
-      for (let i = 0; i <= 3; i++) {
+      for (let i = 0; i <= 4; i++) {
         setTimeout(() => {
           $('#portfolioItem' + i).animate({
             'opacity': '1',
@@ -388,6 +388,8 @@ var language = {
     portfolioDescr: "Responsive web application developped using web technologies (HTML 5, CSS 3 and JavaScript 8) and Bootstrap 4 Framework",
     vaudvinDescr: "Hybrid mobile application programmed with Ionic 4 (Front End) and Laravel PHP 5 (Back End) Frameworks technologies",
     fndDescr: "Responsive Web Application coded using Angular 7 (Front End) and DjangoREST (Back End) Frameworks technologies",
+    biblTitle: "Vaadin Library",
+    biblDescr: "Thick Client Application developped using Vaadin 10 Framework based on Java EE language. Datas are stored using JPA as local storage",
     gcbDescr: "Thick Client Application fully developped using Java SE 8 programming language. Datas are stored on an Oracle database",
     formationTitle: "Education & Training",
     textFormation1: "Business Computing",
@@ -491,18 +493,24 @@ var language = {
     portfolioModal1StartDate: "Start date : June 2019",
     portfolioModal1EndDate: "End date : September 2019",
     portfolioModal1Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>VaudVin Project</a>",
-    portfolioModal2Title: "Food Next Door Project",
+    portfolioModal2Title: "FoodNextDoor Project",
     portfolioModal2Subtitle: "Responsive Web Application developed using Angular 7 Framework (Front End) and DjangoREST Framework (Back End) as part of a group project.",
     portfolioModal2Descr: "This project was built on the basis of an agile methodology named DAD (Disciplined Agile Delivery). From inception phase to construction, followed by transition and finally unit tests, every step was rigorously followed by all four members of the project board. Indeed, we were mandated to create a responsive web application, cross-platform compatible, from which the purpose was to allow individuals to generate additional incomes while making a transaction without the need of a business actor (such as a restaurant or a delivery company). This project was built using Angular 7 Framework (Front End) and DjangoREST (Back End). Both were linked with the help of a PostGreSQL database which was used as a global data storage.",
     portfolioModal2StartDate: "Start date : September 2018",
     portfolioModal2EndDate: "End date: May 2019",
-    portfolioModal2Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>Food Next Door Project</a>",
-    portfolioModal3Title: "Global Class Booking Project",
-    portfolioModal3Subtitle: "Heavy application fully built using Java SE 8 programming language as part of a very first school project achieved individually.",
-    portfolioModal3Descr: "This project represents my very first practical experiment in software developement. Indeed, it was conceived as part of an intermediate school exam and I was free to choose the application's topic. Therefore, I imagined a platform which allows the registered user to subscribe to free slots' group classes using his personnal account, among several sport clubs located in Geneva city. All clubs and classes are locally stored in a database. The purpose was to give the user the possibility to check which courses are currently availables and give his own opinion on those to which he participated, or check other customers' opinions. This project has been fully built using Java SE 8 programming language, based on JDK 1.8 and using an Oracle local database.",
-    portfolioModal3StartDate: "Start date : September 2017",
-    portfolioModal3EndDate: "End date : January 2018",
-    portfolioModal3Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/GlobalClassBooking'>Global Class Booking Project</a>",
+    portfolioModal2Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>FoodNextDoor Project</a>",
+    portfolioModal3Title: "Vaadin Library Project",
+    portfolioModal3Subtitle: "Heavy application built using Vaadin 10 Framework based on Java Enterprise Edition coded using IntelliJ IDEA's IDE as part of a school project achieved individually.",
+    portfolioModal3Descr: "The purpose of this project was to get acquainted with developement Frameworks, in view to assist native coding. Indeed, it was conceived as part of an intermediate school exam and I was asked to build a book library using Vaadin 10 Framework based on Java EE 8 language. At the end of this project, the user was able to create, save and update his own books thanks to JPA (Java Persistance API) which was used as a local data storage.",
+    portfolioModal3StartDate: "Start date : September 2018",
+    portfolioModal3EndDate: "End date : January 2019",
+    portfolioModal3Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/BibliothequeVaadin'>Vaadin Library Project</a>",
+    portfolioModal4Title: "GlobalClassBooking Project",
+    portfolioModal4Subtitle: "Heavy application fully built using Java SE 8 programming language as part of a very first school project achieved individually.",
+    portfolioModal4Descr: "This project represents my very first practical experiment in software developement. Indeed, it was conceived as part of an intermediate school exam and I was free to choose the application's topic. Therefore, I imagined a platform which allows the registered user to subscribe to free slots' group classes using his personnal account, among several sport clubs located in Geneva city. All clubs and classes are locally stored in a database. The purpose was to give the user the possibility to check which courses are currently availables and give his own opinion on those to which he participated, or check other customers' opinions. This project has been fully built using Java SE 8 programming language, based on JDK 1.8 and using an Oracle local database.",
+    portfolioModal4StartDate: "Start date : September 2017",
+    portfolioModal4EndDate: "End date : January 2018",
+    portfolioModal4Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/GlobalClassBooking'>GlobalClassBooking Project</a>",
     // LES MODALES DE DIPLOMES ET CERTIFICATS
     diplomesModal1Title: "BACHELOR OF SCIENCE HES-SO",
     diplomesModal1Subtitle1: "In Business Information Systems",
@@ -555,8 +563,10 @@ var language = {
     skillsSubtitle: "Les unités ci-dessous sont basées sur une échelle de 1% (faible connaissance) à 100% (maîtrise)",
     clickImagesSubtitle: "Cliquez sur les illustrations pour plus de détails",
     portfolioDescr: "Web responsive application développée avec les technologies web (HTML 5, CSS 3 et JavaScript 8) et utilisant le Framework Bootstrap 4",
-    vaudvinDescr: "Application mobile hybride développée avec les Frameworks Ionic 4 (Front End) et Laravel PHP 5 (Back End)",
+    vaudvinDescr: "Application mobile hybride développée avec les Frameworks Ionic 4 (Front End) et Laravel PHP 5 (Back End). Utilise une base PostGreSQL pour le stockage local des données",
     fndDescr: "Responsive WebApp développée à l'aide des Frameworks Angular 7 (Front End) et DjangoREST (Back End)",
+    biblTitle: "Bibliothèque Vaadin",
+    biblDescr: "Application lourde développée avec du Framework Vaadin 10 basé sur le langage Java EE 8. Les données sont stockées localement à l'aide de JPA",
     gcbDescr: "Application lourde entièrement développée en langage Java SE 8 et utilisant une base de données Oracle",
     formationTitle: "Formation",
     textFormation1: "Informatique de gestion",
@@ -664,18 +674,24 @@ var language = {
     portfolioModal1StartDate: "Date de début : Juin 2019",
     portfolioModal1EndDate: "Date de fin : Septembre 2019",
     portfolioModal1Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>Projet VaudVin</a>",
-    portfolioModal2Title: "Projet Food Next Door",
+    portfolioModal2Title: "Projet FoodNextDoor",
     portfolioModal2Subtitle: "Responsive WebApp développée à l'aide des Frameworks Angular 7 (Front End) et DjangoREST (Back-End) dans le cadre d'un projet d'études en groupe.",
     portfolioModal2Descr: "Ce projet a été conçu sur la base d'une méthode agile de gestion de projet : DAD (Disciplined Agile Delivery). De la phase investigation à la construction, puis la transition en passant par les tests unitaires, chacune des étapes a été scrupuleusement suivie par chacun des quatre membres constituant le comité du projet. En effet, nous avions été mandaté afin de réaliser une web application responsive, compatible multi-plateforme, dont l'objectif était de pouvoir proposer une plateforme de mise en relation entre un particulier et un autre, afin de leur permettre de générer des revenus annexes en préparant des plats à domicile. L'objectif était d'effectuer une transaction sans passer par un professionnel (restaurant ou société de livraison par exemple). Ce projet a été développé à l'aide des Frameworks Angular 7 (Front-End) et DjangoREST (Back-End). Les deux étaient reliés à l'aide d'une base de données PostGreSQL qui servait de stockage global.",
     portfolioModal2StartDate: "Date de début : Septembre 2018",
     portfolioModal2EndDate: "Date de fin : Mai 2019",
-    portfolioModal2Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>Projet Food Next Door</a>",
-    portfolioModal3Title: "Projet Global Class Booking",
-    portfolioModal3Subtitle: "Application lourde entièrement développée en langage Java SE 8 dans le cadre d'un premier projet d'études réalisé de manière individuelle.",
-    portfolioModal3Descr: "Ce projet constitue ma toute première expérience pratique individuelle dans le développement applicatif. En effet, il a été réalisé dans le cadre d'un examen demandé par l'école avec la possibilité de choisir librement le thème de l'application. J'ai donc imaginé une plateforme permettant de s'inscrire à des cours de sport collectifs à l'aide d'un compte personnel et des créneaux à choix, dans une liste de clubs de la ville de Genève, stockés localement dans une base de données. L'objectif était de donner la possibilité à l'utilisateur de pouvoir consulter les cours disponibles et donner son avis sur ceux auxquels il a déjà participé, ou voir les avis des autres clients. Ce projet a été entièrement développé en Java SE 8, dépendant du JDK 1.8 et utilisait une base de données Oracle locale.",
-    portfolioModal3StartDate: "Date de début : Septembre 2017",
-    portfolioModal3EndDate: "Date de fin : Janvier 2018",
-    portfolioModal3Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/GlobalClassBooking'>Projet Global Class Booking</a>",
+    portfolioModal2Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>Projet FoodNextDoor</a>",
+    portfolioModal3Title: "Projet Bibliothèque Vaadin",
+    portfolioModal3Subtitle: "Application lourde développée à l'aide du Framework Vaadin 10 basé sur le language Java Edition Entreprise construire sur l'IDE IntelliJ IDEA dans le cadre d'un projet d'études réalisé de manière individuelle.",
+    portfolioModal3Descr: "L'objectif de ce projet était de se familiariser avec les Frameworks de développement qui permettent d'assister le développement natif en Java. En effet, il a été réalisé dans le cadre d'un examen demandé par l'école et dont le but était de construire une bibliothèque de livres en utilisant le Framework Vaadin 10 basé sur le langage Java EE 8. A la fin de ce projet, l'utilisateur pouvait créer, sauvegarder et modifier ses propres livres à l'aide d'une persistance JPA (Java Persistance API) qui était utilisée comme stockage local de données.",
+    portfolioModal3StartDate: "Date de début : Septembre 2018",
+    portfolioModal3EndDate: "Date de fin : Janvier 2019",
+    portfolioModal3Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/BibliothequeVaadin'>Projet Bibliothèque Vaadin</a>",
+    portfolioModal4Title: "Projet GlobalClassBooking",
+    portfolioModal4Subtitle: "Application lourde entièrement développée en langage Java SE 8 dans le cadre d'un premier projet d'études réalisé de manière individuelle.",
+    portfolioModal4Descr: "Ce projet constitue ma toute première expérience pratique individuelle dans le développement applicatif. En effet, il a été réalisé dans le cadre d'un examen demandé par l'école avec la possibilité de choisir librement le thème de l'application. J'ai donc imaginé une plateforme permettant de s'inscrire à des cours de sport collectifs à l'aide d'un compte personnel et des créneaux à choix, dans une liste de clubs de la ville de Genève, stockés localement dans une base de données. L'objectif était de donner la possibilité à l'utilisateur de pouvoir consulter les cours disponibles et donner son avis sur ceux auxquels il a déjà participé, ou voir les avis des autres clients. Ce projet a été entièrement développé en Java SE 8, dépendant du JDK 1.8 et utilisait une base de données Oracle locale.",
+    portfolioModal4StartDate: "Date de début : Septembre 2017",
+    portfolioModal4EndDate: "Date de fin : Janvier 2018",
+    portfolioModal4Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/GlobalClassBooking'>Projet GlobalClassBooking</a>",
     // LES MODALES DE DIPLOMES ET CERTIFICATS
     diplomesModal1Title: "BACHELOR OF SCIENCE HES-SO",
     diplomesModal1Subtitle1: "EN INFORMATIQUE DE GESTION",
@@ -747,6 +763,8 @@ if (window.location.hash) {
     $('#portfolioDescr').html(language.en.portfolioDescr);
     $('#vaudvinDescr').html(language.en.vaudvinDescr);
     $('#fndDescr').html(language.en.fndDescr);
+    $('#biblTitle').html(language.en.biblTitle);
+    $('#biblDescr').html(language.en.biblDescr);
     $('#gcbDescr').html(language.en.gcbDescr);
     $('#formationTitle').html(language.en.formationTitle);
     $('#formationSubtitle').html(language.en.clickImagesSubtitle);
@@ -898,6 +916,13 @@ if (window.location.hash) {
     $('#portfolioModal3EndDate').html(language.en.portfolioModal3EndDate);
     $('#portfolioModal3Source').html(language.en.portfolioModal3Source);
     $('#portfolioModal3Close').html(language.en.closeText);
+    $('#portfolioModal4Title').html(language.en.portfolioModal4Title);
+    $('#portfolioModal4Subtitle').html(language.en.portfolioModal4Subtitle);
+    $('#portfolioModal4Descr').html(language.en.portfolioModal4Descr);
+    $('#portfolioModal4StartDate').html(language.en.portfolioModal4StartDate);
+    $('#portfolioModal4EndDate').html(language.en.portfolioModal4EndDate);
+    $('#portfolioModal4Source').html(language.en.portfolioModal4Source);
+    $('#portfolioModal4Close').html(language.en.closeText);
     $('#diplomesModal1Title').html(language.en.diplomesModal1Title);
     $('#diplomesModal1Subtitle1').html(language.en.diplomesModal1Subtitle1);
     $('#diplomesModal1Subtitle2').html(language.en.diplomesModal1Subtitle2);
@@ -972,6 +997,8 @@ if (window.location.hash) {
     $('#portfolioDescr').html(language.fr.portfolioDescr);
     $('#vaudvinDescr').html(language.fr.vaudvinDescr);
     $('#fndDescr').html(language.fr.fndDescr);
+    $('#biblTitle').html(language.fr.biblTitle);
+    $('#biblDescr').html(language.fr.biblDescr);
     $('#gcbDescr').html(language.fr.gcbDescr);
     $('#formationTitle').html(language.fr.formationTitle);
     $('#formationSubtitle').html(language.fr.clickImagesSubtitle);
@@ -1125,6 +1152,13 @@ if (window.location.hash) {
     $('#portfolioModal3EndDate').html(language.fr.portfolioModal3EndDate);
     $('#portfolioModal3Source').html(language.fr.portfolioModal3Source);
     $('#portfolioModal3Close').html(language.fr.closeText);
+    $('#portfolioModal4Title').html(language.fr.portfolioModal4Title);
+    $('#portfolioModal4Subtitle').html(language.fr.portfolioModal4Subtitle);
+    $('#portfolioModal4Descr').html(language.fr.portfolioModal4Descr);
+    $('#portfolioModal4StartDate').html(language.fr.portfolioModal4StartDate);
+    $('#portfolioModal4EndDate').html(language.fr.portfolioModal4EndDate);
+    $('#portfolioModal4Source').html(language.fr.portfolioModal4Source);
+    $('#portfolioModal4Close').html(language.fr.closeText);
     $('#diplomesModal1Title').html(language.fr.diplomesModal1Title);
     $('#diplomesModal1Subtitle1').html(language.fr.diplomesModal1Subtitle1);
     $('#diplomesModal1Subtitle2').html(language.fr.diplomesModal1Subtitle2);
