@@ -159,18 +159,18 @@ $(window).scroll(function () {
       $(this).delay(1000).animate({
         'opacity': '1',
         'top': '0'
-      }, 1200);
+      }, 1500);
     });
 
-    this.aboutQualifier.delay(1300).animate({
+    this.aboutQualifier.delay(1500).animate({
       'opacity': '1',
       'bottom': '0'
-    }, 1200);
+    }, 1500);
 
-    this.aboutInfos.delay(1400).animate({
+    this.aboutInfos.delay(2000).animate({
       'opacity': '1',
       'bottom': '0'
-    }, 1200);
+    }, 1500);
 
   }
 
@@ -323,8 +323,8 @@ $(window).scroll(function () {
           $('#diplomeItem' + i).animate({
             'opacity': '1',
             'top': '0',
-          }, 1500)
-        }, i * 200);
+          }, 2000)
+        }, i * 350);
       }
     })
   }
@@ -387,7 +387,7 @@ var language = {
     clickImagesSubtitle: "Click on the illustrations below for more details",
     portfolioDescr: "Responsive web application developped using web technologies (HTML 5, CSS 3 and JavaScript 8) and Bootstrap 4 Framework",
     vaudvinDescr: "Hybrid mobile application programmed with Ionic 4 (Front End) and Laravel PHP 5 (Back End) Frameworks technologies",
-    fndDescr: "Responsive Web Application coded using Angular 7 (Front End) and DjangoREST (Back End) Frameworks technologies",
+    fndDescr: "Responsive Web Application coded using Angular 7 (Front End) and DjangoREST 1.11 (Back End) Frameworks technologies",
     biblTitle: "Virtual Library",
     biblDescr: "Thick Client Application developped using Vaadin 10 Framework based on Java EE language. Datas are stored using JPA as local storage",
     gcbDescr: "Thick Client Application fully developped using Java SE 8 programming language. Datas are stored on an Oracle database",
@@ -439,7 +439,7 @@ var language = {
     msgPlaceholder: "Message*",
     msgRequired: "Please enter a message.",
     sendMessageButton: "Send message",
-    knowMoreTitle: "Click for more informations",
+    knowMoreTitle: "Click for more information",
     moreDetailsTitle: "Click for more details",
     seeProjectTitle: "Click to see the project",
     diplomeText1: "Click to see the diploma",
@@ -494,8 +494,8 @@ var language = {
     portfolioModal1EndDate: "End date : September 2019",
     portfolioModal1Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>VaudVin Project</a>",
     portfolioModal2Title: "FoodNextDoor Project",
-    portfolioModal2Subtitle: "Responsive Web Application developed using Angular 7 Framework (Front End) and DjangoREST Framework (Back End) as part of a group project.",
-    portfolioModal2Descr: "This project was built on the basis of an agile methodology named DAD (Disciplined Agile Delivery). From inception phase to construction, followed by transition and finally unit tests, every step was rigorously followed by all four members of the project board. Indeed, we were mandated to create a responsive web application, cross-platform compatible, from which the purpose was to allow individuals to generate additional incomes while making a transaction without the need of a business actor (such as a restaurant or a delivery company). This project was built using Angular 7 Framework (Front End) and DjangoREST (Back End). Both were linked with the help of a PostGreSQL database which was used as a global data storage.",
+    portfolioModal2Subtitle: "Responsive Web Application developed using Angular 7 Framework (Front End) and DjangoREST 1.11 Framework (Back End) as part of a group project.",
+    portfolioModal2Descr: "This project was built on the basis of an agile methodology named DAD (Disciplined Agile Delivery). From inception phase to construction, followed by transition and finally unit tests, every step was rigorously followed by all four members of the project board. Indeed, we were mandated to create a responsive web application, cross-platform compatible, from which the purpose was to allow individuals to generate additional incomes while making a transaction without the need of a business actor (such as a restaurant or a delivery company). This project was built using Angular 7 Framework (Front End) and DjangoREST 1.11 (Back End). Both were linked with the help of a PostGreSQL database which was used as a global data storage.",
     portfolioModal2StartDate: "Start date : September 2018",
     portfolioModal2EndDate: "End date: May 2019",
     portfolioModal2Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>FoodNextDoor Project</a>",
@@ -564,7 +564,7 @@ var language = {
     clickImagesSubtitle: "Cliquez sur les illustrations pour plus de détails",
     portfolioDescr: "Web responsive application développée avec les technologies web (HTML 5, CSS 3 et JavaScript 8) et utilisant le Framework Bootstrap 4",
     vaudvinDescr: "Application mobile hybride développée avec les Frameworks Ionic 4 (Front End) et Laravel PHP 5 (Back End). Utilise une base PostGreSQL pour le stockage local des données",
-    fndDescr: "Responsive WebApp développée à l'aide des Frameworks Angular 7 (Front End) et DjangoREST (Back End)",
+    fndDescr: "Responsive WebApp développée à l'aide des Frameworks Angular 7 (Front End) et DjangoREST 1.11 (Back End)",
     biblTitle: "Bibliothèque Virtuelle",
     biblDescr: "Application lourde développée avec le Framework Vaadin 10 basé sur le langage Java. Les données sont stockées localement à l'aide de JPA",
     gcbDescr: "Application lourde entièrement développée en langage Java SE 8 et utilisant une base de données Oracle",
