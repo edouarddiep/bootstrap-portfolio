@@ -492,13 +492,15 @@ var language = {
     portfolioModal1Descr: "This project has been thought, conceived and introduced as part of my Bachelor's final work. Indeed, I collaborated with a principal who co-owned a wine contests' company and wished to expand its existing services. The purpose of this application was to introduce to local consumers a brand new rating and evaluation's platform for swiss wines, in order to encourage them to consume local grape varieties instead of foreign imported products. This software has been developed using Ionic 4 Framework (Front End) and Laravel PHP 5 (Back End). It uses a PostGreSQL database as global data storage.",
     portfolioModal1StartDate: "Start date : June 2019",
     portfolioModal1EndDate: "End date : September 2019",
-    portfolioModal1Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>VaudVin Project</a>",
+    portfolioModal1Source1: "Front-End source code : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>VaudVin Front-End</a>",
+    portfolioModal1Source2: "Back-End source code : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-back'>VaudVin Back-End</a>",
     portfolioModal2Title: "FoodNextDoor Project",
     portfolioModal2Subtitle: "Responsive Web Application developed using Angular 7 Framework (Front End) and DjangoREST 1.11 Framework (Back End) as part of a group project.",
     portfolioModal2Descr: "This project was built on the basis of an agile methodology named DAD (Disciplined Agile Delivery). From inception phase to construction, followed by transition and finally unit tests, every step was rigorously followed by all four members of the project board. Indeed, we were mandated to create a responsive web application, cross-platform compatible, from which the purpose was to allow individuals to generate additional incomes while making a transaction without the need of a business actor (such as a restaurant or a delivery company). This project was built using Angular 7 Framework (Front End) and DjangoREST 1.11 (Back End). Both were linked with the help of a PostGreSQL database which was used as a global data storage.",
     portfolioModal2StartDate: "Start date : September 2018",
     portfolioModal2EndDate: "End date: May 2019",
-    portfolioModal2Source: "Source code : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>FoodNextDoor Project</a>",
+    portfolioModal2Source1: "Front End source code : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>Front-End FoodNextDoor</a>",
+    portfolioModal2Source2: "Back End source code : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-back'>Back-End FoodNextDoor</a>",
     portfolioModal3Title: "Virtual Library Project",
     portfolioModal3Subtitle: "Heavy application built using Vaadin 10 Framework based on Java Enterprise Edition coded using IntelliJ IDEA's IDE as part of a school project achieved individually.",
     portfolioModal3Descr: "The purpose of this project was to get acquainted with developement Frameworks, in view to assist native coding. Indeed, it was conceived as part of an intermediate school exam and I was asked to build a virtual book library using Vaadin 10 Framework based on Java EE 8 language. At the end of this project, the user was able to create, save and update his own books thanks to JPA (Java Persistance API) which was used as a local data storage.",
@@ -673,13 +675,15 @@ var language = {
     portfolioModal1Descr: "Ce projet a été pensé, réalisé et présenté dans le cadre de mon travail de bachelor. En effet, j'ai collaboré avec un client qui avait pour idée d'étendre les services déjà existants dans sa société. Le but de l'application était de proposer une plateforme de notation et d’évaluation de vins suisses aux consommateurs locaux, afin de les inciter à vouloir consommer des cépages de la région aux dépens des importations étrangères. Ce projet a été développé à l'aide des frameworks Ionic 4 (Front-End) et Laravel PHP 5 (Back-End). Il utilise une base de données PostGreSQL comme stockage global des données.",
     portfolioModal1StartDate: "Date de début : Juin 2019",
     portfolioModal1EndDate: "Date de fin : Septembre 2019",
-    portfolioModal1Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>Projet VaudVin</a>",
+    portfolioModal1Source1: "Code source Front End : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-front'>Front End VaudVin</a>",
+    portfolioModal1Source2: "Code source Back End : <a target='_blank' href='https://github.com/edouarddiep/VaudVin-back'>Back End  VaudVin</a>",
     portfolioModal2Title: "Projet FoodNextDoor",
     portfolioModal2Subtitle: "Responsive WebApp développée à l'aide des Frameworks Angular 7 (Front End) et DjangoREST (Back-End) dans le cadre d'un projet d'études en groupe.",
     portfolioModal2Descr: "Ce projet a été conçu sur la base d'une méthode agile de gestion de projet : DAD (Disciplined Agile Delivery). De la phase investigation à la construction, puis la transition en passant par les tests unitaires, chacune des étapes a été scrupuleusement suivie par chacun des quatre membres constituant le comité du projet. En effet, nous avions été mandaté afin de réaliser une web application responsive, compatible multi-plateforme, dont l'objectif était de pouvoir proposer une plateforme de mise en relation entre un particulier et un autre, afin de leur permettre de générer des revenus annexes en préparant des plats à domicile. L'objectif était d'effectuer une transaction sans passer par un professionnel (restaurant ou société de livraison par exemple). Ce projet a été développé à l'aide des Frameworks Angular 7 (Front-End) et DjangoREST (Back-End). Les deux étaient reliés à l'aide d'une base de données PostGreSQL qui servait de stockage global.",
     portfolioModal2StartDate: "Date de début : Septembre 2018",
     portfolioModal2EndDate: "Date de fin : Mai 2019",
-    portfolioModal2Source: "Code source : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>Projet FoodNextDoor</a>",
+    portfolioModal2Source1: "Code source Front End : <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-front'>Front End FoodNextDoor</a>",
+    portfolioModal2Source2: "Code source Back End: <a target='_blank' href='https://github.com/edouarddiep/foodnextdoor-back'>Back End FoodNextDoor</a>",
     portfolioModal3Title: "Projet Bibliothèque Virtuelle",
     portfolioModal3Subtitle: "Application lourde développée à l'aide du Framework Vaadin 10 basé sur le language Java Edition Entreprise construire sur l'IDE IntelliJ IDEA dans le cadre d'un projet d'études réalisé de manière individuelle.",
     portfolioModal3Descr: "L'objectif de ce projet était de se familiariser avec les Frameworks de développement qui permettent d'assister le développement natif en Java. En effet, il a été réalisé dans le cadre d'un examen demandé par l'école et dont le but était de construire une bibliothèque virtuelle de livres en utilisant le Framework Vaadin 10 basé sur le langage Java EE 8. A la fin de ce projet, l'utilisateur pouvait créer, sauvegarder et modifier ses propres livres à l'aide d'une persistance JPA (Java Persistance API) qui était utilisée comme stockage local de données.",
@@ -900,14 +904,16 @@ if (window.location.hash) {
     $('#portfolioModal1Descr').html(language.en.portfolioModal1Descr);
     $('#portfolioModal1StartDate').html(language.en.portfolioModal1StartDate);
     $('#portfolioModal1EndDate').html(language.en.portfolioModal1EndDate);
-    $('#portfolioModal1Source').html(language.en.portfolioModal1Source);
+    $('#portfolioModal1Source1').html(language.en.portfolioModal1Source1);
+    $('#portfolioModal1Source2').html(language.en.portfolioModal1Source2);
     $('#portfolioModal1Close').html(language.en.closeText);
     $('#portfolioModal2Title').html(language.en.portfolioModal2Title);
     $('#portfolioModal2Subtitle').html(language.en.portfolioModal2Subtitle);
     $('#portfolioModal2Descr').html(language.en.portfolioModal2Descr);
     $('#portfolioModal2StartDate').html(language.en.portfolioModal2StartDate);
     $('#portfolioModal2EndDate').html(language.en.portfolioModal2EndDate);
-    $('#portfolioModal2Source').html(language.en.portfolioModal2Source);
+    $('#portfolioModal2Source1').html(language.en.portfolioModal2Source1);
+    $('#portfolioModal2Source2').html(language.en.portfolioModal2Source2);
     $('#portfolioModal2Close').html(language.en.closeText);
     $('#portfolioModal3Title').html(language.en.portfolioModal3Title);
     $('#portfolioModal3Subtitle').html(language.en.portfolioModal3Subtitle);
@@ -1136,14 +1142,16 @@ if (window.location.hash) {
     $('#portfolioModal1Descr').html(language.fr.portfolioModal1Descr);
     $('#portfolioModal1StartDate').html(language.fr.portfolioModal1StartDate);
     $('#portfolioModal1EndDate').html(language.fr.portfolioModal1EndDate);
-    $('#portfolioModal1Source').html(language.fr.portfolioModal1Source);
+    $('#portfolioModal1Source1').html(language.fr.portfolioModal1Source1);
+    $('#portfolioModal1Source2').html(language.fr.portfolioModal1Source2);
     $('#portfolioModal1Close').html(language.fr.closeText);
     $('#portfolioModal2Title').html(language.fr.portfolioModal2Title);
     $('#portfolioModal2Subtitle').html(language.fr.portfolioModal2Subtitle);
     $('#portfolioModal2Descr').html(language.fr.portfolioModal2Descr);
     $('#portfolioModal2StartDate').html(language.fr.portfolioModal2StartDate);
     $('#portfolioModal2EndDate').html(language.fr.portfolioModal2EndDate);
-    $('#portfolioModal2Source').html(language.fr.portfolioModal2Source);
+    $('#portfolioModal2Source1').html(language.fr.portfolioModal2Source1);
+    $('#portfolioModal2Source2').html(language.fr.portfolioModal2Source2);
     $('#portfolioModal2Close').html(language.fr.closeText);
     $('#portfolioModal3Title').html(language.fr.portfolioModal3Title);
     $('#portfolioModal3Subtitle').html(language.fr.portfolioModal3Subtitle);
