@@ -205,7 +205,7 @@ $(window).scroll(function () {
       // ANIMATION LOGOS IT & PROGRESS BARS 
       function frame() {
         if (width > 10) {
-          for (let i = 0; i <= 24; i++) {
+          for (let i = 0; i <= 25; i++) {
             setTimeout(function () {
               $('#skill' + i).animate({
                 'opacity': '1',
@@ -751,7 +751,7 @@ var language = {
     diplomesModal10Subtitle: "HEG - Genève | Campus de Battelle, Rue de la Tambourine 17, 1227 Carouge - Genève",
     diplomesModal10Date: "Date de remise : 17 septembre 2019",
     seeNotesText: "Cliquez pour voir le bulletin de notes",
-    copyrightText: "Copyright &copy; E. Diep 2019 ",
+    copyrightText: "Copyright &copy; E. Diep 2020",
     siteLanguage: "Choisir la langue",
   }
 };
